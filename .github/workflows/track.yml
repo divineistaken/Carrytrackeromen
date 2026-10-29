@@ -48,8 +48,8 @@ jobs:
               ls -1 *.json 2>/dev/null | sort -n | head -n -20 | xargs -r rm -f
             )
 
-            if [ -n "$(git status --porcelain -- state.json d)" ]; then
-              git add state.json d
+            if [ -n "$(git status --porcelain -- state.json history.json d)" ]; then
+              git add state.json history.json d
               git commit --amend --no-edit -q || git commit -m "Update OMEN carry data" -q
               for attempt in 1 2 3; do
                 if git push --force origin HEAD:data; then break; fi

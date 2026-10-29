@@ -173,6 +173,21 @@ def main():
         state = {"clan": CLAN, "updated": utc_now(), "wins": ordered}
         changed = write_if_changed(state_path, state)
 
+    if state:
+        history = {
+            "updated": state.get("updated", ""),
+            "wins": [
+                {
+                    "time": w.get("time", ""),
+                    "map": w.get("map", ""),
+                    "carry": w.get("carry", ""),
+                    "contest": bool(w.get("contest")),
+                }
+                for w in state.get("wins", [])
+            ],
+        }
+        write_if_changed(state_path.with_name("history.json"), history)
+
     slot = int(time.time() * 1000 // SLOT_MS * SLOT_MS)
     slot_dir.mkdir(parents=True, exist_ok=True)
     slot_path = slot_dir / f"{slot}.json"

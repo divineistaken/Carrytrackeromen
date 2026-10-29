@@ -54,6 +54,28 @@
     text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted);
     border-bottom: 1px solid var(--border);
   }
+  .panel-head {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 10px 16px; border-bottom: 1px solid var(--border);
+  }
+  .panel-head h2 { padding: 0; border-bottom: 0; }
+  .range { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-left: auto; }
+  .range label {
+    display: flex; align-items: center; gap: 6px; font-size: 10px;
+    text-transform: uppercase; letter-spacing: 1px; color: var(--muted);
+  }
+  .range input {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 5px 8px; font: inherit; font-size: 12px;
+    color-scheme: dark;
+  }
+  .range button {
+    background: #21262d; border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 5px 10px; font: inherit; font-size: 12px; cursor: pointer;
+  }
+  .range button:hover { border-color: var(--accent); color: var(--accent); }
+  .range-note { margin: 0; padding: 8px 16px; font-size: 12px; color: var(--muted); border-bottom: 1px solid #21262d; }
+  .range-note:empty { display: none; }
   .name { font-weight: 600; }
   th.num, td.num { text-align: right; white-space: nowrap; }
   td.num.total { color: var(--accent); font-weight: 700; }
@@ -88,7 +110,16 @@
   </section>
 
   <section class="panel">
-    <h2>Carries</h2>
+    <div class="panel-head">
+      <h2>Carries</h2>
+      <div class="range">
+        <label>From <input type="datetime-local" id="from" step="1"></label>
+        <label>To <input type="datetime-local" id="to" step="1"></label>
+        <button id="apply" type="button">Apply</button>
+        <button id="clear" type="button">All time</button>
+      </div>
+    </div>
+    <p class="range-note" id="range-note"></p>
     <table class="carries">
       <thead>
         <tr>
@@ -129,11 +160,18 @@ const STATE_SOURCES = [
   "https://raw.githack.com/divineistaken/Carrytrackeromen/data/state.json",
   "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/state.json"
 ];
+const HISTORY_SOURCES = [
+  "https://raw.githack.com/divineistaken/Carrytrackeromen/data/history.json",
+  "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/history.json"
+];
 const REFRESH_MS = 30000;
 const MAX_ROWS = 25;
 
 const $ = (id) => document.getElementById(id);
 let lastData = null;
+let history = null;
+let historyAt = 0;
+let activeRange = null;
 
 async function getJson(url) {
   const res = await fetch(url, { cache: "no-store" });
@@ -195,19 +233,77 @@ function carryStats(data) {
   return { total: data.carries || {}, non: null, con: null };
 }
 
+async function loadHistory(force) {
+  if (!force && history && Date.now() - historyAt < 60000) return history;
+  const results = await Promise.allSettled(HISTORY_SOURCES.map(getJson));
+  const ok = results.find((r) => r.status === "fulfilled");
+  if (ok) {
+    history = ok.value;
+    historyAt = Date.now();
+  }
+  return history;
+}
+
+function mergedWins(data) {
+  const map = new Map();
+  for (const w of (history && history.wins) || []) map.set(w.time + "|" + w.map, w);
+  for (const w of data.wins || []) map.set(w.time + "|" + w.map, w);
+  return [...map.values()].sort((a, b) =>
+    (Date.parse(b.time) || 0) - (Date.parse(a.time) || 0));
+}
+
+function inRange(w) {
+  if (!activeRange) return true;
+  const t = Date.parse(w.time);
+  if (isNaN(t)) return false;
+  if (activeRange.from !== null && t < activeRange.from) return false;
+  if (activeRange.to !== null && t > activeRange.to) return false;
+  return true;
+}
+
+function filteredWins(data) {
+  return mergedWins(data).filter(inRange);
+}
+
+function statsForRange(data) {
+  const total = {}, non = {}, con = {};
+  for (const w of filteredWins(data)) {
+    const name = w.carry;
+    if (!name) continue;
+    total[name] = (total[name] || 0) + 1;
+    if (w.contest) con[name] = (con[name] || 0) + 1;
+    else non[name] = (non[name] || 0) + 1;
+  }
+  return { total, non, con };
+}
+
+function rangeText() {
+  if (!activeRange) return "";
+  const fmt = (t) => (t === null ? "…" : new Date(t).toLocaleString());
+  return `${fmt(activeRange.from)} → ${fmt(activeRange.to)}`;
+}
+
 function render(data) {
   lastData = data;
 
   $("total-wins").textContent = data.total_wins ?? 0;
-  const stats = carryStats(data);
+  const stats = activeRange ? statsForRange(data) : carryStats(data);
   const names = Object.keys(stats.total).sort((a, b) =>
     (stats.total[b] - stats.total[a]) || a.toLowerCase().localeCompare(b.toLowerCase()));
   $("total-carriers").textContent = names.length;
   $("updated").textContent = data.checked || data.updated || "-";
 
+  const note = $("range-note");
+  if (activeRange) {
+    const n = filteredWins(data).length;
+    note.textContent = `${n} win${n === 1 ? "" : "s"} · ${rangeText()}`;
+  } else {
+    note.textContent = "";
+  }
+
   const list = $("carries");
   if (!names.length) {
-    list.innerHTML = '<tr><td colspan="4" class="empty">no OMEN carries tracked yet</td></tr>';
+    list.innerHTML = '<tr><td colspan="4" class="empty">no OMEN carries in this range</td></tr>';
   } else {
     list.innerHTML = names.map((name) => `
       <tr>
@@ -218,7 +314,7 @@ function render(data) {
       </tr>`).join("");
   }
 
-  const wins = (data.wins || []).slice(0, MAX_ROWS);
+  const wins = (activeRange ? filteredWins(data) : (data.wins || [])).slice(0, MAX_ROWS);
   const tbody = $("wins");
   if (!wins.length) {
     tbody.innerHTML = '<tr><td colspan="3" class="empty">no OMEN wins tracked yet</td></tr>';
@@ -245,8 +341,44 @@ function setStatus(text, stale) {
   $("dot").className = "dot" + (stale ? " stale" : "");
 }
 
+async function applyRange() {
+  const f = $("from").value;
+  const t = $("to").value;
+  if (!f && !t) {
+    activeRange = null;
+    if (lastData) render(lastData);
+    return;
+  }
+  let from = f ? new Date(f).getTime() : null;
+  let to = t ? new Date(t).getTime() : null;
+  if (from !== null && isNaN(from)) from = null;
+  if (to !== null && isNaN(to)) to = null;
+  if (from !== null && to !== null && from > to) [from, to] = [to, from];
+  activeRange = { from, to };
+  try {
+    await loadHistory(true);
+  } catch (err) {
+    console.error(err);
+  }
+  if (lastData) render(lastData);
+}
+
+function clearRange() {
+  $("from").value = "";
+  $("to").value = "";
+  activeRange = null;
+  if (lastData) render(lastData);
+}
+
 async function refresh() {
   try {
+    if (activeRange) {
+      try {
+        await loadHistory(false);
+      } catch (err) {
+        console.error(err);
+      }
+    }
     render(await loadData());
   } catch (err) {
     console.error(err);
@@ -256,6 +388,12 @@ async function refresh() {
     setStatus("offline - retrying", true);
   }
 }
+
+$("apply").addEventListener("click", applyRange);
+$("clear").addEventListener("click", clearRange);
+[$("from"), $("to")].forEach((el) => el.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") applyRange();
+}));
 
 refresh();
 setInterval(refresh, REFRESH_MS);
