@@ -4,8 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carrytrackeromen</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #f0883e;
+    --green: #3fb950;
+    --red: #f85149;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1b2330 0%, var(--bg) 55%);
+    color: var(--text);
+    font: 15px/1.5 ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    padding: 32px 16px 64px;
+  }
+  main { max-width: 860px; margin: 0 auto; }
+  header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.5px; }
+  h1 span { color: var(--accent); }
+  .wip {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--muted); border: 1px solid var(--border);
+    border-radius: 999px; padding: 2px 9px;
+  }
+  .sub { color: var(--muted); margin: 6px 0 24px; font-size: 13px; }
+  .sub a { color: var(--muted); }
+  .stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; margin-bottom: 24px;
+  }
+  .stat {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px;
+  }
+  .stat b { display: block; font-size: 20px; color: var(--text); }
+  .stat span { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .panel {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden; margin-bottom: 24px;
+  }
+  .panel h2 {
+    margin: 0; padding: 12px 16px; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  ol.carries { list-style: none; margin: 0; padding: 6px 0; counter-reset: c; }
+  ol.carries li {
+    display: flex; align-items: center; gap: 12px;
+    padding: 9px 16px; border-bottom: 1px solid #21262d;
+  }
+  ol.carries li:last-child { border-bottom: 0; }
+  .rank { width: 26px; color: var(--muted); font-size: 12px; text-align: right; }
+  .name { font-weight: 600; }
+  .count { margin-left: auto; color: var(--accent); white-space: nowrap; }
+  .count small { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 16px; border-bottom: 1px solid #21262d; }
+  th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+  tr:last-child td { border-bottom: 0; }
+  td.carry { color: var(--accent); font-weight: 600; }
+  td.gold { text-align: right; color: var(--green); }
+  th.gold { text-align: right; }
+  .empty { padding: 28px 16px; color: var(--muted); text-align: center; }
+  footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
+  .dot.stale { background: var(--red); }
+  .error { color: var(--red); }
+</style>
 </head>
 <body>
-<h1>Work in progress</h1>
+<main>
+  <header>
+    <h1>OMEN <span>Carries</span></h1>
+    <span class="wip">work in progress</span>
+  </header>
+  <p class="sub">
+    tracking <a href="https://territorial.io/log/team" target="_blank" rel="noopener">territorial.io/log/team</a>
+    &middot; wins by clan <b>[OMEN]</b> only &middot; a carry is the top gold earner of the win
+  </p>
+
+  <section class="stats">
+    <div class="stat"><b id="total-wins">-</b><span>OMEN wins tracked</span></div>
+    <div class="stat"><b id="total-carriers">-</b><span>players with carries</span></div>
+    <div class="stat"><b id="updated">-</b><span>data updated (UTC)</span></div>
+  </section>
+
+  <section class="panel">
+    <h2>Carries</h2>
+    <ol class="carries" id="carries">
+      <li class="empty">loading...</li>
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Recent OMEN wins</h2>
+    <table>
+      <thead>
+        <tr><th>Time (UTC)</th><th>Map</th><th>Carry</th><th class="gold">Gold</th></tr>
+      </thead>
+      <tbody id="wins">
+        <tr><td colspan="4" class="empty">loading...</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <span><span class="dot" id="dot"></span><span id="status">connecting...</span></span>
+    <span>auto-refresh every 30s</span>
+  </footer>
+</main>
+
+<script>
+const SOURCES = [
+  "https://raw.githack.com/divineistaken/Carrytrackeromen/data/data.json",
+  "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/data.json",
+  "https://cdn.jsdelivr.net/gh/divineistaken/Carrytrackeromen@data/data.json"
+];
+const REFRESH_MS = 30000;
+const MAX_ROWS = 25;
+
+const $ = (id) => document.getElementById(id);
+let lastData = null;
+let lastCheck = null;
+
+function bust(url) {
+  return url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
+}
+
+async function fetchSource(url) {
+  const res = await fetch(bust(url), { cache: "no-store" });
+  if (!res.ok) throw new Error(url + " -> " + res.status);
+  const data = await res.json();
+  if (!data || !Array.isArray(data.wins)) throw new Error("bad payload");
+  return data;
+}
+
+async function loadData() {
+  const results = await Promise.allSettled(SOURCES.map(fetchSource));
+  const valid = results
+    .filter((r) => r.status === "fulfilled")
+    .map((r) => r.value)
+    .sort((a, b) => {
+      const wa = a.total_wins || 0, wb = b.total_wins || 0;
+      if (wb !== wa) return wb - wa;
+      return (Date.parse(b.updated) || 0) - (Date.parse(a.updated) || 0);
+    });
+  if (!valid.length) throw new Error("all sources failed");
+  return valid[0];
+}
+
+function render(data) {
+  lastData = data;
+  lastCheck = new Date();
+
+  $("total-wins").textContent = data.total_wins ?? 0;
+  const carries = Object.entries(data.carries || {});
+  $("total-carriers").textContent = carries.length;
+  $("updated").textContent = data.updated || "-";
+
+  const list = $("carries");
+  if (!carries.length) {
+    list.innerHTML = '<li class="empty">no OMEN carries tracked yet</li>';
+  } else {
+    list.innerHTML = carries.map(([name, n], i) => `
+      <li>
+        <span class="rank">${i + 1}</span>
+        <span class="name">${escapeHtml(name)} - (${n}) carries</span>
+        <span class="count">${n}<small> ${n === 1 ? "carry" : "carries"}</small></span>
+      </li>`).join("");
+  }
+
+  const wins = (data.wins || []).slice(0, MAX_ROWS);
+  const tbody = $("wins");
+  if (!wins.length) {
+    tbody.innerHTML = '<tr><td colspan="4" class="empty">no OMEN wins tracked yet</td></tr>';
+  } else {
+    tbody.innerHTML = wins.map((w) => `
+      <tr>
+        <td>${escapeHtml(w.time)}</td>
+        <td>${escapeHtml(w.map)}</td>
+        <td class="carry">${escapeHtml(w.carry)}</td>
+        <td class="gold">${Number(w.carry_gold || 0).toFixed(2)}</td>
+      </tr>`).join("");
+  }
+
+  $("dot").className = "dot";
+  $("status").textContent = "live";
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+function setStatus(text, stale) {
+  $("status").textContent = text;
+  $("dot").className = "dot" + (stale ? " stale" : "");
+}
+
+async function refresh() {
+  try {
+    const data = await loadData();
+    render(data);
+  } catch (err) {
+    console.error(err);
+    if (!lastData) {
+      $("carries").innerHTML = '<li class="empty error">could not load data</li>';
+    }
+    setStatus("offline - retrying", true);
+  }
+}
+
+refresh();
+setInterval(refresh, REFRESH_MS);
+</script>
 </body>
 </html>

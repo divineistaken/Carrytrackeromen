@@ -1,0 +1,52 @@
+name: Track OMEN carries
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: omen-tracker
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect OMEN wins
+        run: |
+          set -uo pipefail
+          git config --global user.name "omen-tracker"
+          git config --global user.email "omen-tracker@users.noreply.github.com"
+
+          work="$(mktemp -d)"
+          git fetch --depth=1 origin data
+          git worktree add --detach "$work" FETCH_HEAD
+          cd "$work"
+          git checkout -B data
+
+          deadline=$(( $(date +%s) + 20700 ))
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            python3 "$GITHUB_WORKSPACE/tracker.py" "$work/data.json" || true
+
+            if [ -n "$(git status --porcelain -- data.json)" ]; then
+              git add data.json
+              git commit --amend --no-edit -q || git commit -m "Update OMEN carry data" -q
+              for attempt in 1 2 3; do
+                if git push --force origin HEAD:data; then break; fi
+                sleep 5
+              done
+            fi
+
+            sleep 30
+          done
