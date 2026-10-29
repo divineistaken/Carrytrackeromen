@@ -54,14 +54,10 @@
     text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted);
     border-bottom: 1px solid var(--border);
   }
-  ol.carries { list-style: none; margin: 0; padding: 6px 0; }
-  ol.carries li {
-    display: flex; align-items: center; gap: 12px;
-    padding: 9px 16px; border-bottom: 1px solid #21262d;
-  }
-  ol.carries li:last-child { border-bottom: 0; }
-  .rank { width: 26px; color: var(--muted); font-size: 12px; text-align: right; }
   .name { font-weight: 600; }
+  th.num, td.num { text-align: right; white-space: nowrap; }
+  td.num.total { color: var(--accent); font-weight: 700; }
+  th.num.total { color: var(--accent); }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 8px 16px; border-bottom: 1px solid #21262d; }
   th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
@@ -93,9 +89,19 @@
 
   <section class="panel">
     <h2>Carries</h2>
-    <ol class="carries" id="carries">
-      <li class="empty">loading...</li>
-    </ol>
+    <table class="carries">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th class="num">Non-contest</th>
+          <th class="num">Contest</th>
+          <th class="num total">Total</th>
+        </tr>
+      </thead>
+      <tbody id="carries">
+        <tr><td colspan="4" class="empty">loading...</td></tr>
+      </tbody>
+    </table>
   </section>
 
   <section class="panel">
@@ -166,23 +172,50 @@ async function loadData() {
   throw new Error("all sources failed");
 }
 
+function carryStats(data) {
+  if (data.carries_noncontest || data.carries_contest) {
+    return {
+      total: data.carries || {},
+      non: data.carries_noncontest || {},
+      con: data.carries_contest || {},
+    };
+  }
+  const wins = data.wins || [];
+  if (wins.length && wins.length >= (data.total_wins || 0)) {
+    const total = {}, non = {}, con = {};
+    for (const w of wins) {
+      const name = w.carry;
+      if (!name) continue;
+      total[name] = (total[name] || 0) + 1;
+      if (w.contest) con[name] = (con[name] || 0) + 1;
+      else non[name] = (non[name] || 0) + 1;
+    }
+    return { total, non, con };
+  }
+  return { total: data.carries || {}, non: null, con: null };
+}
+
 function render(data) {
   lastData = data;
 
   $("total-wins").textContent = data.total_wins ?? 0;
-  const carries = Object.entries(data.carries || {});
-  $("total-carriers").textContent = carries.length;
+  const stats = carryStats(data);
+  const names = Object.keys(stats.total).sort((a, b) =>
+    (stats.total[b] - stats.total[a]) || a.toLowerCase().localeCompare(b.toLowerCase()));
+  $("total-carriers").textContent = names.length;
   $("updated").textContent = data.checked || data.updated || "-";
 
   const list = $("carries");
-  if (!carries.length) {
-    list.innerHTML = '<li class="empty">no OMEN carries tracked yet</li>';
+  if (!names.length) {
+    list.innerHTML = '<tr><td colspan="4" class="empty">no OMEN carries tracked yet</td></tr>';
   } else {
-    list.innerHTML = carries.map(([name, n], i) => `
-      <li>
-        <span class="rank">${i + 1}</span>
-        <span class="name">${escapeHtml(name)} - ${n} carries</span>
-      </li>`).join("");
+    list.innerHTML = names.map((name) => `
+      <tr>
+        <td class="name">${escapeHtml(name)}</td>
+        <td class="num">${stats.non ? (stats.non[name] || 0) : "—"}</td>
+        <td class="num">${stats.con ? (stats.con[name] || 0) : "—"}</td>
+        <td class="num total">${stats.total[name] || 0}</td>
+      </tr>`).join("");
   }
 
   const wins = (data.wins || []).slice(0, MAX_ROWS);
@@ -218,7 +251,7 @@ async function refresh() {
   } catch (err) {
     console.error(err);
     if (!lastData) {
-      $("carries").innerHTML = '<li class="empty error">could not load data</li>';
+      $("carries").innerHTML = '<tr><td colspan="4" class="empty error">could not load data</td></tr>';
     }
     setStatus("offline - retrying", true);
   }

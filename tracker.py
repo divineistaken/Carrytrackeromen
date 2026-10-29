@@ -84,6 +84,7 @@ def to_record(entry):
         "map": entry.get("Map", ""),
         "players": int(entry["Player Count"]) if entry.get("Player Count", "").isdigit() else None,
         "gain": entry.get("Gain", ""),
+        "contest": entry.get("Contest", "").strip().lower() == "yes",
         "carry": payout[0][0],
         "carry_gold": payout[0][1],
         "payout": payout,
@@ -106,15 +107,26 @@ def utc_now():
 
 def build_summary(state, checked):
     wins = state.get("wins", [])
-    carries = {}
+    total, non_contest, contest = {}, {}, {}
     for win in wins:
-        carries[win["carry"]] = carries.get(win["carry"], 0) + 1
+        name = win.get("carry")
+        if not name:
+            continue
+        total[name] = total.get(name, 0) + 1
+        bucket = contest if win.get("contest") else non_contest
+        bucket[name] = bucket.get(name, 0) + 1
+
+    def ordered(counts):
+        return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0].lower())))
+
     return {
         "clan": CLAN,
         "checked": checked,
         "updated": state.get("updated", checked),
         "total_wins": len(wins),
-        "carries": dict(sorted(carries.items(), key=lambda kv: (-kv[1], kv[0].lower()))),
+        "carries": ordered(total),
+        "carries_noncontest": ordered(non_contest),
+        "carries_contest": ordered(contest),
         "wins": wins[:RECENT_WINS],
     }
 
