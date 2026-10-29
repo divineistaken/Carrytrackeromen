@@ -82,7 +82,7 @@
   </header>
   <p class="sub">
     tracking <a href="https://territorial.io/log/team" target="_blank" rel="noopener">territorial.io/log/team</a>
-    &middot; wins by clan <b>[OMEN]</b> only &middot; a carry is the top gold earner of the win
+    &middot; wins by clan <b>[OMEN]</b> only
   </p>
 
   <section class="stats">
@@ -181,7 +181,7 @@ function render(data) {
     list.innerHTML = carries.map(([name, n], i) => `
       <li>
         <span class="rank">${i + 1}</span>
-        <span class="name">${escapeHtml(name)} - (${n}) carries</span>
+        <span class="name">${escapeHtml(name)} - ${n} carries</span>
       </li>`).join("");
   }
 
