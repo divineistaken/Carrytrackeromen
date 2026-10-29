@@ -10,6 +10,7 @@ Usage: tracker.py [state.json] [slot_dir]
 """
 
 import json
+import os
 import re
 import sys
 import time
@@ -18,10 +19,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 LOG_URL = "https://territorial.io/log/team"
+ACCOUNT_API = "https://territorial.io/api/account/get"
+USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
 CLAN = "OMEN"
 MAX_WINS = 2000
 SLOT_MS = 30_000
 RECENT_WINS = 25
+MAX_NAME_LOOKUPS = 20
 
 FIELD_RE = re.compile(r"^([A-Za-z. ]+?):\s+(.*)$")
 PAYOUT_RE = re.compile(r"([^\s,]+)\s+([0-9]+(?:\.[0-9]+)?)")
@@ -30,14 +37,86 @@ PAYOUT_RE = re.compile(r"([^\s,]+)\s+([0-9]+(?:\.[0-9]+)?)")
 def fetch_log():
     req = urllib.request.Request(
         LOG_URL,
-        headers={
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-            "Accept": "text/html,text/plain,*/*",
-        },
+        headers={"User-Agent": USER_AGENT, "Accept": "text/html,text/plain,*/*"},
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read().decode("utf-8", "replace")
+
+
+def account_lookup(account_name, own_account, own_password):
+    body = json.dumps(
+        {
+            "account_name": own_account,
+            "password": own_password,
+            "target_account_name": account_name,
+        }
+    ).encode()
+    req = urllib.request.Request(
+        ACCOUNT_API,
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+    )
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return json.loads(resp.read().decode("utf-8", "replace"))
+
+
+def extract_display_name(data, code):
+    """Pull a display/username out of the account payload, whatever its shape."""
+    if isinstance(data, dict):
+        status = str(data.get("status", "")).lower()
+        if status in {"error", "account error", "password error", "format error"}:
+            return None
+
+    found = []
+
+    def walk(obj, depth):
+        if depth > 3:
+            return
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                k = key.lower()
+                if isinstance(value, str) and value.strip() and value != code:
+                    if "user" in k or "display" in k or "nick" in k:
+                        found.append((0, value.strip()))
+                    elif "name" in k and "account" not in k and "clan" not in k:
+                        found.append((1, value.strip()))
+                elif isinstance(value, (dict, list)):
+                    walk(value, depth + 1)
+        elif isinstance(obj, list):
+            for item in obj:
+                walk(item, depth + 1)
+
+    walk(data, 0)
+    found.sort(key=lambda item: item[0])
+    return found[0][1] if found else None
+
+
+def resolve_names(names, accounts):
+    own_account = os.environ.get("TTIO_ACCOUNT", "").strip()
+    own_password = os.environ.get("TTIO_PASSWORD", "")
+    if not own_account or not own_password:
+        return names, 0
+
+    todo = sorted(a for a in accounts if a and a not in names)[:MAX_NAME_LOOKUPS]
+    added = 0
+    for code in todo:
+        try:
+            data = account_lookup(code, own_account, own_password)
+        except Exception as exc:
+            print(f"name lookup failed for {code}: {exc}", file=sys.stderr)
+            continue
+        display = extract_display_name(data, code)
+        if display:
+            names[code] = display
+            added += 1
+        else:
+            keys = sorted(data.keys()) if isinstance(data, dict) else type(data).__name__
+            print(f"name lookup: no username for {code} (keys={keys})", file=sys.stderr)
+    return names, added
 
 
 def parse_entries(text):
@@ -105,7 +184,8 @@ def utc_now():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
 
-def build_summary(state, checked):
+def build_summary(state, checked, names=None):
+    names = names or {}
     wins = state.get("wins", [])
     total, non_contest, contest = {}, {}, {}
     for win in wins:
@@ -127,6 +207,7 @@ def build_summary(state, checked):
         "carries": ordered(total),
         "carries_noncontest": ordered(non_contest),
         "carries_contest": ordered(contest),
+        "names": {name: names[name] for name in total if name in names},
         "wins": wins[:RECENT_WINS],
     }
 
@@ -165,6 +246,12 @@ def main():
             added += 1
 
     ordered = sorted(wins.values(), key=lambda w: w["time"], reverse=True)[:MAX_WINS]
+
+    names_path = state_path.with_name("names.json")
+    names = load_json(names_path)
+    names, name_added = resolve_names(names, {w["carry"] for w in ordered})
+    write_if_changed(names_path, names)
+
     changed = False
     if added:
         state = {"clan": CLAN, "updated": utc_now(), "wins": ordered}
@@ -192,7 +279,7 @@ def main():
     slot_dir.mkdir(parents=True, exist_ok=True)
     slot_path = slot_dir / f"{slot}.json"
     if not slot_path.exists():
-        summary = build_summary(state, utc_now())
+        summary = build_summary(state, utc_now(), names)
         slot_path.write_text(json.dumps(summary, indent=2) + "\n")
         changed = True
 
