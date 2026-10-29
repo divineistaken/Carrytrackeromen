@@ -1,0 +1,1007 @@
+{
+  "updated": "2026-10-31 11:58:42 UTC",
+  "wins": [
+    {
+      "time": "Thu, 29 Oct 2026 23:56:34 GMT",
+      "map": "Europe",
+      "carry": "K9wkt",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 23:46:26 GMT",
+      "map": "Caucasia",
+      "carry": "qQT79",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 23:40:02 GMT",
+      "map": "Mare Nostrum",
+      "carry": "qQT79",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:57:22 GMT",
+      "map": "Europe",
+      "carry": "SjJlN",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:44:17 GMT",
+      "map": "Africa",
+      "carry": "CdmyB",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:18:02 GMT",
+      "map": "North America",
+      "carry": "RDhuO",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:11:38 GMT",
+      "map": "World 1",
+      "carry": "RGjNB",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:06:13 GMT",
+      "map": "World 2",
+      "carry": "CPT-Z",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:58:13 GMT",
+      "map": "Scandinavia",
+      "carry": "GDR8n",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:56:13 GMT",
+      "map": "Mare Nostrum",
+      "carry": "9mnVt",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:45:52 GMT",
+      "map": "Caucasia",
+      "carry": "CPT-Z",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:17:13 GMT",
+      "map": "Mare Nostrum",
+      "carry": "9mnVt",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:09:03 GMT",
+      "map": "Mountains 1",
+      "carry": "sOtSV",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:00:12 GMT",
+      "map": "Caucasia",
+      "carry": "MVqjy",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:36:09 GMT",
+      "map": "Africa",
+      "carry": "ED4in",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:03:29 GMT",
+      "map": "Caucasia",
+      "carry": "kWvRT",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:03:03 GMT",
+      "map": "North America",
+      "carry": "DKjTY",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:52:19 GMT",
+      "map": "Mare Nostrum",
+      "carry": "rmNnQ",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:39:06 GMT",
+      "map": "World 1",
+      "carry": "TfJ3h",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:38:13 GMT",
+      "map": "Middle East",
+      "carry": "ESXc7",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:32:46 GMT",
+      "map": "Scandinavia",
+      "carry": "Tb97m",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:15:48 GMT",
+      "map": "World 2",
+      "carry": "CPT-Z",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:56:47 GMT",
+      "map": "Mare Nostrum",
+      "carry": "RtQtq",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:47:59 GMT",
+      "map": "North America",
+      "carry": "N5ytc",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:33:52 GMT",
+      "map": "Middle East",
+      "carry": "RtQtq",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:25:29 GMT",
+      "map": "Mare Nostrum",
+      "carry": "ESXc7",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:22:22 GMT",
+      "map": "Middle East",
+      "carry": "87BRB",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:19:54 GMT",
+      "map": "Mare Nostrum",
+      "carry": "77dN7",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:11:14 GMT",
+      "map": "Africa",
+      "carry": "sOtSV",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:38:26 GMT",
+      "map": "Africa",
+      "carry": "bLQrm",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:37:31 GMT",
+      "map": "Africa",
+      "carry": "87BRB",
+      "contest": true
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:30:46 GMT",
+      "map": "World 1",
+      "carry": "bLQrm",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:26:18 GMT",
+      "map": "Australia",
+      "carry": "CdmyB",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:13:08 GMT",
+      "map": "World 1",
+      "carry": "NdJ8M",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:46:54 GMT",
+      "map": "Caucasia",
+      "carry": "qwJ8T",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:36:13 GMT",
+      "map": "Australia",
+      "carry": "ESXc7",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:29:25 GMT",
+      "map": "Middle East",
+      "carry": "ESXc7",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:21:57 GMT",
+      "map": "Swamp",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:46:35 GMT",
+      "map": "Middle East",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:41:19 GMT",
+      "map": "North America",
+      "carry": "StjCs",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:36:26 GMT",
+      "map": "Mare Nostrum",
+      "carry": "gBJby",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:33:54 GMT",
+      "map": "Caucasia",
+      "carry": "bLQrm",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:27:00 GMT",
+      "map": "Africa",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:23:00 GMT",
+      "map": "Europe",
+      "carry": "bLQrm",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:02:33 GMT",
+      "map": "Africa",
+      "carry": "TvR7M",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 14:58:09 GMT",
+      "map": "North America",
+      "carry": "MQBtq",
+      "contest": false
+    },
+    {
+      "time": "Thu, 29 Oct 2026 14:57:21 GMT",
+      "map": "World 2",
+      "carry": "bLQrm",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:58:30 GMT",
+      "map": "Mare Nostrum",
+      "carry": "55977",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:44:19 GMT",
+      "map": "World 2",
+      "carry": "JLC2w",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:08:58 GMT",
+      "map": "Caucasia",
+      "carry": "q5m52",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:08:42 GMT",
+      "map": "Middle East",
+      "carry": "iUvte",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 10:47:02 GMT",
+      "map": "British Isles",
+      "carry": "q5m52",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:41:36 GMT",
+      "map": "Australia",
+      "carry": "DKbV7",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:30:05 GMT",
+      "map": "Mountains 2",
+      "carry": "wLbt2",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:21:50 GMT",
+      "map": "British Isles",
+      "carry": "7Ntq8",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:15:33 GMT",
+      "map": "World 2",
+      "carry": "mtnQ5",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:38:03 GMT",
+      "map": "World 1",
+      "carry": "qLvND",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:25:22 GMT",
+      "map": "Middle East",
+      "carry": "rJNM9",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:19:03 GMT",
+      "map": "Australia",
+      "carry": "VVgcY",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:59:22 GMT",
+      "map": "Caucasia",
+      "carry": "7R252",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:41:44 GMT",
+      "map": "World 1",
+      "carry": "7R252",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:39:05 GMT",
+      "map": "World 1",
+      "carry": "rJNM9",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:26:58 GMT",
+      "map": "Australia",
+      "carry": "7R252",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:19:52 GMT",
+      "map": "Australia",
+      "carry": "mJnMB",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:39:43 GMT",
+      "map": "Scandinavia",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:29:52 GMT",
+      "map": "Caucasia",
+      "carry": "bwkn8",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:23:13 GMT",
+      "map": "Asia",
+      "carry": "L25mR",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:21:44 GMT",
+      "map": "Australia",
+      "carry": "JBjBJ",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:21:07 GMT",
+      "map": "British Isles",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:49:42 GMT",
+      "map": "North America",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:19:25 GMT",
+      "map": "Caucasia",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:04:26 GMT",
+      "map": "Africa",
+      "carry": "n2jvJ",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 03:09:59 GMT",
+      "map": "World 2",
+      "carry": "RLB7M",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:46:19 GMT",
+      "map": "Caucasia",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:38:33 GMT",
+      "map": "North America",
+      "carry": "n2jvJ",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:12:14 GMT",
+      "map": "Caucasia",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:54:47 GMT",
+      "map": "World 1",
+      "carry": "577kL",
+      "contest": true
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:49:00 GMT",
+      "map": "Mare Nostrum",
+      "carry": "778ML",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:09:38 GMT",
+      "map": "Caucasia",
+      "carry": "n2jvJ",
+      "contest": true
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:57:21 GMT",
+      "map": "Europe",
+      "carry": "SjJlN",
+      "contest": true
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:44:35 GMT",
+      "map": "Middle East",
+      "carry": "v-b8G",
+      "contest": true
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:44:24 GMT",
+      "map": "Caucasia",
+      "carry": "8tNRt",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:42:20 GMT",
+      "map": "British Isles",
+      "carry": "mV9q2",
+      "contest": false
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:15:49 GMT",
+      "map": "Middle East",
+      "carry": "L25mR",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:58:29 GMT",
+      "map": "World 2",
+      "carry": "SjJlN",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:45:06 GMT",
+      "map": "World 1",
+      "carry": "Yggjy",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:27:04 GMT",
+      "map": "Middle East",
+      "carry": "IFAAk",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:00:11 GMT",
+      "map": "White Plains",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:45:30 GMT",
+      "map": "World 2",
+      "carry": "d9lDm",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:29:29 GMT",
+      "map": "North America",
+      "carry": "nBmLV",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:07:28 GMT",
+      "map": "Mare Nostrum",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:07:28 GMT",
+      "map": "World 2",
+      "carry": "ED4in",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:55:38 GMT",
+      "map": "Cliffs",
+      "carry": "BRmr8",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:48:34 GMT",
+      "map": "Caucasia",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:34:02 GMT",
+      "map": "World 1",
+      "carry": "hehtS",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:15:39 GMT",
+      "map": "World 2",
+      "carry": "ED4in",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:13:05 GMT",
+      "map": "Australia",
+      "carry": "DMQN7",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 20:41:51 GMT",
+      "map": "South America",
+      "carry": "-L_Ag",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 20:07:13 GMT",
+      "map": "Caucasia",
+      "carry": "KtQLm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:57:48 GMT",
+      "map": "Europe",
+      "carry": "87BRB",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:45:08 GMT",
+      "map": "Australia",
+      "carry": "vJmdK",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:42:54 GMT",
+      "map": "Europe",
+      "carry": "7D5r5",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:40:58 GMT",
+      "map": "British Isles",
+      "carry": "CPT-Z",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:35:19 GMT",
+      "map": "Middle East",
+      "carry": "77dN7",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:28:01 GMT",
+      "map": "World 1",
+      "carry": "77dN7",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:26:46 GMT",
+      "map": "White Plains",
+      "carry": "CPT-Z",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:16:24 GMT",
+      "map": "Scandinavia",
+      "carry": "KtQLm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:48:09 GMT",
+      "map": "World 1",
+      "carry": "9n8LQ",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:34:10 GMT",
+      "map": "Caucasia",
+      "carry": "LVLmr",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:25:55 GMT",
+      "map": "Scandinavia",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:18:31 GMT",
+      "map": "Mare Nostrum",
+      "carry": "87BRB",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:08:42 GMT",
+      "map": "World 2",
+      "carry": "TvR7M",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:49:34 GMT",
+      "map": "Australia",
+      "carry": "TvR7M",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:48:16 GMT",
+      "map": "Mare Nostrum",
+      "carry": "sOtSV",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:46:02 GMT",
+      "map": "Middle East",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:39:53 GMT",
+      "map": "Australia",
+      "carry": "MIDnz",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:34:26 GMT",
+      "map": "Island Kingdom",
+      "carry": "BRmr8",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:15:07 GMT",
+      "map": "Middle East",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:05:39 GMT",
+      "map": "Mare Nostrum",
+      "carry": "qBv2v",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:42:40 GMT",
+      "map": "Mare Nostrum",
+      "carry": "vWqLT",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:36:08 GMT",
+      "map": "Scandinavia",
+      "carry": "7b5nv",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:07:28 GMT",
+      "map": "Mare Nostrum",
+      "carry": "jdcnc",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:37:42 GMT",
+      "map": "World 2",
+      "carry": "vb88T",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:34:51 GMT",
+      "map": "Australia",
+      "carry": "7Tbr5",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:28:00 GMT",
+      "map": "Europe",
+      "carry": "jdcnc",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:16:11 GMT",
+      "map": "World 2",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:06:44 GMT",
+      "map": "Mare Nostrum",
+      "carry": "BvJRb",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:03:26 GMT",
+      "map": "Desert",
+      "carry": "TvR7M",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:56:03 GMT",
+      "map": "Caucasia",
+      "carry": "KtQLm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:46:52 GMT",
+      "map": "Middle East",
+      "carry": "bLQrm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:43:39 GMT",
+      "map": "Mare Nostrum",
+      "carry": "2B2gJ",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:39:07 GMT",
+      "map": "Scandinavia",
+      "carry": "ED4in",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:16:27 GMT",
+      "map": "Australia",
+      "carry": "KtQLm",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:00:01 GMT",
+      "map": "South America",
+      "carry": "ED4in",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 13:43:23 GMT",
+      "map": "Mare Nostrum",
+      "carry": "qLT7L",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 13:31:53 GMT",
+      "map": "Australia",
+      "carry": "q5m52",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:51:09 GMT",
+      "map": "Scandinavia",
+      "carry": "77dN7",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:31:16 GMT",
+      "map": "Middle East",
+      "carry": "nBmLV",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:29:10 GMT",
+      "map": "Caucasia",
+      "carry": "NGmMt",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:19:58 GMT",
+      "map": "Scandinavia",
+      "carry": "L25mR",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:17:42 GMT",
+      "map": "Mare Nostrum",
+      "carry": "55977",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:06:50 GMT",
+      "map": "Caucasia",
+      "carry": "CCGGr",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:04:20 GMT",
+      "map": "Pond",
+      "carry": "m22TB",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:53:34 GMT",
+      "map": "Caucasia",
+      "carry": "9BMM5",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:52:14 GMT",
+      "map": "Scandinavia",
+      "carry": "L25mR",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:44:50 GMT",
+      "map": "World 2",
+      "carry": "nBmLV",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:27:55 GMT",
+      "map": "Scandinavia",
+      "carry": "7rmkd",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:21:37 GMT",
+      "map": "Middle East",
+      "carry": "QrM9b",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:12:14 GMT",
+      "map": "Scandinavia",
+      "carry": "rQqRM",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:57:21 GMT",
+      "map": "Middle East",
+      "carry": "CCGGr",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:45:06 GMT",
+      "map": "Caucasia",
+      "carry": "CPT-Z",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:33:57 GMT",
+      "map": "World 1",
+      "carry": "M5NGM",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:55:26 GMT",
+      "map": "Europe",
+      "carry": "77dN7",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:49:37 GMT",
+      "map": "Europe",
+      "carry": "RtQtq",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:40:37 GMT",
+      "map": "Australia",
+      "carry": "77dN7",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:32:56 GMT",
+      "map": "Africa",
+      "carry": "RtQtq",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 06:45:56 GMT",
+      "map": "World 1",
+      "carry": "LbrmQ",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 03:22:56 GMT",
+      "map": "Middle East",
+      "carry": "trn8Q",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 03:11:07 GMT",
+      "map": "World 1",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:59:14 GMT",
+      "map": "Middle East",
+      "carry": "RMv7n",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:47:55 GMT",
+      "map": "Mare Nostrum",
+      "carry": "nCdgy",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:28:11 GMT",
+      "map": "Middle East",
+      "carry": "trn8Q",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:10:11 GMT",
+      "map": "Mare Nostrum",
+      "carry": "57cWc",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 01:47:33 GMT",
+      "map": "Asia",
+      "carry": "L25mR",
+      "contest": false
+    },
+    {
+      "time": "Fri, 30 Oct 2026 01:19:05 GMT",
+      "map": "Europe",
+      "carry": "55977",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 00:49:44 GMT",
+      "map": "World 1",
+      "carry": "KwgdQ",
+      "contest": true
+    },
+    {
+      "time": "Fri, 30 Oct 2026 00:33:24 GMT",
+      "map": "North America",
+      "carry": "BdMrG",
+      "contest": false
+    }
+  ]
+}

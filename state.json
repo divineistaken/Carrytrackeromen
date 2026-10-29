@@ -1,0 +1,8210 @@
+{
+  "clan": "OMEN",
+  "updated": "2026-10-31 11:58:42 UTC",
+  "wins": [
+    {
+      "time": "Thu, 29 Oct 2026 23:56:34 GMT",
+      "map": "Europe",
+      "players": 53,
+      "gain": "0.12249",
+      "contest": true,
+      "carry": "K9wkt",
+      "carry_gold": 29.91,
+      "payout": [
+        [
+          "K9wkt",
+          29.91
+        ],
+        [
+          "SjJlN",
+          24.77
+        ],
+        [
+          "55977",
+          10.22
+        ],
+        [
+          "Gy1ZY",
+          9.99
+        ],
+        [
+          "_IWx6",
+          8.9
+        ],
+        [
+          "Bknv8",
+          5.11
+        ],
+        [
+          "_RMa8",
+          4.38
+        ],
+        [
+          "m8RYw",
+          2.68
+        ],
+        [
+          "XnzRP",
+          0.02
+        ],
+        [
+          "hujCy",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "SjJlN",
+        "55977"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 23:46:26 GMT",
+      "map": "Caucasia",
+      "players": 18,
+      "gain": "0.02168",
+      "contest": false,
+      "carry": "qQT79",
+      "carry_gold": 10.88,
+      "payout": [
+        [
+          "qQT79",
+          10.88
+        ],
+        [
+          "299L2",
+          6.12
+        ]
+      ],
+      "clan_winners": [
+        "qQT79"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 23:40:02 GMT",
+      "map": "Mare Nostrum",
+      "players": 22,
+      "gain": "0.02805",
+      "contest": false,
+      "carry": "qQT79",
+      "carry_gold": 22.0,
+      "payout": [
+        [
+          "qQT79",
+          22.0
+        ]
+      ],
+      "clan_winners": [
+        "qQT79"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:57:22 GMT",
+      "map": "Europe",
+      "players": 85,
+      "gain": "0.20903",
+      "contest": true,
+      "carry": "SjJlN",
+      "carry_gold": 101.78,
+      "payout": [
+        [
+          "SjJlN",
+          101.78
+        ],
+        [
+          "1FULM",
+          12.11
+        ],
+        [
+          "CTmLv",
+          10.3
+        ],
+        [
+          "7QL92",
+          6.92
+        ],
+        [
+          "RdR26",
+          5.9
+        ],
+        [
+          "VRTNm",
+          5.13
+        ],
+        [
+          "RMv7n",
+          4.83
+        ],
+        [
+          "CdmyB",
+          2.99
+        ],
+        [
+          "_s2QT",
+          2.87
+        ],
+        [
+          "G82LY",
+          2.58
+        ],
+        [
+          "2Qg9c",
+          2.26
+        ],
+        [
+          "MJGcN",
+          2.08
+        ],
+        [
+          "d5ttD",
+          1.99
+        ],
+        [
+          "Bv2B2",
+          1.61
+        ],
+        [
+          "9VjBM",
+          0.65
+        ],
+        [
+          "ED4in",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "SjJlN",
+        "CTmLv",
+        "VRTNm",
+        "RMv7n",
+        "CdmyB",
+        "_s2QT",
+        "d5ttD",
+        "9VjBM",
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:44:17 GMT",
+      "map": "Africa",
+      "players": 76,
+      "gain": "0.18147",
+      "contest": true,
+      "carry": "CdmyB",
+      "carry_gold": 101.5,
+      "payout": [
+        [
+          "CdmyB",
+          101.5
+        ],
+        [
+          "r8MtN",
+          16.12
+        ],
+        [
+          "SjJlN",
+          9.07
+        ],
+        [
+          "d5ttD",
+          7.42
+        ],
+        [
+          "RMv7n",
+          4.98
+        ],
+        [
+          "JcyQJ",
+          2.54
+        ],
+        [
+          "87BRB",
+          0.23
+        ],
+        [
+          "9TNkd",
+          0.13
+        ],
+        [
+          "CTmLv",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "CdmyB",
+        "r8MtN",
+        "SjJlN",
+        "d5ttD",
+        "RMv7n",
+        "JcyQJ",
+        "87BRB",
+        "9TNkd",
+        "CTmLv"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:18:02 GMT",
+      "map": "North America",
+      "players": 93,
+      "gain": "0.22012",
+      "contest": true,
+      "carry": "RDhuO",
+      "carry_gold": 77.02,
+      "payout": [
+        [
+          "RDhuO",
+          77.02
+        ],
+        [
+          "dcdVn",
+          27.42
+        ],
+        [
+          "-tZ6j",
+          15.54
+        ],
+        [
+          "ED4in",
+          9.61
+        ],
+        [
+          "n8W5r",
+          9.55
+        ],
+        [
+          "CTmLv",
+          7.08
+        ],
+        [
+          "DnbGD",
+          6.35
+        ],
+        [
+          "RMv7n",
+          5.51
+        ],
+        [
+          "d5ttD",
+          4.91
+        ],
+        [
+          "StW86",
+          4.1
+        ],
+        [
+          "CdmyB",
+          3.41
+        ],
+        [
+          "5K7Cn",
+          1.18
+        ],
+        [
+          "9mnVt",
+          0.24
+        ],
+        [
+          "KYT9L",
+          0.08
+        ]
+      ],
+      "clan_winners": [
+        "RDhuO",
+        "-tZ6j",
+        "ED4in",
+        "CTmLv",
+        "DnbGD",
+        "RMv7n",
+        "d5ttD",
+        "StW86",
+        "CdmyB",
+        "9mnVt"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:11:38 GMT",
+      "map": "World 1",
+      "players": 30,
+      "gain": "0.03455",
+      "contest": false,
+      "carry": "RGjNB",
+      "carry_gold": 27.0,
+      "payout": [
+        [
+          "RGjNB",
+          27.0
+        ]
+      ],
+      "clan_winners": [
+        "RGjNB"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 22:06:13 GMT",
+      "map": "World 2",
+      "players": 106,
+      "gain": "0.25216",
+      "contest": true,
+      "carry": "CPT-Z",
+      "carry_gold": 65.71,
+      "payout": [
+        [
+          "CPT-Z",
+          65.71
+        ],
+        [
+          "lQQyG",
+          17.79
+        ],
+        [
+          "9mnVt",
+          16.43
+        ],
+        [
+          "RtQtq",
+          14.97
+        ],
+        [
+          "_s2QT",
+          13.15
+        ],
+        [
+          "RDhuO",
+          9.68
+        ],
+        [
+          "StW86",
+          7.88
+        ],
+        [
+          "N5ytc",
+          7.48
+        ],
+        [
+          "ED4in",
+          6.76
+        ],
+        [
+          "7b5nv",
+          4.76
+        ],
+        [
+          "r8MtN",
+          4.27
+        ],
+        [
+          "vJmdK",
+          4.25
+        ],
+        [
+          "CdmyB",
+          3.99
+        ],
+        [
+          "SjJlN",
+          3.92
+        ],
+        [
+          "2v78t",
+          3.35
+        ],
+        [
+          "yKMKd",
+          2.88
+        ],
+        [
+          "-tZ6j",
+          2.44
+        ],
+        [
+          "CTmLv",
+          2.27
+        ],
+        [
+          "7MV9v",
+          2.14
+        ],
+        [
+          "JdqvR",
+          1.85
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z",
+        "lQQyG",
+        "9mnVt",
+        "RtQtq",
+        "_s2QT",
+        "RDhuO",
+        "StW86",
+        "N5ytc",
+        "ED4in",
+        "7b5nv",
+        "r8MtN",
+        "vJmdK",
+        "CdmyB",
+        "SjJlN",
+        "2v78t",
+        "-tZ6j",
+        "CTmLv",
+        "JdqvR",
+        "VRTNm",
+        "cOld3"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:58:13 GMT",
+      "map": "Scandinavia",
+      "players": 30,
+      "gain": "0.03729",
+      "contest": false,
+      "carry": "GDR8n",
+      "carry_gold": 16.88,
+      "payout": [
+        [
+          "GDR8n",
+          16.88
+        ],
+        [
+          "7vC77",
+          4.19
+        ],
+        [
+          "V2tTg",
+          1.76
+        ],
+        [
+          "TLTT9",
+          1.74
+        ],
+        [
+          "DcBvW",
+          1.42
+        ],
+        [
+          "N889R",
+          1.36
+        ],
+        [
+          "VVgcY",
+          0.81
+        ],
+        [
+          "Up1-O",
+          0.53
+        ],
+        [
+          "YnK8m",
+          0.33
+        ]
+      ],
+      "clan_winners": [
+        "GDR8n",
+        "VVgcY"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:56:13 GMT",
+      "map": "Mare Nostrum",
+      "players": 106,
+      "gain": "0.26136",
+      "contest": true,
+      "carry": "9mnVt",
+      "carry_gold": 55.04,
+      "payout": [
+        [
+          "9mnVt",
+          55.04
+        ],
+        [
+          "lQQyG",
+          43.15
+        ],
+        [
+          "CPT-Z",
+          20.52
+        ],
+        [
+          "VRTNm",
+          15.6
+        ],
+        [
+          "RDhuO",
+          9.0
+        ],
+        [
+          "RtQtq",
+          8.92
+        ],
+        [
+          "CdmyB",
+          7.93
+        ],
+        [
+          "RMv7n",
+          7.56
+        ],
+        [
+          "ED4in",
+          6.67
+        ],
+        [
+          "cOld3",
+          3.98
+        ],
+        [
+          "N5ytc",
+          3.9
+        ],
+        [
+          "ESXc7",
+          3.83
+        ],
+        [
+          "YVKtG",
+          3.83
+        ],
+        [
+          "SjJlN",
+          3.0
+        ],
+        [
+          "n8W5r",
+          2.81
+        ],
+        [
+          "-tZ6j",
+          2.25
+        ],
+        [
+          "9TNkd",
+          1.6
+        ],
+        [
+          "StW86",
+          1.37
+        ],
+        [
+          "tbb9N",
+          1.05
+        ]
+      ],
+      "clan_winners": [
+        "9mnVt",
+        "lQQyG",
+        "CPT-Z",
+        "VRTNm",
+        "RDhuO",
+        "RtQtq",
+        "CdmyB",
+        "RMv7n",
+        "ED4in",
+        "cOld3",
+        "N5ytc",
+        "ESXc7",
+        "SjJlN",
+        "-tZ6j",
+        "9TNkd",
+        "StW86",
+        "tbb9N"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:45:52 GMT",
+      "map": "Caucasia",
+      "players": 86,
+      "gain": "0.20508",
+      "contest": true,
+      "carry": "CPT-Z",
+      "carry_gold": 76.64,
+      "payout": [
+        [
+          "CPT-Z",
+          76.64
+        ],
+        [
+          "r8MtN",
+          12.31
+        ],
+        [
+          "CdmyB",
+          10.06
+        ],
+        [
+          "87BRB",
+          8.57
+        ],
+        [
+          "SjJlN",
+          5.64
+        ],
+        [
+          "9mnVt",
+          5.31
+        ],
+        [
+          "RtQtq",
+          5.24
+        ],
+        [
+          "N5ytc",
+          4.74
+        ],
+        [
+          "RMv7n",
+          4.06
+        ],
+        [
+          "K2G9y",
+          3.7
+        ],
+        [
+          "ED4in",
+          3.44
+        ],
+        [
+          "m5Ntv",
+          3.42
+        ],
+        [
+          "VRTNm",
+          3.16
+        ],
+        [
+          "sL3bB",
+          2.65
+        ],
+        [
+          "RDhuO",
+          2.64
+        ],
+        [
+          "StW86",
+          2.24
+        ],
+        [
+          "-tZ6j",
+          1.87
+        ],
+        [
+          "CTmLv",
+          1.58
+        ],
+        [
+          "9TNkd",
+          0.75
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z",
+        "r8MtN",
+        "CdmyB",
+        "87BRB",
+        "SjJlN",
+        "9mnVt",
+        "RtQtq",
+        "N5ytc",
+        "RMv7n",
+        "ED4in",
+        "m5Ntv",
+        "VRTNm",
+        "sL3bB",
+        "RDhuO",
+        "StW86",
+        "-tZ6j",
+        "CTmLv",
+        "9TNkd"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:17:13 GMT",
+      "map": "Mare Nostrum",
+      "players": 123,
+      "gain": "0.29133",
+      "contest": true,
+      "carry": "9mnVt",
+      "carry_gold": 94.81,
+      "payout": [
+        [
+          "9mnVt",
+          94.81
+        ],
+        [
+          "87BRB",
+          36.11
+        ],
+        [
+          "3RCXD",
+          10.57
+        ],
+        [
+          "N5ytc",
+          10.36
+        ],
+        [
+          "RtQtq",
+          9.17
+        ],
+        [
+          "jdcnc",
+          7.93
+        ],
+        [
+          "sL3bB",
+          7.37
+        ],
+        [
+          "Q5tVN",
+          6.19
+        ],
+        [
+          "vJmdK",
+          5.95
+        ],
+        [
+          "ED4in",
+          5.58
+        ],
+        [
+          "-tZ6j",
+          4.6
+        ],
+        [
+          "StW86",
+          4.42
+        ],
+        [
+          "BKkLj",
+          4.23
+        ],
+        [
+          "sOtSV",
+          3.86
+        ],
+        [
+          "CTmLv",
+          3.58
+        ],
+        [
+          "CdmyB",
+          3.52
+        ],
+        [
+          "xIvqa",
+          3.44
+        ],
+        [
+          "RMv7n",
+          2.28
+        ],
+        [
+          "VRTNm",
+          0.03
+        ]
+      ],
+      "clan_winners": [
+        "9mnVt",
+        "87BRB",
+        "N5ytc",
+        "RtQtq",
+        "jdcnc",
+        "sL3bB",
+        "Q5tVN",
+        "vJmdK",
+        "ED4in",
+        "-tZ6j",
+        "StW86",
+        "BKkLj",
+        "sOtSV",
+        "CTmLv",
+        "CdmyB",
+        "RMv7n",
+        "VRTNm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:09:03 GMT",
+      "map": "Mountains 1",
+      "players": 17,
+      "gain": "0.01949",
+      "contest": false,
+      "carry": "sOtSV",
+      "carry_gold": 10.33,
+      "payout": [
+        [
+          "sOtSV",
+          10.33
+        ],
+        [
+          "LKtmm",
+          4.67
+        ]
+      ],
+      "clan_winners": [
+        "sOtSV"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 21:00:12 GMT",
+      "map": "Caucasia",
+      "players": 98,
+      "gain": "0.24270",
+      "contest": true,
+      "carry": "MVqjy",
+      "carry_gold": 76.2,
+      "payout": [
+        [
+          "MVqjy",
+          76.2
+        ],
+        [
+          "jdcnc",
+          56.32
+        ],
+        [
+          "L8tLw",
+          6.91
+        ],
+        [
+          "RtQtq",
+          6.18
+        ],
+        [
+          "vJmdK",
+          4.77
+        ],
+        [
+          "N5ytc",
+          4.41
+        ],
+        [
+          "CdmyB",
+          4.36
+        ],
+        [
+          "vj2Nd",
+          3.85
+        ],
+        [
+          "9VjBM",
+          3.08
+        ],
+        [
+          "sOtSV",
+          3.03
+        ],
+        [
+          "CTmLv",
+          2.81
+        ],
+        [
+          "vbr8R",
+          2.17
+        ],
+        [
+          "DnbGD",
+          2.16
+        ],
+        [
+          "ztXi9",
+          2.11
+        ],
+        [
+          "-tZ6j",
+          2.01
+        ],
+        [
+          "tRMnn",
+          1.68
+        ],
+        [
+          "c2dvq",
+          1.45
+        ],
+        [
+          "StW86",
+          1.08
+        ],
+        [
+          "TnKQ9",
+          0.8
+        ],
+        [
+          "7b5nv",
+          0.62
+        ]
+      ],
+      "clan_winners": [
+        "MVqjy",
+        "jdcnc",
+        "RtQtq",
+        "vJmdK",
+        "N5ytc",
+        "CdmyB",
+        "9VjBM",
+        "sOtSV",
+        "CTmLv",
+        "DnbGD",
+        "-tZ6j",
+        "StW86",
+        "7b5nv"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:36:09 GMT",
+      "map": "Africa",
+      "players": 51,
+      "gain": "0.06372",
+      "contest": false,
+      "carry": "ED4in",
+      "carry_gold": 49.0,
+      "payout": [
+        [
+          "ED4in",
+          49.0
+        ]
+      ],
+      "clan_winners": [
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:03:29 GMT",
+      "map": "Caucasia",
+      "players": 40,
+      "gain": "0.04783",
+      "contest": false,
+      "carry": "kWvRT",
+      "carry_gold": 30.22,
+      "payout": [
+        [
+          "kWvRT",
+          30.22
+        ],
+        [
+          "DM7Mg",
+          2.59
+        ],
+        [
+          "TyDDm",
+          2.22
+        ],
+        [
+          "Q7RMN",
+          0.84
+        ],
+        [
+          "9BMM5",
+          0.69
+        ],
+        [
+          "dWVMW",
+          0.22
+        ],
+        [
+          "DNwdD",
+          0.21
+        ]
+      ],
+      "clan_winners": [
+        "9BMM5"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 20:03:03 GMT",
+      "map": "North America",
+      "players": 49,
+      "gain": "0.05954",
+      "contest": false,
+      "carry": "DKjTY",
+      "carry_gold": 25.9,
+      "payout": [
+        [
+          "DKjTY",
+          25.9
+        ],
+        [
+          "TfJ3h",
+          20.1
+        ]
+      ],
+      "clan_winners": [
+        "DKjTY",
+        "TfJ3h"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:52:19 GMT",
+      "map": "Mare Nostrum",
+      "players": 53,
+      "gain": "0.06075",
+      "contest": false,
+      "carry": "rmNnQ",
+      "carry_gold": 23.4,
+      "payout": [
+        [
+          "rmNnQ",
+          23.4
+        ],
+        [
+          "rYgp8",
+          11.67
+        ],
+        [
+          "kycYQ",
+          2.33
+        ],
+        [
+          "8R9VT",
+          2.3
+        ],
+        [
+          "bRqGq",
+          2.03
+        ],
+        [
+          "RQBBt",
+          1.37
+        ],
+        [
+          "cbdjR",
+          1.34
+        ],
+        [
+          "YRqRv",
+          1.29
+        ],
+        [
+          "VDQTK",
+          1.26
+        ]
+      ],
+      "clan_winners": [
+        "kycYQ"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:39:06 GMT",
+      "map": "World 1",
+      "players": 49,
+      "gain": "0.05293",
+      "contest": false,
+      "carry": "TfJ3h",
+      "carry_gold": 11.29,
+      "payout": [
+        [
+          "TfJ3h",
+          11.29
+        ],
+        [
+          "Jm9Yk",
+          8.89
+        ],
+        [
+          "DKjTY",
+          6.01
+        ],
+        [
+          "D2Lqr",
+          5.04
+        ],
+        [
+          "7Y5bG",
+          3.66
+        ],
+        [
+          "AiqJF",
+          3.01
+        ],
+        [
+          "CtjVB",
+          1.34
+        ],
+        [
+          "vjJwV",
+          0.81
+        ],
+        [
+          "cLyRV",
+          0.55
+        ],
+        [
+          "tkgV7",
+          0.39
+        ]
+      ],
+      "clan_winners": [
+        "TfJ3h",
+        "DKjTY"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:38:13 GMT",
+      "map": "Middle East",
+      "players": 91,
+      "gain": "0.22308",
+      "contest": true,
+      "carry": "ESXc7",
+      "carry_gold": 53.63,
+      "payout": [
+        [
+          "ESXc7",
+          53.63
+        ],
+        [
+          "9mnVt",
+          40.13
+        ],
+        [
+          "DV9h0",
+          26.78
+        ],
+        [
+          "RMv7n",
+          17.17
+        ],
+        [
+          "r8MtN",
+          11.58
+        ],
+        [
+          "8OHCX",
+          7.2
+        ],
+        [
+          "JnK8R",
+          4.79
+        ],
+        [
+          "RtQtq",
+          4.26
+        ],
+        [
+          "cvJgn",
+          2.38
+        ],
+        [
+          "mVmL7",
+          2.27
+        ],
+        [
+          "8Dr2V",
+          1.81
+        ],
+        [
+          "2BQt7",
+          0.0
+        ],
+        [
+          "LVLmr",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7",
+        "9mnVt",
+        "RMv7n",
+        "r8MtN",
+        "RtQtq",
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:32:46 GMT",
+      "map": "Scandinavia",
+      "players": 50,
+      "gain": "0.05967",
+      "contest": false,
+      "carry": "Tb97m",
+      "carry_gold": 45.22,
+      "payout": [
+        [
+          "Tb97m",
+          45.22
+        ],
+        [
+          "kycYQ",
+          0.51
+        ],
+        [
+          "DhC1o",
+          0.19
+        ],
+        [
+          "CnctR",
+          0.08
+        ]
+      ],
+      "clan_winners": [
+        "kycYQ"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 19:15:48 GMT",
+      "map": "World 2",
+      "players": 129,
+      "gain": "0.29934",
+      "contest": true,
+      "carry": "CPT-Z",
+      "carry_gold": 42.83,
+      "payout": [
+        [
+          "CPT-Z",
+          42.83
+        ],
+        [
+          "28mN9",
+          34.24
+        ],
+        [
+          "CWQBn",
+          16.35
+        ],
+        [
+          "dV29K",
+          11.16
+        ],
+        [
+          "sL3bB",
+          10.8
+        ],
+        [
+          "r8MtN",
+          9.66
+        ],
+        [
+          "QPjfA",
+          9.21
+        ],
+        [
+          "v5bmB",
+          8.26
+        ],
+        [
+          "C2rCm",
+          7.75
+        ],
+        [
+          "Ytrrm",
+          7.64
+        ],
+        [
+          "N5ytc",
+          6.92
+        ],
+        [
+          "U_GOq",
+          6.53
+        ],
+        [
+          "DbYCW",
+          5.5
+        ],
+        [
+          "GBGnd",
+          4.71
+        ],
+        [
+          "9Bvrv",
+          4.69
+        ],
+        [
+          "nnnB5",
+          4.45
+        ],
+        [
+          "RtQtq",
+          4.14
+        ],
+        [
+          "nXfrd",
+          3.88
+        ],
+        [
+          "7kJj7",
+          3.76
+        ],
+        [
+          "LGmmv",
+          3.73
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z",
+        "sL3bB",
+        "r8MtN",
+        "N5ytc",
+        "GBGnd",
+        "9Bvrv",
+        "RtQtq",
+        "CdmyB",
+        "kycYQ"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:56:47 GMT",
+      "map": "Mare Nostrum",
+      "players": 84,
+      "gain": "0.20310",
+      "contest": true,
+      "carry": "RtQtq",
+      "carry_gold": 32.32,
+      "payout": [
+        [
+          "RtQtq",
+          32.32
+        ],
+        [
+          "fIsGx",
+          21.84
+        ],
+        [
+          "N5ytc",
+          19.97
+        ],
+        [
+          "CPT-Z",
+          11.38
+        ],
+        [
+          "CdmyB",
+          7.8
+        ],
+        [
+          "8OHCX",
+          7.7
+        ],
+        [
+          "87BRB",
+          7.04
+        ],
+        [
+          "5ncDg",
+          6.95
+        ],
+        [
+          "r8MtN",
+          6.66
+        ],
+        [
+          "BRVTr",
+          6.42
+        ],
+        [
+          "RRCgr",
+          6.26
+        ],
+        [
+          "YWmV9",
+          5.16
+        ],
+        [
+          "rtgnj",
+          3.6
+        ],
+        [
+          "DnbGD",
+          3.45
+        ],
+        [
+          "nb9b7",
+          2.95
+        ],
+        [
+          "2Qv7Q",
+          2.62
+        ],
+        [
+          "YKVyQ",
+          2.13
+        ],
+        [
+          "w2jw2",
+          1.72
+        ],
+        [
+          "dqjrV",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "RtQtq",
+        "N5ytc",
+        "CPT-Z",
+        "CdmyB",
+        "87BRB",
+        "r8MtN",
+        "YWmV9",
+        "DnbGD"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:47:59 GMT",
+      "map": "North America",
+      "players": 96,
+      "gain": "0.24039",
+      "contest": true,
+      "carry": "N5ytc",
+      "carry_gold": 45.59,
+      "payout": [
+        [
+          "N5ytc",
+          45.59
+        ],
+        [
+          "jdcnc",
+          39.99
+        ],
+        [
+          "fIsGx",
+          36.87
+        ],
+        [
+          "YWmV9",
+          20.51
+        ],
+        [
+          "bqcc7",
+          14.82
+        ],
+        [
+          "RtQtq",
+          12.24
+        ],
+        [
+          "kKtVD",
+          8.54
+        ],
+        [
+          "Yrcbg",
+          5.45
+        ]
+      ],
+      "clan_winners": [
+        "N5ytc",
+        "jdcnc",
+        "YWmV9",
+        "RtQtq"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:33:52 GMT",
+      "map": "Middle East",
+      "players": 37,
+      "gain": "0.04039",
+      "contest": false,
+      "carry": "RtQtq",
+      "carry_gold": 20.97,
+      "payout": [
+        [
+          "RtQtq",
+          20.97
+        ],
+        [
+          "77dN7",
+          8.36
+        ],
+        [
+          "T5rWm",
+          1.67
+        ]
+      ],
+      "clan_winners": [
+        "RtQtq",
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:25:29 GMT",
+      "map": "Mare Nostrum",
+      "players": 53,
+      "gain": "0.06122",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 44.87,
+      "payout": [
+        [
+          "ESXc7",
+          44.87
+        ],
+        [
+          "c2WrG",
+          2.13
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:22:22 GMT",
+      "map": "Middle East",
+      "players": 90,
+      "gain": "0.21454",
+      "contest": true,
+      "carry": "87BRB",
+      "carry_gold": 108.3,
+      "payout": [
+        [
+          "87BRB",
+          108.3
+        ],
+        [
+          "N5ytc",
+          34.4
+        ],
+        [
+          "57cWc",
+          9.94
+        ],
+        [
+          "RtQtq",
+          5.54
+        ],
+        [
+          "9Bvrv",
+          2.92
+        ],
+        [
+          "qdmyK",
+          2.09
+        ],
+        [
+          "jcbnL",
+          0.81
+        ]
+      ],
+      "clan_winners": [
+        "87BRB",
+        "N5ytc",
+        "57cWc",
+        "RtQtq",
+        "9Bvrv"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:19:54 GMT",
+      "map": "Mare Nostrum",
+      "players": 112,
+      "gain": "0.27632",
+      "contest": true,
+      "carry": "77dN7",
+      "carry_gold": 204.96,
+      "payout": [
+        [
+          "77dN7",
+          204.96
+        ],
+        [
+          "BRmr8",
+          4.57
+        ],
+        [
+          "ukywA",
+          0.31
+        ],
+        [
+          "gHwna",
+          0.15
+        ]
+      ],
+      "clan_winners": [
+        "77dN7",
+        "BRmr8"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 18:11:14 GMT",
+      "map": "Africa",
+      "players": 43,
+      "gain": "0.05389",
+      "contest": false,
+      "carry": "sOtSV",
+      "carry_gold": 24.74,
+      "payout": [
+        [
+          "sOtSV",
+          24.74
+        ],
+        [
+          "LJgYy",
+          10.05
+        ],
+        [
+          "qqNV8",
+          6.21
+        ]
+      ],
+      "clan_winners": [
+        "sOtSV",
+        "qqNV8"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:38:26 GMT",
+      "map": "Africa",
+      "players": 50,
+      "gain": "0.05881",
+      "contest": false,
+      "carry": "bLQrm",
+      "carry_gold": 24.02,
+      "payout": [
+        [
+          "bLQrm",
+          24.02
+        ],
+        [
+          "pnCEV",
+          3.91
+        ],
+        [
+          "YbkJW",
+          3.79
+        ],
+        [
+          "qWQtd",
+          3.5
+        ],
+        [
+          "_zvIV",
+          3.21
+        ],
+        [
+          "mmckJ",
+          3.11
+        ],
+        [
+          "NjmF7",
+          2.22
+        ],
+        [
+          "LnGaN",
+          1.24
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:37:31 GMT",
+      "map": "Africa",
+      "players": 84,
+      "gain": "0.20220",
+      "contest": true,
+      "carry": "87BRB",
+      "carry_gold": 78.54,
+      "payout": [
+        [
+          "87BRB",
+          78.54
+        ],
+        [
+          "v7n5n",
+          25.91
+        ],
+        [
+          "RtQtq",
+          22.47
+        ],
+        [
+          "9mnVt",
+          6.23
+        ],
+        [
+          "RDhuO",
+          6.09
+        ],
+        [
+          "dmmmd",
+          4.32
+        ],
+        [
+          "CdmyB",
+          3.84
+        ],
+        [
+          "77dN7",
+          3.21
+        ],
+        [
+          "nQMdg",
+          2.75
+        ],
+        [
+          "r2Dyd",
+          0.64
+        ]
+      ],
+      "clan_winners": [
+        "87BRB",
+        "RtQtq",
+        "9mnVt",
+        "RDhuO",
+        "CdmyB",
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:30:46 GMT",
+      "map": "World 1",
+      "players": 62,
+      "gain": "0.07742",
+      "contest": false,
+      "carry": "bLQrm",
+      "carry_gold": 52.35,
+      "payout": [
+        [
+          "bLQrm",
+          52.35
+        ],
+        [
+          "k5JQV",
+          3.9
+        ],
+        [
+          "2d5D2",
+          2.75
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:26:18 GMT",
+      "map": "Australia",
+      "players": 46,
+      "gain": "0.04989",
+      "contest": false,
+      "carry": "CdmyB",
+      "carry_gold": 7.79,
+      "payout": [
+        [
+          "CdmyB",
+          7.79
+        ],
+        [
+          "Miltu",
+          5.65
+        ],
+        [
+          "m8NJK",
+          3.77
+        ],
+        [
+          "lueT7",
+          2.78
+        ],
+        [
+          "ynvmr",
+          2.59
+        ],
+        [
+          "dWytc",
+          2.44
+        ],
+        [
+          "N7LVb",
+          2.41
+        ],
+        [
+          "77dN7",
+          1.94
+        ],
+        [
+          "88Q7v",
+          1.6
+        ],
+        [
+          "G2MWm",
+          1.54
+        ],
+        [
+          "Wr9MV",
+          1.52
+        ],
+        [
+          "MCnDv",
+          1.39
+        ],
+        [
+          "d5cMD",
+          1.18
+        ],
+        [
+          "YMbjt",
+          0.9
+        ],
+        [
+          "kM2v7",
+          0.47
+        ],
+        [
+          "nwM5c",
+          0.03
+        ]
+      ],
+      "clan_winners": [
+        "CdmyB",
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 17:13:08 GMT",
+      "map": "World 1",
+      "players": 74,
+      "gain": "0.08657",
+      "contest": false,
+      "carry": "NdJ8M",
+      "carry_gold": 45.29,
+      "payout": [
+        [
+          "NdJ8M",
+          45.29
+        ],
+        [
+          "RQ5tD",
+          5.24
+        ],
+        [
+          "bLQrm",
+          5.11
+        ],
+        [
+          "jkTTj",
+          4.41
+        ],
+        [
+          "bVQBJ",
+          2.09
+        ],
+        [
+          "yWTqC",
+          2.06
+        ],
+        [
+          "LNt82",
+          1.29
+        ],
+        [
+          "CbwVb",
+          0.52
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:46:54 GMT",
+      "map": "Caucasia",
+      "players": 47,
+      "gain": "0.05481",
+      "contest": false,
+      "carry": "qwJ8T",
+      "carry_gold": 15.75,
+      "payout": [
+        [
+          "qwJ8T",
+          15.75
+        ],
+        [
+          "b5GGk",
+          4.39
+        ],
+        [
+          "ESXc7",
+          3.5
+        ],
+        [
+          "vK5Lk",
+          3.31
+        ],
+        [
+          "KvMd9",
+          3.15
+        ],
+        [
+          "rkj8g",
+          3.13
+        ],
+        [
+          "kgkAS",
+          2.86
+        ],
+        [
+          "cCQbb",
+          2.52
+        ],
+        [
+          "d9wLv",
+          2.47
+        ],
+        [
+          "qtjDJ",
+          0.92
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:36:13 GMT",
+      "map": "Australia",
+      "players": 57,
+      "gain": "0.06912",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 29.0,
+      "payout": [
+        [
+          "ESXc7",
+          29.0
+        ],
+        [
+          "TbB9m",
+          5.52
+        ],
+        [
+          "twKtG",
+          4.77
+        ],
+        [
+          "Lymcc",
+          4.41
+        ],
+        [
+          "cmCKb",
+          2.76
+        ],
+        [
+          "O_pvf",
+          2.59
+        ],
+        [
+          "9cCjj",
+          2.02
+        ],
+        [
+          "Miltu",
+          1.94
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:29:25 GMT",
+      "map": "Middle East",
+      "players": 60,
+      "gain": "0.07307",
+      "carry": "ESXc7",
+      "carry_gold": 32.09,
+      "payout": [
+        [
+          "ESXc7",
+          32.09
+        ],
+        [
+          "B8n29",
+          13.83
+        ],
+        [
+          "8DO6T",
+          7.07
+        ],
+        [
+          "CdmyB",
+          2.28
+        ],
+        [
+          "rbDrG",
+          0.73
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7",
+        "CdmyB"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 16:21:57 GMT",
+      "map": "Swamp",
+      "players": 30,
+      "gain": "0.03387",
+      "carry": "RMv7n",
+      "carry_gold": 6.66,
+      "payout": [
+        [
+          "RMv7n",
+          6.66
+        ],
+        [
+          "ESXc7",
+          4.37
+        ],
+        [
+          "dmmKC",
+          4.23
+        ],
+        [
+          "tdYvK",
+          3.44
+        ],
+        [
+          "Yy72G",
+          3.11
+        ],
+        [
+          "vM2t9",
+          1.52
+        ],
+        [
+          "gRv25",
+          1.38
+        ],
+        [
+          "RKJVt",
+          1.28
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n",
+        "ESXc7"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:46:35 GMT",
+      "map": "Middle East",
+      "players": 108,
+      "gain": "0.26012",
+      "carry": "RMv7n",
+      "carry_gold": 65.99,
+      "payout": [
+        [
+          "RMv7n",
+          65.99
+        ],
+        [
+          "f_T7k",
+          47.21
+        ],
+        [
+          "CPT-Z",
+          39.19
+        ],
+        [
+          "jdcnc",
+          16.22
+        ],
+        [
+          "kBcq2",
+          14.36
+        ],
+        [
+          "_jrqo",
+          7.84
+        ],
+        [
+          "qyywK",
+          5.37
+        ],
+        [
+          "YLT9d",
+          2.23
+        ],
+        [
+          "KBqjC",
+          1.59
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n",
+        "CPT-Z",
+        "jdcnc"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:41:19 GMT",
+      "map": "North America",
+      "players": 37,
+      "gain": "0.04546",
+      "carry": "StjCs",
+      "carry_gold": 10.97,
+      "payout": [
+        [
+          "StjCs",
+          10.97
+        ],
+        [
+          "t82L7",
+          6.08
+        ],
+        [
+          "DKbV7",
+          3.81
+        ],
+        [
+          "CdmyB",
+          3.31
+        ],
+        [
+          "wn52J",
+          2.59
+        ],
+        [
+          "jm8Rv",
+          2.07
+        ],
+        [
+          "bLQrm",
+          1.48
+        ],
+        [
+          "qcnTc",
+          1.34
+        ],
+        [
+          "B9QcV",
+          1.17
+        ],
+        [
+          "GWKgC",
+          1.06
+        ],
+        [
+          "Dngcm",
+          0.79
+        ],
+        [
+          "vTgqq",
+          0.33
+        ]
+      ],
+      "clan_winners": [
+        "DKbV7",
+        "CdmyB",
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:36:26 GMT",
+      "map": "Mare Nostrum",
+      "players": 39,
+      "gain": "0.04938",
+      "carry": "gBJby",
+      "carry_gold": 17.42,
+      "payout": [
+        [
+          "gBJby",
+          17.42
+        ],
+        [
+          "030uO",
+          15.24
+        ],
+        [
+          "Mtc9d",
+          2.38
+        ],
+        [
+          "9BMM5",
+          1.92
+        ],
+        [
+          "c2CwV",
+          1.03
+        ]
+      ],
+      "clan_winners": [
+        "9BMM5"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:33:54 GMT",
+      "map": "Caucasia",
+      "players": 54,
+      "gain": "0.06502",
+      "carry": "bLQrm",
+      "carry_gold": 26.06,
+      "payout": [
+        [
+          "bLQrm",
+          26.06
+        ],
+        [
+          "wNLrV",
+          10.23
+        ],
+        [
+          "d6daR",
+          4.24
+        ],
+        [
+          "YcRMR",
+          2.89
+        ],
+        [
+          "9yTBg",
+          2.49
+        ],
+        [
+          "M5BtR",
+          2.43
+        ],
+        [
+          "BWbGq",
+          0.83
+        ],
+        [
+          "Lsg2-",
+          0.62
+        ],
+        [
+          "bKKrQ",
+          0.14
+        ],
+        [
+          "MTJrk",
+          0.07
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:27:00 GMT",
+      "map": "Africa",
+      "players": 107,
+      "gain": "0.25345",
+      "carry": "RMv7n",
+      "carry_gold": 65.02,
+      "payout": [
+        [
+          "RMv7n",
+          65.02
+        ],
+        [
+          "DgdTN",
+          15.78
+        ],
+        [
+          "vvmrM",
+          15.54
+        ],
+        [
+          "JR797",
+          14.43
+        ],
+        [
+          "o8uJS",
+          11.01
+        ],
+        [
+          "tYm2J",
+          8.82
+        ],
+        [
+          "ESXc7",
+          7.96
+        ],
+        [
+          "kwJrJ",
+          6.47
+        ],
+        [
+          "kRn8b",
+          6.37
+        ],
+        [
+          "7tBLL",
+          6.36
+        ],
+        [
+          "7Tbr5",
+          6.04
+        ],
+        [
+          "bcvvq",
+          5.29
+        ],
+        [
+          "Z2Yfi",
+          5.18
+        ],
+        [
+          "tb8rn",
+          3.72
+        ],
+        [
+          "jcbnL",
+          3.56
+        ],
+        [
+          "wn52J",
+          3.46
+        ],
+        [
+          "uZ34F",
+          3.07
+        ],
+        [
+          "LGt2T",
+          2.74
+        ],
+        [
+          "d7rqv",
+          1.76
+        ],
+        [
+          "2DGQ2",
+          0.93
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n",
+        "ESXc7",
+        "kwJrJ",
+        "7Tbr5"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:23:00 GMT",
+      "map": "Europe",
+      "players": 66,
+      "gain": "0.07185",
+      "carry": "bLQrm",
+      "carry_gold": 37.38,
+      "payout": [
+        [
+          "bLQrm",
+          37.38
+        ],
+        [
+          "7r58m",
+          7.81
+        ],
+        [
+          "CCjNY",
+          3.96
+        ],
+        [
+          "5Lyfw",
+          2.48
+        ],
+        [
+          "gCRDm",
+          2.45
+        ],
+        [
+          "5VR8A",
+          0.91
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 15:02:33 GMT",
+      "map": "Africa",
+      "players": 36,
+      "gain": "0.04556",
+      "carry": "TvR7M",
+      "carry_gold": 26.05,
+      "payout": [
+        [
+          "TvR7M",
+          26.05
+        ],
+        [
+          "rV8LQ",
+          8.92
+        ],
+        [
+          "gtcw8",
+          0.03
+        ]
+      ],
+      "clan_winners": [
+        "TvR7M",
+        "rV8LQ"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 14:58:09 GMT",
+      "map": "North America",
+      "players": 57,
+      "gain": "0.07163",
+      "carry": "MQBtq",
+      "carry_gold": 22.14,
+      "payout": [
+        [
+          "MQBtq",
+          22.14
+        ],
+        [
+          "DKbV7",
+          11.8
+        ],
+        [
+          "CBWdW",
+          7.71
+        ],
+        [
+          "lQ4yH",
+          5.34
+        ],
+        [
+          "dVmWL",
+          4.86
+        ],
+        [
+          "YWmV9",
+          2.16
+        ],
+        [
+          "5BqRT",
+          1.0
+        ]
+      ],
+      "clan_winners": [
+        "MQBtq",
+        "DKbV7",
+        "YWmV9"
+      ]
+    },
+    {
+      "time": "Thu, 29 Oct 2026 14:57:21 GMT",
+      "map": "World 2",
+      "players": 63,
+      "gain": "0.07436",
+      "carry": "bLQrm",
+      "carry_gold": 22.14,
+      "payout": [
+        [
+          "bLQrm",
+          22.14
+        ],
+        [
+          "bVQBJ",
+          14.11
+        ],
+        [
+          "Qq79r",
+          13.06
+        ],
+        [
+          "jKqrm",
+          4.13
+        ],
+        [
+          "VCt77",
+          3.55
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:58:30 GMT",
+      "map": "Mare Nostrum",
+      "players": 35,
+      "gain": "0.04314",
+      "contest": false,
+      "carry": "55977",
+      "carry_gold": 10.74,
+      "payout": [
+        [
+          "55977",
+          10.74
+        ],
+        [
+          "Y8JcW",
+          5.3
+        ],
+        [
+          "R8M8v",
+          5.29
+        ],
+        [
+          "mDWNQ",
+          2.76
+        ],
+        [
+          "VB2Mv",
+          2.48
+        ],
+        [
+          "NcVJn",
+          1.56
+        ],
+        [
+          "Wm2qB",
+          1.47
+        ],
+        [
+          "ccGkc",
+          1.36
+        ],
+        [
+          "YVYDb",
+          0.56
+        ],
+        [
+          "TLT27",
+          0.28
+        ],
+        [
+          "ttNGg",
+          0.2
+        ],
+        [
+          "wvgm7",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "55977"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:44:19 GMT",
+      "map": "World 2",
+      "players": 38,
+      "gain": "0.04847",
+      "contest": false,
+      "carry": "JLC2w",
+      "carry_gold": 15.6,
+      "payout": [
+        [
+          "JLC2w",
+          15.6
+        ],
+        [
+          "2Tn8q",
+          8.58
+        ],
+        [
+          "ZYe97",
+          5.88
+        ],
+        [
+          "LygYt",
+          2.89
+        ],
+        [
+          "2rbNR",
+          1.52
+        ],
+        [
+          "k8TDm",
+          0.94
+        ],
+        [
+          "LjTHK",
+          0.6
+        ]
+      ],
+      "clan_winners": [
+        "2rbNR"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:08:58 GMT",
+      "map": "Caucasia",
+      "players": 44,
+      "gain": "0.05622",
+      "contest": false,
+      "carry": "q5m52",
+      "carry_gold": 34.9,
+      "payout": [
+        [
+          "q5m52",
+          34.9
+        ],
+        [
+          "zy1lH",
+          6.61
+        ],
+        [
+          "pj5-7",
+          0.33
+        ],
+        [
+          "9gwt8",
+          0.16
+        ]
+      ],
+      "clan_winners": [
+        "q5m52"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 11:08:42 GMT",
+      "map": "Middle East",
+      "players": 43,
+      "gain": "0.05360",
+      "contest": false,
+      "carry": "iUvte",
+      "carry_gold": 24.98,
+      "payout": [
+        [
+          "iUvte",
+          24.98
+        ],
+        [
+          "rQqRM",
+          3.45
+        ],
+        [
+          "rBN8Y",
+          2.78
+        ],
+        [
+          "LygYt",
+          2.77
+        ],
+        [
+          "CRDdT",
+          2.54
+        ],
+        [
+          "Lqr57",
+          1.92
+        ],
+        [
+          "2T27W",
+          1.0
+        ],
+        [
+          "WKbmv",
+          0.52
+        ],
+        [
+          "jrKnQ",
+          0.03
+        ],
+        [
+          "RJnbq",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "rQqRM"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 10:47:02 GMT",
+      "map": "British Isles",
+      "players": 30,
+      "gain": "0.03207",
+      "contest": false,
+      "carry": "q5m52",
+      "carry_gold": 24.0,
+      "payout": [
+        [
+          "q5m52",
+          24.0
+        ]
+      ],
+      "clan_winners": [
+        "q5m52"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:41:36 GMT",
+      "map": "Australia",
+      "players": 25,
+      "gain": "0.02911",
+      "contest": false,
+      "carry": "DKbV7",
+      "carry_gold": 7.69,
+      "payout": [
+        [
+          "DKbV7",
+          7.69
+        ],
+        [
+          "DCcv9",
+          5.49
+        ],
+        [
+          "98CMT",
+          3.71
+        ],
+        [
+          "LB3vc",
+          2.32
+        ],
+        [
+          "9Bcv8",
+          1.47
+        ],
+        [
+          "rwgVD",
+          1.32
+        ]
+      ],
+      "clan_winners": [
+        "DKbV7"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:30:05 GMT",
+      "map": "Mountains 2",
+      "players": 18,
+      "gain": "0.01981",
+      "contest": false,
+      "carry": "wLbt2",
+      "carry_gold": 7.53,
+      "payout": [
+        [
+          "wLbt2",
+          7.53
+        ],
+        [
+          "KRm2V",
+          6.16
+        ],
+        [
+          "DKbV7",
+          1.31
+        ]
+      ],
+      "clan_winners": [
+        "DKbV7"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:21:50 GMT",
+      "map": "British Isles",
+      "players": 29,
+      "gain": "0.03696",
+      "contest": false,
+      "carry": "7Ntq8",
+      "carry_gold": 10.1,
+      "payout": [
+        [
+          "7Ntq8",
+          10.1
+        ],
+        [
+          "7rmkd",
+          9.89
+        ],
+        [
+          "DQVVk",
+          4.91
+        ],
+        [
+          "T9CqW",
+          1.51
+        ],
+        [
+          "Jw2BC",
+          1.01
+        ],
+        [
+          "DNCGv",
+          0.58
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 09:15:33 GMT",
+      "map": "World 2",
+      "players": 32,
+      "gain": "0.03961",
+      "contest": false,
+      "carry": "mtnQ5",
+      "carry_gold": 25.72,
+      "payout": [
+        [
+          "mtnQ5",
+          25.72
+        ],
+        [
+          "7rmkd",
+          3.75
+        ],
+        [
+          "DjY8B",
+          0.52
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:38:03 GMT",
+      "map": "World 1",
+      "players": 40,
+      "gain": "0.04601",
+      "contest": false,
+      "carry": "qLvND",
+      "carry_gold": 34.12,
+      "payout": [
+        [
+          "qLvND",
+          34.12
+        ],
+        [
+          "8mm2v",
+          0.87
+        ],
+        [
+          "n2jvJ",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "n2jvJ"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:25:22 GMT",
+      "map": "Middle East",
+      "players": 27,
+      "gain": "0.03544",
+      "contest": false,
+      "carry": "rJNM9",
+      "carry_gold": 27.0,
+      "payout": [
+        [
+          "rJNM9",
+          27.0
+        ]
+      ],
+      "clan_winners": [
+        "rJNM9"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 08:19:03 GMT",
+      "map": "Australia",
+      "players": 18,
+      "gain": "0.02362",
+      "contest": false,
+      "carry": "VVgcY",
+      "carry_gold": 18.0,
+      "payout": [
+        [
+          "VVgcY",
+          18.0
+        ]
+      ],
+      "clan_winners": [
+        "VVgcY"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:59:22 GMT",
+      "map": "Caucasia",
+      "players": 28,
+      "gain": "0.03405",
+      "contest": false,
+      "carry": "7R252",
+      "carry_gold": 22.11,
+      "payout": [
+        [
+          "7R252",
+          22.11
+        ],
+        [
+          "N7rnn",
+          3.89
+        ],
+        [
+          "7ntB9",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "7R252"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:41:44 GMT",
+      "map": "World 1",
+      "players": 39,
+      "gain": "0.04447",
+      "contest": false,
+      "carry": "7R252",
+      "carry_gold": 7.87,
+      "payout": [
+        [
+          "7R252",
+          7.87
+        ],
+        [
+          "SP9TE",
+          5.88
+        ],
+        [
+          "TcWwC",
+          3.48
+        ],
+        [
+          "vgtct",
+          3.44
+        ],
+        [
+          "rQqRM",
+          2.45
+        ],
+        [
+          "iNqs6",
+          2.4
+        ],
+        [
+          "n22VM",
+          1.37
+        ],
+        [
+          "yTTLD",
+          1.33
+        ],
+        [
+          "kwJkw",
+          1.18
+        ],
+        [
+          "9CTGN",
+          1.08
+        ],
+        [
+          "TwLJG",
+          0.95
+        ],
+        [
+          "T9Vj5",
+          0.86
+        ],
+        [
+          "wDrtq",
+          0.68
+        ],
+        [
+          "5btYw",
+          0.59
+        ],
+        [
+          "ynJcw",
+          0.31
+        ],
+        [
+          "LJbm9",
+          0.13
+        ]
+      ],
+      "clan_winners": [
+        "7R252",
+        "rQqRM"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:39:05 GMT",
+      "map": "World 1",
+      "players": 25,
+      "gain": "0.03140",
+      "contest": false,
+      "carry": "rJNM9",
+      "carry_gold": 23.53,
+      "payout": [
+        [
+          "rJNM9",
+          23.53
+        ],
+        [
+          "DbWbv",
+          0.45
+        ],
+        [
+          "Cddqt",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "rJNM9"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:26:58 GMT",
+      "map": "Australia",
+      "players": 22,
+      "gain": "0.02745",
+      "contest": false,
+      "carry": "7R252",
+      "carry_gold": 18.68,
+      "payout": [
+        [
+          "7R252",
+          18.68
+        ],
+        [
+          "kwJkw",
+          1.41
+        ],
+        [
+          "LrGV5",
+          0.91
+        ]
+      ],
+      "clan_winners": [
+        "7R252"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 07:19:52 GMT",
+      "map": "Australia",
+      "players": 22,
+      "gain": "0.02614",
+      "contest": false,
+      "carry": "mJnMB",
+      "carry_gold": 12.52,
+      "payout": [
+        [
+          "mJnMB",
+          12.52
+        ],
+        [
+          "D277B",
+          7.48
+        ]
+      ],
+      "clan_winners": [
+        "mJnMB"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:39:43 GMT",
+      "map": "Scandinavia",
+      "players": 17,
+      "gain": "0.01812",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 2.38,
+      "payout": [
+        [
+          "RMv7n",
+          2.38
+        ],
+        [
+          "NLCBD",
+          2.19
+        ],
+        [
+          "TdKkd",
+          2.0
+        ],
+        [
+          "bWdwJ",
+          1.6
+        ],
+        [
+          "LDMn8",
+          1.56
+        ],
+        [
+          "vqbQ8",
+          1.26
+        ],
+        [
+          "7mn7N",
+          1.25
+        ],
+        [
+          "55Jkk",
+          1.15
+        ],
+        [
+          "tM7DK",
+          0.6
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:29:52 GMT",
+      "map": "Caucasia",
+      "players": 26,
+      "gain": "0.02717",
+      "contest": false,
+      "carry": "bwkn8",
+      "carry_gold": 20.36,
+      "payout": [
+        [
+          "bwkn8",
+          20.36
+        ],
+        [
+          "JBjBJ",
+          0.64
+        ]
+      ],
+      "clan_winners": [
+        "JBjBJ"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:23:13 GMT",
+      "map": "Asia",
+      "players": 13,
+      "gain": "0.01552",
+      "contest": false,
+      "carry": "L25mR",
+      "carry_gold": 11.3,
+      "payout": [
+        [
+          "L25mR",
+          11.3
+        ],
+        [
+          "7NTb8",
+          0.7
+        ]
+      ],
+      "clan_winners": [
+        "L25mR"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:21:44 GMT",
+      "map": "Australia",
+      "players": 13,
+      "gain": "0.01682",
+      "contest": false,
+      "carry": "JBjBJ",
+      "carry_gold": 6.36,
+      "payout": [
+        [
+          "JBjBJ",
+          6.36
+        ],
+        [
+          "R8yw8",
+          2.94
+        ],
+        [
+          "LtBDM",
+          2.13
+        ],
+        [
+          "2Jk9G",
+          0.94
+        ],
+        [
+          "dnRcQ",
+          0.63
+        ]
+      ],
+      "clan_winners": [
+        "JBjBJ"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 05:21:07 GMT",
+      "map": "British Isles",
+      "players": 12,
+      "gain": "0.01553",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 10.09,
+      "payout": [
+        [
+          "RMv7n",
+          10.09
+        ],
+        [
+          "Y9W9D",
+          1.91
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:49:42 GMT",
+      "map": "North America",
+      "players": 12,
+      "gain": "0.01549",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 6.31,
+      "payout": [
+        [
+          "RMv7n",
+          6.31
+        ],
+        [
+          "wRMJw",
+          4.58
+        ],
+        [
+          "JdcjQ",
+          1.11
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:19:25 GMT",
+      "map": "Caucasia",
+      "players": 13,
+      "gain": "0.01674",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 13.0,
+      "payout": [
+        [
+          "RMv7n",
+          13.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 04:04:26 GMT",
+      "map": "Africa",
+      "players": 14,
+      "gain": "0.01801",
+      "contest": false,
+      "carry": "n2jvJ",
+      "carry_gold": 11.44,
+      "payout": [
+        [
+          "n2jvJ",
+          11.44
+        ],
+        [
+          "wSSj_",
+          2.56
+        ]
+      ],
+      "clan_winners": [
+        "n2jvJ"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 03:09:59 GMT",
+      "map": "World 2",
+      "players": 26,
+      "gain": "0.02816",
+      "contest": false,
+      "carry": "RLB7M",
+      "carry_gold": 7.97,
+      "payout": [
+        [
+          "RLB7M",
+          7.97
+        ],
+        [
+          "M8v92",
+          4.52
+        ],
+        [
+          "_bJb_",
+          2.98
+        ],
+        [
+          "Yd8RV",
+          2.31
+        ],
+        [
+          "tyLgY",
+          2.08
+        ],
+        [
+          "2yJj7",
+          1.26
+        ],
+        [
+          "g8Vyq",
+          0.87
+        ]
+      ],
+      "clan_winners": [
+        "RLB7M"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:46:19 GMT",
+      "map": "Caucasia",
+      "players": 11,
+      "gain": "0.01022",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 8.0,
+      "payout": [
+        [
+          "RMv7n",
+          8.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:38:33 GMT",
+      "map": "North America",
+      "players": 17,
+      "gain": "0.02044",
+      "contest": false,
+      "carry": "n2jvJ",
+      "carry_gold": 7.3,
+      "payout": [
+        [
+          "n2jvJ",
+          7.3
+        ],
+        [
+          "2m5Ln",
+          3.57
+        ],
+        [
+          "9kBBJ",
+          3.24
+        ],
+        [
+          "ByY7Q",
+          1.13
+        ],
+        [
+          "DxUln",
+          0.76
+        ]
+      ],
+      "clan_winners": [
+        "n2jvJ"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 02:12:14 GMT",
+      "map": "Caucasia",
+      "players": 21,
+      "gain": "0.02551",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 12.23,
+      "payout": [
+        [
+          "RMv7n",
+          12.23
+        ],
+        [
+          "UJCgb",
+          3.63
+        ],
+        [
+          "778ML",
+          2.47
+        ],
+        [
+          "LNNJK",
+          1.28
+        ],
+        [
+          "GWJRC",
+          0.39
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:54:47 GMT",
+      "map": "World 1",
+      "players": 44,
+      "gain": "0.10723",
+      "contest": true,
+      "carry": "577kL",
+      "carry_gold": 19.41,
+      "payout": [
+        [
+          "577kL",
+          19.41
+        ],
+        [
+          "r8MtN",
+          9.37
+        ],
+        [
+          "trn8Q",
+          6.65
+        ],
+        [
+          "z-A_2",
+          6.41
+        ],
+        [
+          "SjJlN",
+          5.1
+        ],
+        [
+          "8RTk9",
+          5.05
+        ],
+        [
+          "CdmyB",
+          4.55
+        ],
+        [
+          "Qm95v",
+          4.47
+        ],
+        [
+          "55977",
+          4.36
+        ],
+        [
+          "bNBKC",
+          4.18
+        ],
+        [
+          "v4ih9",
+          3.64
+        ],
+        [
+          "RvLmr",
+          3.14
+        ],
+        [
+          "TzD0Q",
+          2.22
+        ],
+        [
+          "DtdYb",
+          2.0
+        ],
+        [
+          "mQLYW",
+          1.51
+        ],
+        [
+          "92DyB",
+          1.34
+        ],
+        [
+          "8WND8",
+          0.43
+        ],
+        [
+          "vMjtd",
+          0.09
+        ],
+        [
+          "YN55y",
+          0.07
+        ],
+        [
+          "CQTgY",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "r8MtN",
+        "trn8Q",
+        "SjJlN",
+        "CdmyB",
+        "Qm95v",
+        "55977",
+        "v4ih9",
+        "CQTgY"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:49:00 GMT",
+      "map": "Mare Nostrum",
+      "players": 25,
+      "gain": "0.03064",
+      "contest": false,
+      "carry": "778ML",
+      "carry_gold": 19.57,
+      "payout": [
+        [
+          "778ML",
+          19.57
+        ],
+        [
+          "Qm95v",
+          4.38
+        ],
+        [
+          "92DyB",
+          0.05
+        ]
+      ],
+      "clan_winners": [
+        "Qm95v"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 01:09:38 GMT",
+      "map": "Caucasia",
+      "players": 51,
+      "gain": "0.11731",
+      "contest": true,
+      "carry": "n2jvJ",
+      "carry_gold": 37.73,
+      "payout": [
+        [
+          "n2jvJ",
+          37.73
+        ],
+        [
+          "v-b8G",
+          17.04
+        ],
+        [
+          "55977",
+          14.96
+        ],
+        [
+          "QwYvT",
+          11.38
+        ],
+        [
+          "7Tbr5",
+          7.15
+        ],
+        [
+          "SjJlN",
+          2.69
+        ],
+        [
+          "CdmyB",
+          0.99
+        ],
+        [
+          "CQTgY",
+          0.07
+        ]
+      ],
+      "clan_winners": [
+        "n2jvJ",
+        "v-b8G",
+        "55977",
+        "QwYvT",
+        "7Tbr5",
+        "SjJlN",
+        "CdmyB",
+        "CQTgY"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:57:21 GMT",
+      "map": "Europe",
+      "players": 59,
+      "gain": "0.14571",
+      "contest": true,
+      "carry": "SjJlN",
+      "carry_gold": 29.39,
+      "payout": [
+        [
+          "SjJlN",
+          29.39
+        ],
+        [
+          "bMDqB",
+          25.47
+        ],
+        [
+          "55977",
+          23.94
+        ],
+        [
+          "p0u26",
+          17.62
+        ],
+        [
+          "MAA4O",
+          8.3
+        ],
+        [
+          "7Tbr5",
+          4.78
+        ],
+        [
+          "D9m2Y",
+          3.79
+        ],
+        [
+          "CQTgY",
+          0.71
+        ]
+      ],
+      "clan_winners": [
+        "SjJlN",
+        "55977",
+        "7Tbr5",
+        "CQTgY"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:44:35 GMT",
+      "map": "Middle East",
+      "players": 62,
+      "gain": "0.15114",
+      "contest": true,
+      "carry": "v-b8G",
+      "carry_gold": 117.97,
+      "payout": [
+        [
+          "v-b8G",
+          117.97
+        ],
+        [
+          "8gwJk",
+          0.03
+        ]
+      ],
+      "clan_winners": [
+        "v-b8G"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:44:24 GMT",
+      "map": "Caucasia",
+      "players": 21,
+      "gain": "0.02434",
+      "contest": false,
+      "carry": "8tNRt",
+      "carry_gold": 19.0,
+      "payout": [
+        [
+          "8tNRt",
+          19.0
+        ],
+        [
+          "mvbmn",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "8tNRt"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:42:20 GMT",
+      "map": "British Isles",
+      "players": 11,
+      "gain": "0.01409",
+      "contest": false,
+      "carry": "mV9q2",
+      "carry_gold": 5.95,
+      "payout": [
+        [
+          "mV9q2",
+          5.95
+        ],
+        [
+          "MBMvv",
+          4.37
+        ],
+        [
+          "sJspO",
+          0.68
+        ]
+      ],
+      "clan_winners": [
+        "mV9q2"
+      ]
+    },
+    {
+      "time": "Sat, 31 Oct 2026 00:15:49 GMT",
+      "map": "Middle East",
+      "players": 18,
+      "gain": "0.01919",
+      "contest": false,
+      "carry": "L25mR",
+      "carry_gold": 15.0,
+      "payout": [
+        [
+          "L25mR",
+          15.0
+        ]
+      ],
+      "clan_winners": [
+        "L25mR"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:58:29 GMT",
+      "map": "World 2",
+      "players": 61,
+      "gain": "0.14866",
+      "contest": true,
+      "carry": "SjJlN",
+      "carry_gold": 60.79,
+      "payout": [
+        [
+          "SjJlN",
+          60.79
+        ],
+        [
+          "ED4in",
+          31.89
+        ],
+        [
+          "r8MtN",
+          6.61
+        ],
+        [
+          "g5JY0",
+          6.23
+        ],
+        [
+          "Ap4cO",
+          5.28
+        ],
+        [
+          "CdmyB",
+          4.57
+        ],
+        [
+          "Nm7N9",
+          0.59
+        ],
+        [
+          "kCCLN",
+          0.03
+        ],
+        [
+          "c8rwK",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "SjJlN",
+        "ED4in",
+        "r8MtN",
+        "Ap4cO",
+        "CdmyB",
+        "c8rwK"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:45:06 GMT",
+      "map": "World 1",
+      "players": 36,
+      "gain": "0.04354",
+      "contest": false,
+      "carry": "Yggjy",
+      "carry_gold": 15.12,
+      "payout": [
+        [
+          "Yggjy",
+          15.12
+        ],
+        [
+          "7rmkd",
+          8.08
+        ],
+        [
+          "QQt9t",
+          3.02
+        ],
+        [
+          "Ver3t",
+          2.02
+        ],
+        [
+          "wT8MW",
+          1.81
+        ],
+        [
+          "TCGDy",
+          1.25
+        ],
+        [
+          "kq2k2",
+          1.13
+        ],
+        [
+          "5mqb9",
+          0.76
+        ],
+        [
+          "XsDqS",
+          0.45
+        ],
+        [
+          "dq9cJ",
+          0.36
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:27:04 GMT",
+      "map": "Middle East",
+      "players": 50,
+      "gain": "0.12039",
+      "contest": true,
+      "carry": "IFAAk",
+      "carry_gold": 26.14,
+      "payout": [
+        [
+          "IFAAk",
+          26.14
+        ],
+        [
+          "CdmyB",
+          22.42
+        ],
+        [
+          "TrMsR",
+          19.87
+        ],
+        [
+          "vbr8R",
+          9.4
+        ],
+        [
+          "SjJlN",
+          4.97
+        ],
+        [
+          "Gv8Cv",
+          3.79
+        ],
+        [
+          "ED4in",
+          3.53
+        ],
+        [
+          "KLrM5",
+          1.97
+        ],
+        [
+          "StW86",
+          1.91
+        ]
+      ],
+      "clan_winners": [
+        "CdmyB",
+        "SjJlN",
+        "ED4in",
+        "StW86"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 23:00:11 GMT",
+      "map": "White Plains",
+      "players": 19,
+      "gain": "0.02171",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 14.92,
+      "payout": [
+        [
+          "RMv7n",
+          14.92
+        ],
+        [
+          "NGkdQ",
+          2.08
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:45:30 GMT",
+      "map": "World 2",
+      "players": 36,
+      "gain": "0.03955",
+      "contest": false,
+      "carry": "d9lDm",
+      "carry_gold": 13.93,
+      "payout": [
+        [
+          "d9lDm",
+          13.93
+        ],
+        [
+          "ED4in",
+          10.21
+        ],
+        [
+          "9Q5mQ",
+          2.27
+        ],
+        [
+          "5KjVt",
+          1.52
+        ],
+        [
+          "7VDKW",
+          1.37
+        ],
+        [
+          "cWnvL",
+          0.96
+        ],
+        [
+          "2NdjJ",
+          0.74
+        ]
+      ],
+      "clan_winners": [
+        "ED4in",
+        "7VDKW"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:29:29 GMT",
+      "map": "North America",
+      "players": 21,
+      "gain": "0.02419",
+      "contest": false,
+      "carry": "nBmLV",
+      "carry_gold": 11.02,
+      "payout": [
+        [
+          "nBmLV",
+          11.02
+        ],
+        [
+          "MMKtg",
+          3.48
+        ],
+        [
+          "2mj7L",
+          1.89
+        ],
+        [
+          "KbrqR",
+          1.69
+        ],
+        [
+          "nTct9",
+          0.93
+        ]
+      ],
+      "clan_winners": [
+        "nBmLV"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:07:28 GMT",
+      "map": "Mare Nostrum",
+      "players": 81,
+      "gain": "0.19392",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 57.12,
+      "payout": [
+        [
+          "bLQrm",
+          57.12
+        ],
+        [
+          "vt2Mr",
+          22.01
+        ],
+        [
+          "SURNy",
+          19.77
+        ],
+        [
+          "RtQtq",
+          9.66
+        ],
+        [
+          "r8MtN",
+          8.94
+        ],
+        [
+          "3LDny",
+          7.07
+        ],
+        [
+          "SjJlN",
+          6.32
+        ],
+        [
+          "StW86",
+          5.9
+        ],
+        [
+          "QB3Pw",
+          4.0
+        ],
+        [
+          "v5bmB",
+          2.94
+        ],
+        [
+          "bKcrB",
+          2.46
+        ],
+        [
+          "wKnmQ",
+          2.43
+        ],
+        [
+          "t5Kdm",
+          1.81
+        ],
+        [
+          "W7b8g",
+          1.42
+        ],
+        [
+          "uidCF",
+          0.15
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "RtQtq",
+        "r8MtN",
+        "SjJlN",
+        "StW86"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 22:07:28 GMT",
+      "map": "World 2",
+      "players": 40,
+      "gain": "0.04979",
+      "contest": false,
+      "carry": "ED4in",
+      "carry_gold": 25.0,
+      "payout": [
+        [
+          "ED4in",
+          25.0
+        ],
+        [
+          "g2dgK",
+          14.0
+        ]
+      ],
+      "clan_winners": [
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:55:38 GMT",
+      "map": "Cliffs",
+      "players": 15,
+      "gain": "0.01658",
+      "contest": false,
+      "carry": "BRmr8",
+      "carry_gold": 10.63,
+      "payout": [
+        [
+          "BRmr8",
+          10.63
+        ],
+        [
+          "v8wqd",
+          1.54
+        ],
+        [
+          "EhR8n",
+          0.83
+        ]
+      ],
+      "clan_winners": [
+        "BRmr8"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:48:34 GMT",
+      "map": "Caucasia",
+      "players": 78,
+      "gain": "0.19199",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 53.15,
+      "payout": [
+        [
+          "bLQrm",
+          53.15
+        ],
+        [
+          "TuHUs",
+          36.4
+        ],
+        [
+          "22LDb",
+          15.78
+        ],
+        [
+          "r8MtN",
+          9.91
+        ],
+        [
+          "52LVQ",
+          8.74
+        ],
+        [
+          "qMnL2",
+          6.51
+        ],
+        [
+          "RtQtq",
+          4.96
+        ],
+        [
+          "SjJlN",
+          3.31
+        ],
+        [
+          "StW86",
+          3.09
+        ],
+        [
+          "1lw0M",
+          2.87
+        ],
+        [
+          "xwQq7",
+          2.66
+        ],
+        [
+          "T9B52",
+          2.61
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "r8MtN",
+        "52LVQ",
+        "RtQtq",
+        "SjJlN",
+        "StW86"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:34:02 GMT",
+      "map": "World 1",
+      "players": 46,
+      "gain": "0.04603",
+      "contest": false,
+      "carry": "hehtS",
+      "carry_gold": 20.77,
+      "payout": [
+        [
+          "hehtS",
+          20.77
+        ],
+        [
+          "ED4in",
+          15.22
+        ],
+        [
+          "WjTwg",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:15:39 GMT",
+      "map": "World 2",
+      "players": 39,
+      "gain": "0.04080",
+      "contest": false,
+      "carry": "ED4in",
+      "carry_gold": 10.48,
+      "payout": [
+        [
+          "ED4in",
+          10.48
+        ],
+        [
+          "VRRqm",
+          7.27
+        ],
+        [
+          "GvLRW",
+          5.87
+        ],
+        [
+          "qVNbD",
+          4.74
+        ],
+        [
+          "mkmqC",
+          1.92
+        ],
+        [
+          "MQqTN",
+          1.65
+        ],
+        [
+          "JrygC",
+          0.07
+        ]
+      ],
+      "clan_winners": [
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 21:13:05 GMT",
+      "map": "Australia",
+      "players": 40,
+      "gain": "0.04977",
+      "contest": false,
+      "carry": "DMQN7",
+      "carry_gold": 15.69,
+      "payout": [
+        [
+          "DMQN7",
+          15.69
+        ],
+        [
+          "bLQrm",
+          11.19
+        ],
+        [
+          "BRmr8",
+          5.7
+        ],
+        [
+          "r29Tg",
+          2.05
+        ],
+        [
+          "bVQBJ",
+          1.82
+        ],
+        [
+          "kMGgC",
+          1.13
+        ],
+        [
+          "q5ykM",
+          0.83
+        ],
+        [
+          "n7r2q",
+          0.59
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "BRmr8"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 20:41:51 GMT",
+      "map": "South America",
+      "players": 28,
+      "gain": "0.03046",
+      "contest": false,
+      "carry": "-L_Ag",
+      "carry_gold": 6.0,
+      "payout": [
+        [
+          "-L_Ag",
+          6.0
+        ],
+        [
+          "jqdcL",
+          4.83
+        ],
+        [
+          "FcaDn",
+          4.09
+        ],
+        [
+          "n8W5r",
+          3.67
+        ],
+        [
+          "ycrJn",
+          2.74
+        ],
+        [
+          "tNG8K",
+          1.03
+        ],
+        [
+          "YMbjt",
+          0.84
+        ],
+        [
+          "GVgvR",
+          0.74
+        ],
+        [
+          "bv8L2",
+          0.06
+        ]
+      ],
+      "clan_winners": [
+        "YMbjt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 20:07:13 GMT",
+      "map": "Caucasia",
+      "players": 95,
+      "gain": "0.20781",
+      "contest": true,
+      "carry": "KtQLm",
+      "carry_gold": 58.77,
+      "payout": [
+        [
+          "KtQLm",
+          58.77
+        ],
+        [
+          "MVqjy",
+          30.19
+        ],
+        [
+          "9mnVt",
+          14.85
+        ],
+        [
+          "CdmyB",
+          12.33
+        ],
+        [
+          "qVLRt",
+          9.17
+        ],
+        [
+          "cvY8B",
+          5.47
+        ],
+        [
+          "87BRB",
+          5.43
+        ],
+        [
+          "9BMM5",
+          5.18
+        ],
+        [
+          "-tZ6j",
+          4.98
+        ],
+        [
+          "g5JY0",
+          4.73
+        ],
+        [
+          "77dN7",
+          4.44
+        ],
+        [
+          "mVmL7",
+          3.62
+        ],
+        [
+          "9TNkd",
+          2.89
+        ],
+        [
+          "D85JT",
+          1.11
+        ],
+        [
+          "kycYQ",
+          0.77
+        ],
+        [
+          "7b5nv",
+          0.07
+        ]
+      ],
+      "clan_winners": [
+        "KtQLm",
+        "MVqjy",
+        "9mnVt",
+        "CdmyB",
+        "cvY8B",
+        "87BRB",
+        "9BMM5",
+        "-tZ6j",
+        "77dN7",
+        "9TNkd",
+        "kycYQ",
+        "7b5nv"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:57:48 GMT",
+      "map": "Europe",
+      "players": 131,
+      "gain": "0.31075",
+      "contest": true,
+      "carry": "87BRB",
+      "carry_gold": 64.76,
+      "payout": [
+        [
+          "87BRB",
+          64.76
+        ],
+        [
+          "KtQLm",
+          51.32
+        ],
+        [
+          "9mnVt",
+          26.87
+        ],
+        [
+          "LVLmr",
+          22.86
+        ],
+        [
+          "cvY8B",
+          9.35
+        ],
+        [
+          "MVqjy",
+          8.79
+        ],
+        [
+          "kNExR",
+          7.45
+        ],
+        [
+          "yKMKd",
+          6.42
+        ],
+        [
+          "vj7nB",
+          6.0
+        ],
+        [
+          "95bMV",
+          5.36
+        ],
+        [
+          "77dN7",
+          4.96
+        ],
+        [
+          "DMmjb",
+          4.81
+        ],
+        [
+          "CPT-Z",
+          4.16
+        ],
+        [
+          "-tZ6j",
+          3.82
+        ],
+        [
+          "LNt82",
+          3.74
+        ],
+        [
+          "7b5nv",
+          3.46
+        ],
+        [
+          "g5JY0",
+          3.34
+        ],
+        [
+          "M9MNY",
+          2.54
+        ],
+        [
+          "tn2Rt",
+          2.31
+        ],
+        [
+          "D8TrG",
+          1.66
+        ]
+      ],
+      "clan_winners": [
+        "87BRB",
+        "KtQLm",
+        "9mnVt",
+        "LVLmr",
+        "cvY8B",
+        "MVqjy",
+        "95bMV",
+        "77dN7",
+        "CPT-Z",
+        "-tZ6j",
+        "7b5nv",
+        "M9MNY",
+        "tn2Rt",
+        "mT2Rt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:45:08 GMT",
+      "map": "Australia",
+      "players": 80,
+      "gain": "0.19651",
+      "contest": true,
+      "carry": "vJmdK",
+      "carry_gold": 23.73,
+      "payout": [
+        [
+          "vJmdK",
+          23.73
+        ],
+        [
+          "cSnI_",
+          21.6
+        ],
+        [
+          "9mnVt",
+          11.93
+        ],
+        [
+          "87BRB",
+          11.82
+        ],
+        [
+          "-tZ6j",
+          11.36
+        ],
+        [
+          "g5JY0",
+          6.99
+        ],
+        [
+          "cvY8B",
+          5.74
+        ],
+        [
+          "KtQLm",
+          5.46
+        ],
+        [
+          "77dN7",
+          5.28
+        ],
+        [
+          "mT2Rt",
+          4.84
+        ],
+        [
+          "95bMV",
+          4.51
+        ],
+        [
+          "CdmyB",
+          4.43
+        ],
+        [
+          "vj7nB",
+          4.23
+        ],
+        [
+          "5CgD8",
+          3.73
+        ],
+        [
+          "RMv7n",
+          3.71
+        ],
+        [
+          "9BMM5",
+          3.58
+        ],
+        [
+          "tn2Rt",
+          3.47
+        ],
+        [
+          "rm8M7",
+          3.41
+        ],
+        [
+          "d2rc9",
+          2.88
+        ],
+        [
+          "7b5nv",
+          2.73
+        ]
+      ],
+      "clan_winners": [
+        "vJmdK",
+        "cSnI_",
+        "9mnVt",
+        "87BRB",
+        "-tZ6j",
+        "cvY8B",
+        "KtQLm",
+        "77dN7",
+        "mT2Rt",
+        "95bMV",
+        "CdmyB",
+        "RMv7n",
+        "9BMM5",
+        "tn2Rt",
+        "rm8M7",
+        "d2rc9",
+        "7b5nv",
+        "2v78t",
+        "MVqjy"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:42:54 GMT",
+      "map": "Europe",
+      "players": 49,
+      "gain": "0.06001",
+      "contest": false,
+      "carry": "7D5r5",
+      "carry_gold": 14.73,
+      "payout": [
+        [
+          "7D5r5",
+          14.73
+        ],
+        [
+          "vM8r5",
+          7.69
+        ],
+        [
+          "RMv7n",
+          5.2
+        ],
+        [
+          "VRb9T",
+          4.54
+        ],
+        [
+          "CDR2C",
+          3.8
+        ],
+        [
+          "_HJLR",
+          3.24
+        ],
+        [
+          "LVLmr",
+          2.12
+        ],
+        [
+          "YMbjt",
+          1.65
+        ],
+        [
+          "qdrmW",
+          1.55
+        ],
+        [
+          "7YmgR",
+          1.47
+        ],
+        [
+          "TQD5r",
+          1.03
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n",
+        "LVLmr",
+        "YMbjt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:40:58 GMT",
+      "map": "British Isles",
+      "players": 39,
+      "gain": "0.04726",
+      "contest": false,
+      "carry": "CPT-Z",
+      "carry_gold": 26.16,
+      "payout": [
+        [
+          "CPT-Z",
+          26.16
+        ],
+        [
+          "7MndN",
+          5.71
+        ],
+        [
+          "L8tLw",
+          4.5
+        ],
+        [
+          "JvbDV",
+          0.41
+        ],
+        [
+          "kwBCC",
+          0.22
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:35:19 GMT",
+      "map": "Middle East",
+      "players": 84,
+      "gain": "0.19484",
+      "contest": true,
+      "carry": "77dN7",
+      "carry_gold": 68.13,
+      "payout": [
+        [
+          "77dN7",
+          68.13
+        ],
+        [
+          "mT2Rt",
+          11.32
+        ],
+        [
+          "CPT-Z",
+          9.63
+        ],
+        [
+          "95bMV",
+          8.69
+        ],
+        [
+          "KtQLm",
+          5.87
+        ],
+        [
+          "7b5nv",
+          5.71
+        ],
+        [
+          "g5JY0",
+          5.49
+        ],
+        [
+          "kGmbk",
+          5.08
+        ],
+        [
+          "57cWc",
+          5.05
+        ],
+        [
+          "cvY8B",
+          4.54
+        ],
+        [
+          "2v78t",
+          4.47
+        ],
+        [
+          "vJmdK",
+          3.56
+        ],
+        [
+          "9BMM5",
+          3.39
+        ],
+        [
+          "LVLmr",
+          3.08
+        ],
+        [
+          "CdmyB",
+          3.0
+        ],
+        [
+          "-tZ6j",
+          2.13
+        ],
+        [
+          "J2dJR",
+          1.21
+        ],
+        [
+          "TgrG9",
+          0.67
+        ],
+        [
+          "RMv7n",
+          0.64
+        ],
+        [
+          "ytLrB",
+          0.32
+        ]
+      ],
+      "clan_winners": [
+        "77dN7",
+        "mT2Rt",
+        "CPT-Z",
+        "95bMV",
+        "KtQLm",
+        "7b5nv",
+        "57cWc",
+        "cvY8B",
+        "2v78t",
+        "vJmdK",
+        "9BMM5",
+        "LVLmr",
+        "CdmyB",
+        "-tZ6j",
+        "J2dJR",
+        "RMv7n",
+        "87BRB"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:28:01 GMT",
+      "map": "World 1",
+      "players": 119,
+      "gain": "0.28614",
+      "contest": true,
+      "carry": "77dN7",
+      "carry_gold": 112.23,
+      "payout": [
+        [
+          "77dN7",
+          112.23
+        ],
+        [
+          "KtQLm",
+          20.93
+        ],
+        [
+          "9mnVt",
+          14.27
+        ],
+        [
+          "-tZ6j",
+          8.75
+        ],
+        [
+          "RMv7n",
+          8.25
+        ],
+        [
+          "9n8LQ",
+          6.75
+        ],
+        [
+          "yKMKd",
+          6.05
+        ],
+        [
+          "9BMM5",
+          6.0
+        ],
+        [
+          "vJmdK",
+          5.96
+        ],
+        [
+          "AOB65",
+          5.02
+        ],
+        [
+          "jjT2t",
+          4.54
+        ],
+        [
+          "7D5r5",
+          4.44
+        ],
+        [
+          "cvY8B",
+          3.84
+        ],
+        [
+          "CdmyB",
+          3.39
+        ],
+        [
+          "87BRB",
+          3.37
+        ],
+        [
+          "7b5nv",
+          2.96
+        ],
+        [
+          "ggKC7",
+          2.56
+        ],
+        [
+          "DLvkT",
+          1.97
+        ],
+        [
+          "6H2Fh",
+          0.73
+        ]
+      ],
+      "clan_winners": [
+        "77dN7",
+        "KtQLm",
+        "9mnVt",
+        "-tZ6j",
+        "RMv7n",
+        "9n8LQ",
+        "9BMM5",
+        "vJmdK",
+        "cvY8B",
+        "CdmyB",
+        "87BRB",
+        "7b5nv",
+        "ggKC7"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:26:46 GMT",
+      "map": "White Plains",
+      "players": 32,
+      "gain": "0.03609",
+      "contest": false,
+      "carry": "CPT-Z",
+      "carry_gold": 25.38,
+      "payout": [
+        [
+          "CPT-Z",
+          25.38
+        ],
+        [
+          "RBdHs",
+          1.56
+        ],
+        [
+          "j7jyn",
+          1.06
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 19:16:24 GMT",
+      "map": "Scandinavia",
+      "players": 90,
+      "gain": "0.20960",
+      "contest": true,
+      "carry": "KtQLm",
+      "carry_gold": 71.76,
+      "payout": [
+        [
+          "KtQLm",
+          71.76
+        ],
+        [
+          "9BMM5",
+          29.91
+        ],
+        [
+          "9n8LQ",
+          6.54
+        ],
+        [
+          "QB2qW",
+          6.33
+        ],
+        [
+          "JnJ5D",
+          5.8
+        ],
+        [
+          "dvQDd",
+          5.72
+        ],
+        [
+          "77dN7",
+          4.85
+        ],
+        [
+          "tn2Rt",
+          4.74
+        ],
+        [
+          "cvY8B",
+          4.45
+        ],
+        [
+          "87BRB",
+          3.94
+        ],
+        [
+          "7b5nv",
+          3.54
+        ],
+        [
+          "95bMV",
+          3.09
+        ],
+        [
+          "bLQrm",
+          3.06
+        ],
+        [
+          "rwQk2",
+          3.06
+        ],
+        [
+          "QBR5v",
+          2.45
+        ],
+        [
+          "rvJRv",
+          1.89
+        ],
+        [
+          "J2dJR",
+          0.86
+        ]
+      ],
+      "clan_winners": [
+        "KtQLm",
+        "9BMM5",
+        "9n8LQ",
+        "77dN7",
+        "tn2Rt",
+        "cvY8B",
+        "87BRB",
+        "7b5nv",
+        "95bMV",
+        "bLQrm",
+        "rvJRv",
+        "J2dJR"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:48:09 GMT",
+      "map": "World 1",
+      "players": 85,
+      "gain": "0.20388",
+      "contest": true,
+      "carry": "9n8LQ",
+      "carry_gold": 158.0,
+      "payout": [
+        [
+          "9n8LQ",
+          158.0
+        ]
+      ],
+      "clan_winners": [
+        "9n8LQ"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:34:10 GMT",
+      "map": "Caucasia",
+      "players": 49,
+      "gain": "0.06058",
+      "contest": false,
+      "carry": "LVLmr",
+      "carry_gold": 14.26,
+      "payout": [
+        [
+          "LVLmr",
+          14.26
+        ],
+        [
+          "Bl1OC",
+          11.26
+        ],
+        [
+          "-OgI_",
+          4.26
+        ],
+        [
+          "bwWyj",
+          3.16
+        ],
+        [
+          "CJgQn",
+          3.15
+        ],
+        [
+          "7YbTC",
+          3.07
+        ],
+        [
+          "KEgQx",
+          1.84
+        ],
+        [
+          "EhR8n",
+          1.57
+        ],
+        [
+          "ck8Gv",
+          1.43
+        ],
+        [
+          "qCmbL",
+          0.98
+        ],
+        [
+          "NgRD7",
+          0.6
+        ],
+        [
+          "jMm8K",
+          0.58
+        ],
+        [
+          "mkDrK",
+          0.53
+        ],
+        [
+          "2CDqv",
+          0.32
+        ]
+      ],
+      "clan_winners": [
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:25:55 GMT",
+      "map": "Scandinavia",
+      "players": 110,
+      "gain": "0.25373",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 50.35,
+      "payout": [
+        [
+          "bLQrm",
+          50.35
+        ],
+        [
+          "RzNpW",
+          16.36
+        ],
+        [
+          "VRTNm",
+          16.31
+        ],
+        [
+          "_s2QT",
+          14.99
+        ],
+        [
+          "9BMM5",
+          13.2
+        ],
+        [
+          "RMv7n",
+          11.1
+        ],
+        [
+          "sOtSV",
+          10.44
+        ],
+        [
+          "87BRB",
+          8.61
+        ],
+        [
+          "qBv2v",
+          8.14
+        ],
+        [
+          "LvLBv",
+          7.87
+        ],
+        [
+          "7VMym",
+          6.24
+        ],
+        [
+          "tn2Rt",
+          6.22
+        ],
+        [
+          "yKMKd",
+          5.82
+        ],
+        [
+          "57cWc",
+          5.38
+        ],
+        [
+          "cvY8B",
+          3.96
+        ],
+        [
+          "DT2tk",
+          3.38
+        ],
+        [
+          "DYV9T",
+          3.1
+        ],
+        [
+          "RtQtq",
+          2.58
+        ],
+        [
+          "2v78t",
+          1.75
+        ],
+        [
+          "MVqjy",
+          0.15
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "RzNpW",
+        "VRTNm",
+        "_s2QT",
+        "9BMM5",
+        "RMv7n",
+        "sOtSV",
+        "87BRB",
+        "qBv2v",
+        "7VMym",
+        "tn2Rt",
+        "57cWc",
+        "cvY8B",
+        "RtQtq",
+        "2v78t",
+        "MVqjy"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:18:31 GMT",
+      "map": "Mare Nostrum",
+      "players": 54,
+      "gain": "0.06860",
+      "contest": false,
+      "carry": "87BRB",
+      "carry_gold": 22.07,
+      "payout": [
+        [
+          "87BRB",
+          22.07
+        ],
+        [
+          "RMv7n",
+          17.67
+        ],
+        [
+          "CtvDD",
+          9.59
+        ],
+        [
+          "VVgcY",
+          3.16
+        ],
+        [
+          "LVLmr",
+          0.5
+        ]
+      ],
+      "clan_winners": [
+        "87BRB",
+        "RMv7n",
+        "VVgcY",
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 18:08:42 GMT",
+      "map": "World 2",
+      "players": 108,
+      "gain": "0.27032",
+      "contest": true,
+      "carry": "TvR7M",
+      "carry_gold": 43.64,
+      "payout": [
+        [
+          "TvR7M",
+          43.64
+        ],
+        [
+          "sOtSV",
+          38.77
+        ],
+        [
+          "Jcv8M",
+          23.43
+        ],
+        [
+          "LVLmr",
+          18.25
+        ],
+        [
+          "bLQrm",
+          15.16
+        ],
+        [
+          "BvJRb",
+          13.84
+        ],
+        [
+          "qnT7M",
+          13.15
+        ],
+        [
+          "87BRB",
+          11.46
+        ],
+        [
+          "vwjdM",
+          11.33
+        ],
+        [
+          "3jQmB",
+          7.37
+        ],
+        [
+          "77dN7",
+          3.51
+        ],
+        [
+          "g5JY0",
+          3.34
+        ],
+        [
+          "qBv2v",
+          3.17
+        ],
+        [
+          "KtQLm",
+          1.38
+        ],
+        [
+          "9Bvrv",
+          0.19
+        ]
+      ],
+      "clan_winners": [
+        "TvR7M",
+        "sOtSV",
+        "Jcv8M",
+        "LVLmr",
+        "bLQrm",
+        "BvJRb",
+        "qnT7M",
+        "87BRB",
+        "3jQmB",
+        "77dN7",
+        "qBv2v",
+        "KtQLm",
+        "9Bvrv"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:49:34 GMT",
+      "map": "Australia",
+      "players": 41,
+      "gain": "0.04534",
+      "contest": false,
+      "carry": "TvR7M",
+      "carry_gold": 21.35,
+      "payout": [
+        [
+          "TvR7M",
+          21.35
+        ],
+        [
+          "2v78t",
+          4.76
+        ],
+        [
+          "Jkn9R",
+          3.89
+        ],
+        [
+          "MGrTG",
+          2.72
+        ],
+        [
+          "MIDnz",
+          1.77
+        ],
+        [
+          "cmGvr",
+          0.51
+        ]
+      ],
+      "clan_winners": [
+        "TvR7M"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:48:16 GMT",
+      "map": "Mare Nostrum",
+      "players": 38,
+      "gain": "0.04278",
+      "contest": false,
+      "carry": "sOtSV",
+      "carry_gold": 18.75,
+      "payout": [
+        [
+          "sOtSV",
+          18.75
+        ],
+        [
+          "JCry7",
+          4.51
+        ],
+        [
+          "Vvg5C",
+          3.49
+        ],
+        [
+          "5m9mt",
+          3.1
+        ],
+        [
+          "MTng2",
+          1.97
+        ],
+        [
+          "TmTtV",
+          1.17
+        ],
+        [
+          "X34na",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "sOtSV"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:46:02 GMT",
+      "map": "Middle East",
+      "players": 112,
+      "gain": "0.26599",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 59.98,
+      "payout": [
+        [
+          "bLQrm",
+          59.98
+        ],
+        [
+          "qBv2v",
+          31.27
+        ],
+        [
+          "ueOLt",
+          16.17
+        ],
+        [
+          "mT2Rt",
+          15.24
+        ],
+        [
+          "aumjp",
+          13.92
+        ],
+        [
+          "qqQR5",
+          9.5
+        ],
+        [
+          "5rRrT",
+          7.67
+        ],
+        [
+          "87BRB",
+          7.4
+        ],
+        [
+          "77dN7",
+          7.02
+        ],
+        [
+          "9BMM5",
+          5.99
+        ],
+        [
+          "VRTNm",
+          5.92
+        ],
+        [
+          "yTrbT",
+          5.85
+        ],
+        [
+          "DnbGD",
+          5.78
+        ],
+        [
+          "_s2QT",
+          3.34
+        ],
+        [
+          "YrvdK",
+          2.68
+        ],
+        [
+          "rJNM9",
+          2.06
+        ],
+        [
+          "7NdwW",
+          1.98
+        ],
+        [
+          "CdmyB",
+          1.52
+        ],
+        [
+          "8qRNN",
+          0.68
+        ],
+        [
+          "YTcNv",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "qBv2v",
+        "mT2Rt",
+        "aumjp",
+        "5rRrT",
+        "87BRB",
+        "77dN7",
+        "9BMM5",
+        "VRTNm",
+        "yTrbT",
+        "DnbGD",
+        "_s2QT",
+        "rJNM9",
+        "CdmyB"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:39:53 GMT",
+      "map": "Australia",
+      "players": 46,
+      "gain": "0.05737",
+      "contest": false,
+      "carry": "MIDnz",
+      "carry_gold": 26.01,
+      "payout": [
+        [
+          "MIDnz",
+          26.01
+        ],
+        [
+          "mT2Rt",
+          7.57
+        ],
+        [
+          "Jqyky",
+          5.72
+        ],
+        [
+          "NMkTR",
+          2.59
+        ],
+        [
+          "BqLB7",
+          1.63
+        ],
+        [
+          "TnKQ9",
+          0.48
+        ]
+      ],
+      "clan_winners": [
+        "mT2Rt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:34:26 GMT",
+      "map": "Island Kingdom",
+      "players": 30,
+      "gain": "0.03256",
+      "contest": false,
+      "carry": "BRmr8",
+      "carry_gold": 16.38,
+      "payout": [
+        [
+          "BRmr8",
+          16.38
+        ],
+        [
+          "82CKn",
+          8.62
+        ]
+      ],
+      "clan_winners": [
+        "BRmr8"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:15:07 GMT",
+      "map": "Middle East",
+      "players": 45,
+      "gain": "0.05584",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 33.65,
+      "payout": [
+        [
+          "RMv7n",
+          33.65
+        ],
+        [
+          "MvbQj",
+          9.35
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 17:05:39 GMT",
+      "map": "Mare Nostrum",
+      "players": 88,
+      "gain": "0.21891",
+      "contest": true,
+      "carry": "qBv2v",
+      "carry_gold": 42.28,
+      "payout": [
+        [
+          "qBv2v",
+          42.28
+        ],
+        [
+          "5rRrT",
+          24.99
+        ],
+        [
+          "N5ytc",
+          12.13
+        ],
+        [
+          "sOtSV",
+          8.25
+        ],
+        [
+          "TvR7M",
+          7.43
+        ],
+        [
+          "fo6Vk",
+          6.57
+        ],
+        [
+          "LnJvR",
+          5.26
+        ],
+        [
+          "Wm2qB",
+          5.07
+        ],
+        [
+          "9BMM5",
+          4.98
+        ],
+        [
+          "Qtbjr",
+          4.64
+        ],
+        [
+          "tn2Rt",
+          4.58
+        ],
+        [
+          "MWvbK",
+          4.54
+        ],
+        [
+          "gj2qD",
+          4.19
+        ],
+        [
+          "77dN7",
+          3.92
+        ],
+        [
+          "9Bvrv",
+          3.72
+        ],
+        [
+          "7mM8c",
+          3.71
+        ],
+        [
+          "vvwGY",
+          3.55
+        ],
+        [
+          "bvmRb",
+          3.31
+        ],
+        [
+          "nqgQW",
+          2.98
+        ],
+        [
+          "_s2QT",
+          2.88
+        ]
+      ],
+      "clan_winners": [
+        "qBv2v",
+        "5rRrT",
+        "sOtSV",
+        "TvR7M",
+        "fo6Vk",
+        "LnJvR",
+        "9BMM5",
+        "tn2Rt",
+        "77dN7",
+        "9Bvrv",
+        "_s2QT"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:42:40 GMT",
+      "map": "Mare Nostrum",
+      "players": 44,
+      "gain": "0.05581",
+      "contest": false,
+      "carry": "vWqLT",
+      "carry_gold": 9.32,
+      "payout": [
+        [
+          "vWqLT",
+          9.32
+        ],
+        [
+          "GbmYM",
+          7.03
+        ],
+        [
+          "5VqMg",
+          5.39
+        ],
+        [
+          "B9rB8",
+          5.32
+        ],
+        [
+          "jjNQL",
+          5.31
+        ],
+        [
+          "mzZ5d",
+          4.23
+        ],
+        [
+          "_bJb_",
+          3.18
+        ],
+        [
+          "LRrdk",
+          1.58
+        ],
+        [
+          "R7N5n",
+          1.0
+        ],
+        [
+          "Y5Dry",
+          0.63
+        ],
+        [
+          "RjyCg",
+          0.01
+        ],
+        [
+          "NRLct",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "vWqLT"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:36:08 GMT",
+      "map": "Scandinavia",
+      "players": 120,
+      "gain": "0.27402",
+      "contest": true,
+      "carry": "7b5nv",
+      "carry_gold": 40.35,
+      "payout": [
+        [
+          "7b5nv",
+          40.35
+        ],
+        [
+          "C4dFP",
+          30.18
+        ],
+        [
+          "_s2QT",
+          15.8
+        ],
+        [
+          "fo6Vk",
+          15.59
+        ],
+        [
+          "GbmYM",
+          12.43
+        ],
+        [
+          "TvR7M",
+          10.41
+        ],
+        [
+          "JBieJ",
+          10.2
+        ],
+        [
+          "rKV7M",
+          10.03
+        ],
+        [
+          "5rRrT",
+          9.06
+        ],
+        [
+          "d9lDm",
+          5.94
+        ],
+        [
+          "NGmMt",
+          5.71
+        ],
+        [
+          "tn2Rt",
+          5.18
+        ],
+        [
+          "yTrbT",
+          4.17
+        ],
+        [
+          "mzZ5d",
+          3.84
+        ],
+        [
+          "g5JY0",
+          3.68
+        ],
+        [
+          "yrD9M",
+          3.56
+        ],
+        [
+          "nNbQL",
+          3.51
+        ],
+        [
+          "N5ytc",
+          3.28
+        ],
+        [
+          "DnbGD",
+          2.47
+        ],
+        [
+          "vWqLT",
+          2.35
+        ]
+      ],
+      "clan_winners": [
+        "7b5nv",
+        "_s2QT",
+        "fo6Vk",
+        "TvR7M",
+        "rKV7M",
+        "5rRrT",
+        "NGmMt",
+        "tn2Rt",
+        "yTrbT",
+        "DnbGD",
+        "vWqLT",
+        "VRTNm",
+        "9mnVt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 16:07:28 GMT",
+      "map": "Mare Nostrum",
+      "players": 131,
+      "gain": "0.30026",
+      "contest": true,
+      "carry": "jdcnc",
+      "carry_gold": 154.33,
+      "payout": [
+        [
+          "jdcnc",
+          154.33
+        ],
+        [
+          "rKV7M",
+          21.63
+        ],
+        [
+          "77dN7",
+          8.4
+        ],
+        [
+          "RtQtq",
+          7.86
+        ],
+        [
+          "VRTNm",
+          7.6
+        ],
+        [
+          "bLQrm",
+          7.49
+        ],
+        [
+          "27jq2",
+          7.48
+        ],
+        [
+          "KWkww",
+          6.35
+        ],
+        [
+          "qBv2v",
+          3.33
+        ],
+        [
+          "QqdMn",
+          2.98
+        ],
+        [
+          "89Gbj",
+          2.49
+        ],
+        [
+          "MWdQW",
+          0.06
+        ],
+        [
+          "v-b8G",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "jdcnc",
+        "rKV7M",
+        "77dN7",
+        "RtQtq",
+        "VRTNm",
+        "bLQrm",
+        "27jq2",
+        "qBv2v",
+        "QqdMn",
+        "MWdQW",
+        "v-b8G"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:37:42 GMT",
+      "map": "World 2",
+      "players": 59,
+      "gain": "0.07276",
+      "contest": false,
+      "carry": "vb88T",
+      "carry_gold": 55.32,
+      "payout": [
+        [
+          "vb88T",
+          55.32
+        ],
+        [
+          "YMbjt",
+          0.58
+        ],
+        [
+          "BtTJw",
+          0.07
+        ],
+        [
+          "LKW8V",
+          0.02
+        ],
+        [
+          "ZIYt5",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "YMbjt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:34:51 GMT",
+      "map": "Australia",
+      "players": 94,
+      "gain": "0.22976",
+      "contest": true,
+      "carry": "7Tbr5",
+      "carry_gold": 22.48,
+      "payout": [
+        [
+          "7Tbr5",
+          22.48
+        ],
+        [
+          "qBv2v",
+          14.25
+        ],
+        [
+          "BvJRb",
+          12.38
+        ],
+        [
+          "nJdBR",
+          8.57
+        ],
+        [
+          "Vdk8n",
+          8.16
+        ],
+        [
+          "Tw5TM",
+          7.86
+        ],
+        [
+          "Y8tCY",
+          7.63
+        ],
+        [
+          "7LMKB",
+          6.14
+        ],
+        [
+          "27jq2",
+          6.01
+        ],
+        [
+          "v-b8G",
+          4.98
+        ],
+        [
+          "ED4in",
+          4.79
+        ],
+        [
+          "DnbGD",
+          4.62
+        ],
+        [
+          "rm7NG",
+          4.57
+        ],
+        [
+          "Mb7yj",
+          4.52
+        ],
+        [
+          "jdcnc",
+          4.43
+        ],
+        [
+          "QtL85",
+          4.28
+        ],
+        [
+          "sk7JU",
+          3.97
+        ],
+        [
+          "qqq7L",
+          3.89
+        ],
+        [
+          "0CC-3",
+          3.79
+        ],
+        [
+          "DKjTY",
+          3.71
+        ]
+      ],
+      "clan_winners": [
+        "7Tbr5",
+        "qBv2v",
+        "BvJRb",
+        "Y8tCY",
+        "27jq2",
+        "v-b8G",
+        "ED4in",
+        "DnbGD",
+        "jdcnc",
+        "qqq7L",
+        "DKjTY",
+        "RtQtq",
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:28:00 GMT",
+      "map": "Europe",
+      "players": 108,
+      "gain": "0.25967",
+      "contest": true,
+      "carry": "jdcnc",
+      "carry_gold": 47.08,
+      "payout": [
+        [
+          "jdcnc",
+          47.08
+        ],
+        [
+          "BvJRb",
+          31.57
+        ],
+        [
+          "v-b8G",
+          29.77
+        ],
+        [
+          "7Tbr5",
+          27.14
+        ],
+        [
+          "JSEBO",
+          13.16
+        ],
+        [
+          "nJdBR",
+          8.51
+        ],
+        [
+          "2oInk",
+          8.3
+        ],
+        [
+          "gj2qD",
+          7.74
+        ],
+        [
+          "Y8tCY",
+          5.97
+        ],
+        [
+          "87BRB",
+          5.93
+        ],
+        [
+          "bLQrm",
+          3.19
+        ],
+        [
+          "vdYRt",
+          2.69
+        ],
+        [
+          "YrdCW",
+          2.62
+        ],
+        [
+          "-vs--",
+          2.61
+        ],
+        [
+          "jGQn0",
+          1.29
+        ],
+        [
+          "ED4in",
+          0.43
+        ]
+      ],
+      "clan_winners": [
+        "jdcnc",
+        "BvJRb",
+        "v-b8G",
+        "7Tbr5",
+        "JSEBO",
+        "Y8tCY",
+        "87BRB",
+        "bLQrm",
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:16:11 GMT",
+      "map": "World 2",
+      "players": 130,
+      "gain": "0.32161",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 54.91,
+      "payout": [
+        [
+          "bLQrm",
+          54.91
+        ],
+        [
+          "k9gTJ",
+          26.17
+        ],
+        [
+          "87BRB",
+          21.43
+        ],
+        [
+          "ED4in",
+          19.85
+        ],
+        [
+          "Y8tCY",
+          19.62
+        ],
+        [
+          "7R252",
+          15.69
+        ],
+        [
+          "rWNNl",
+          15.54
+        ],
+        [
+          "JSEBO",
+          9.89
+        ],
+        [
+          "DnbGD",
+          9.81
+        ],
+        [
+          "jdcnc",
+          6.74
+        ],
+        [
+          "QfA_e",
+          5.46
+        ],
+        [
+          "CPT-Z",
+          5.06
+        ],
+        [
+          "bN8NM",
+          4.82
+        ],
+        [
+          "KtQLm",
+          4.75
+        ],
+        [
+          "BvJRb",
+          4.71
+        ],
+        [
+          "rt95v",
+          3.88
+        ],
+        [
+          "LVLmr",
+          3.56
+        ],
+        [
+          "jl1Pr",
+          3.26
+        ],
+        [
+          "-tZ6j",
+          2.69
+        ],
+        [
+          "J2QKn",
+          2.2
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "k9gTJ",
+        "87BRB",
+        "ED4in",
+        "Y8tCY",
+        "7R252",
+        "JSEBO",
+        "DnbGD",
+        "jdcnc",
+        "CPT-Z",
+        "KtQLm",
+        "BvJRb",
+        "LVLmr",
+        "-tZ6j",
+        "WvGMb",
+        "v-b8G"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:06:44 GMT",
+      "map": "Mare Nostrum",
+      "players": 135,
+      "gain": "0.33922",
+      "contest": true,
+      "carry": "BvJRb",
+      "carry_gold": 94.84,
+      "payout": [
+        [
+          "BvJRb",
+          94.84
+        ],
+        [
+          "v-b8G",
+          61.09
+        ],
+        [
+          "CPT-Z",
+          20.27
+        ],
+        [
+          "JSEBO",
+          10.85
+        ],
+        [
+          "7Tbr5",
+          8.06
+        ],
+        [
+          "7R252",
+          7.53
+        ],
+        [
+          "Y8tCY",
+          5.94
+        ],
+        [
+          "ywdrw",
+          5.68
+        ],
+        [
+          "jdcnc",
+          4.98
+        ],
+        [
+          "bN8NM",
+          4.62
+        ],
+        [
+          "ED4in",
+          4.48
+        ],
+        [
+          "87BRB",
+          4.36
+        ],
+        [
+          "Q5tVN",
+          4.3
+        ],
+        [
+          "LVLmr",
+          3.24
+        ],
+        [
+          "DnbGD",
+          3.16
+        ],
+        [
+          "WvGMb",
+          3.1
+        ],
+        [
+          "bMQtr",
+          2.33
+        ],
+        [
+          "mYj29",
+          2.1
+        ],
+        [
+          "-tZ6j",
+          2.09
+        ],
+        [
+          "cKR7J",
+          1.91
+        ]
+      ],
+      "clan_winners": [
+        "BvJRb",
+        "v-b8G",
+        "CPT-Z",
+        "JSEBO",
+        "7Tbr5",
+        "7R252",
+        "Y8tCY",
+        "jdcnc",
+        "ED4in",
+        "87BRB",
+        "Q5tVN",
+        "LVLmr",
+        "DnbGD",
+        "WvGMb",
+        "-tZ6j",
+        "YMbjt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 15:03:26 GMT",
+      "map": "Desert",
+      "players": 33,
+      "gain": "0.03842",
+      "contest": false,
+      "carry": "TvR7M",
+      "carry_gold": 29.0,
+      "payout": [
+        [
+          "TvR7M",
+          29.0
+        ]
+      ],
+      "clan_winners": [
+        "TvR7M"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:56:03 GMT",
+      "map": "Caucasia",
+      "players": 91,
+      "gain": "0.21534",
+      "contest": true,
+      "carry": "KtQLm",
+      "carry_gold": 42.7,
+      "payout": [
+        [
+          "KtQLm",
+          42.7
+        ],
+        [
+          "Y8tCY",
+          12.63
+        ],
+        [
+          "tTgkc",
+          11.03
+        ],
+        [
+          "bLQrm",
+          10.63
+        ],
+        [
+          "9mnVt",
+          9.56
+        ],
+        [
+          "WVJQY",
+          9.49
+        ],
+        [
+          "7R252",
+          7.08
+        ],
+        [
+          "oC223",
+          6.07
+        ],
+        [
+          "PGNkj",
+          5.78
+        ],
+        [
+          "ED4in",
+          5.52
+        ],
+        [
+          "BGgwG",
+          5.49
+        ],
+        [
+          "QWqJT",
+          4.51
+        ],
+        [
+          "rQvKN",
+          4.22
+        ],
+        [
+          "LVLmr",
+          3.33
+        ],
+        [
+          "kK2jj",
+          2.97
+        ],
+        [
+          "XjONh",
+          2.87
+        ],
+        [
+          "G5V9m",
+          2.86
+        ],
+        [
+          "wtk7q",
+          2.76
+        ],
+        [
+          "D52dV",
+          2.61
+        ],
+        [
+          "WndMt",
+          2.33
+        ]
+      ],
+      "clan_winners": [
+        "KtQLm",
+        "Y8tCY",
+        "bLQrm",
+        "9mnVt",
+        "7R252",
+        "ED4in",
+        "BGgwG",
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:46:52 GMT",
+      "map": "Middle East",
+      "players": 113,
+      "gain": "0.28040",
+      "contest": true,
+      "carry": "bLQrm",
+      "carry_gold": 69.24,
+      "payout": [
+        [
+          "bLQrm",
+          69.24
+        ],
+        [
+          "KtQLm",
+          37.24
+        ],
+        [
+          "QtdKw",
+          34.68
+        ],
+        [
+          "Nw8rB",
+          20.7
+        ],
+        [
+          "GLGNC",
+          12.32
+        ],
+        [
+          "DnbGD",
+          7.24
+        ],
+        [
+          "7R252",
+          6.02
+        ],
+        [
+          "NgrDV",
+          5.87
+        ],
+        [
+          "9mnVt",
+          4.94
+        ],
+        [
+          "ED4in",
+          3.67
+        ],
+        [
+          "7Tbr5",
+          3.64
+        ],
+        [
+          "7RdTK",
+          2.57
+        ],
+        [
+          "LVLmr",
+          1.88
+        ]
+      ],
+      "clan_winners": [
+        "bLQrm",
+        "KtQLm",
+        "DnbGD",
+        "7R252",
+        "9mnVt",
+        "ED4in",
+        "7Tbr5",
+        "LVLmr"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:43:39 GMT",
+      "map": "Mare Nostrum",
+      "players": 46,
+      "gain": "0.05744",
+      "contest": false,
+      "carry": "2B2gJ",
+      "carry_gold": 29.62,
+      "payout": [
+        [
+          "2B2gJ",
+          29.62
+        ],
+        [
+          "8jDbg",
+          9.43
+        ],
+        [
+          "TvR7M",
+          3.95
+        ]
+      ],
+      "clan_winners": [
+        "TvR7M"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:39:07 GMT",
+      "map": "Scandinavia",
+      "players": 84,
+      "gain": "0.19573",
+      "contest": true,
+      "carry": "ED4in",
+      "carry_gold": 41.83,
+      "payout": [
+        [
+          "ED4in",
+          41.83
+        ],
+        [
+          "bLQrm",
+          28.0
+        ],
+        [
+          "qnT7M",
+          18.71
+        ],
+        [
+          "7R252",
+          16.31
+        ],
+        [
+          "Wrtkn",
+          11.51
+        ],
+        [
+          "DnbGD",
+          11.28
+        ],
+        [
+          "9mnVt",
+          6.21
+        ],
+        [
+          "b7RMQ",
+          5.2
+        ],
+        [
+          "JSEBO",
+          4.17
+        ],
+        [
+          "GbbmD",
+          2.77
+        ]
+      ],
+      "clan_winners": [
+        "ED4in",
+        "bLQrm",
+        "qnT7M",
+        "7R252",
+        "DnbGD",
+        "9mnVt",
+        "JSEBO"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:16:27 GMT",
+      "map": "Australia",
+      "players": 102,
+      "gain": "0.24146",
+      "contest": true,
+      "carry": "KtQLm",
+      "carry_gold": 49.64,
+      "payout": [
+        [
+          "KtQLm",
+          49.64
+        ],
+        [
+          "k2qqw",
+          26.29
+        ],
+        [
+          "bLQrm",
+          22.86
+        ],
+        [
+          "ZBxFE",
+          17.61
+        ],
+        [
+          "c9v5L",
+          7.78
+        ],
+        [
+          "v2ULR",
+          5.77
+        ],
+        [
+          "ED4in",
+          4.31
+        ],
+        [
+          "2dmJk",
+          3.85
+        ],
+        [
+          "JSEBO",
+          3.64
+        ],
+        [
+          "Ax5jk",
+          3.61
+        ],
+        [
+          "Plvvs",
+          3.46
+        ],
+        [
+          "LVLmr",
+          3.44
+        ],
+        [
+          "LyVKC",
+          3.33
+        ],
+        [
+          "y7crw",
+          3.26
+        ],
+        [
+          "9mnVt",
+          3.12
+        ],
+        [
+          "cnM9b",
+          2.83
+        ],
+        [
+          "bgyBK",
+          2.4
+        ],
+        [
+          "md7yj",
+          2.17
+        ],
+        [
+          "GJywW",
+          2.1
+        ],
+        [
+          "rfaJQ",
+          1.96
+        ]
+      ],
+      "clan_winners": [
+        "KtQLm",
+        "bLQrm",
+        "ED4in",
+        "JSEBO",
+        "LVLmr",
+        "9mnVt",
+        "RnT2R"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 14:00:01 GMT",
+      "map": "South America",
+      "players": 36,
+      "gain": "0.04415",
+      "contest": false,
+      "carry": "ED4in",
+      "carry_gold": 26.45,
+      "payout": [
+        [
+          "ED4in",
+          26.45
+        ],
+        [
+          "22n2j",
+          3.94
+        ],
+        [
+          "VKbND",
+          1.68
+        ],
+        [
+          "2grNr",
+          0.93
+        ]
+      ],
+      "clan_winners": [
+        "ED4in"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 13:43:23 GMT",
+      "map": "Mare Nostrum",
+      "players": 34,
+      "gain": "0.04277",
+      "contest": false,
+      "carry": "qLT7L",
+      "carry_gold": 10.19,
+      "payout": [
+        [
+          "qLT7L",
+          10.19
+        ],
+        [
+          "Bjc8J",
+          6.92
+        ],
+        [
+          "9BMM5",
+          6.91
+        ],
+        [
+          "-tZ6j",
+          5.39
+        ],
+        [
+          "nrJqn",
+          1.94
+        ],
+        [
+          "97LnN",
+          0.64
+        ]
+      ],
+      "clan_winners": [
+        "9BMM5",
+        "-tZ6j",
+        "nrJqn"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 13:31:53 GMT",
+      "map": "Australia",
+      "players": 31,
+      "gain": "0.04136",
+      "contest": false,
+      "carry": "q5m52",
+      "carry_gold": 10.73,
+      "payout": [
+        [
+          "q5m52",
+          10.73
+        ],
+        [
+          "vc5wt",
+          8.38
+        ],
+        [
+          "RCt7M",
+          6.64
+        ],
+        [
+          "7rmkd",
+          5.25
+        ]
+      ],
+      "clan_winners": [
+        "q5m52",
+        "7rmkd"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:51:09 GMT",
+      "map": "Scandinavia",
+      "players": 30,
+      "gain": "0.03836",
+      "contest": false,
+      "carry": "77dN7",
+      "carry_gold": 22.08,
+      "payout": [
+        [
+          "77dN7",
+          22.08
+        ],
+        [
+          "9bLQV",
+          3.84
+        ],
+        [
+          "L9YnB",
+          3.08
+        ]
+      ],
+      "clan_winners": [
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:31:16 GMT",
+      "map": "Middle East",
+      "players": 63,
+      "gain": "0.07390",
+      "contest": false,
+      "carry": "nBmLV",
+      "carry_gold": 12.88,
+      "payout": [
+        [
+          "nBmLV",
+          12.88
+        ],
+        [
+          "T89QR",
+          10.65
+        ],
+        [
+          "EHVBO",
+          10.45
+        ],
+        [
+          "j25cc",
+          7.11
+        ],
+        [
+          "AAGgh",
+          5.26
+        ],
+        [
+          "QmYQJ",
+          3.54
+        ],
+        [
+          "bYYWL",
+          2.29
+        ],
+        [
+          "jGvwc",
+          1.62
+        ],
+        [
+          "dQycd",
+          1.35
+        ],
+        [
+          "r7w2n",
+          0.86
+        ]
+      ],
+      "clan_winners": [
+        "nBmLV"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:29:10 GMT",
+      "map": "Caucasia",
+      "players": 118,
+      "gain": "0.27884",
+      "contest": true,
+      "carry": "NGmMt",
+      "carry_gold": 152.71,
+      "payout": [
+        [
+          "NGmMt",
+          152.71
+        ],
+        [
+          "9mnVt",
+          28.23
+        ],
+        [
+          "9BMM5",
+          12.2
+        ],
+        [
+          "77dN7",
+          4.94
+        ],
+        [
+          "DQ5td",
+          4.05
+        ],
+        [
+          "nKL6v",
+          3.9
+        ],
+        [
+          "5C2B7",
+          2.17
+        ],
+        [
+          "v2dn5",
+          1.79
+        ],
+        [
+          "tC25B",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "NGmMt",
+        "9mnVt",
+        "9BMM5",
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:19:58 GMT",
+      "map": "Scandinavia",
+      "players": 40,
+      "gain": "0.04245",
+      "contest": false,
+      "carry": "L25mR",
+      "carry_gold": 17.36,
+      "payout": [
+        [
+          "L25mR",
+          17.36
+        ],
+        [
+          "njcgR",
+          7.89
+        ],
+        [
+          "rcQCY",
+          6.74
+        ],
+        [
+          "w8vBR",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "L25mR"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:17:42 GMT",
+      "map": "Mare Nostrum",
+      "players": 95,
+      "gain": "0.23467",
+      "contest": true,
+      "carry": "55977",
+      "carry_gold": 74.4,
+      "payout": [
+        [
+          "55977",
+          74.4
+        ],
+        [
+          "RtQtq",
+          16.84
+        ],
+        [
+          "79tbQ",
+          13.22
+        ],
+        [
+          "qNnjV",
+          7.04
+        ],
+        [
+          "n2jvJ",
+          6.95
+        ],
+        [
+          "SqUUu",
+          6.44
+        ],
+        [
+          "vRntR",
+          6.14
+        ],
+        [
+          "77dN7",
+          6.12
+        ],
+        [
+          "-csnn",
+          5.2
+        ],
+        [
+          "5YnQr",
+          3.89
+        ],
+        [
+          "9mnVt",
+          3.71
+        ],
+        [
+          "d7KWt",
+          3.24
+        ],
+        [
+          "DgGRw",
+          3.23
+        ],
+        [
+          "9BMM5",
+          3.22
+        ],
+        [
+          "59DTY",
+          2.94
+        ],
+        [
+          "8zsZF",
+          1.87
+        ],
+        [
+          "Mzr17",
+          1.82
+        ],
+        [
+          "GbCMj",
+          1.82
+        ],
+        [
+          "bTMYY",
+          1.67
+        ],
+        [
+          "BVmgJ",
+          1.48
+        ]
+      ],
+      "clan_winners": [
+        "55977",
+        "RtQtq",
+        "n2jvJ",
+        "77dN7",
+        "9mnVt",
+        "9BMM5",
+        "8zsZF",
+        "Ap4cO"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:06:50 GMT",
+      "map": "Caucasia",
+      "players": 33,
+      "gain": "0.03860",
+      "contest": false,
+      "carry": "CCGGr",
+      "carry_gold": 11.58,
+      "payout": [
+        [
+          "CCGGr",
+          11.58
+        ],
+        [
+          "95rcj",
+          4.93
+        ],
+        [
+          "G8jdm",
+          4.61
+        ],
+        [
+          "xOtKV",
+          4.07
+        ],
+        [
+          "qT9Dt",
+          3.72
+        ],
+        [
+          "KQLKv",
+          0.1
+        ],
+        [
+          "MBMvv",
+          0.0
+        ],
+        [
+          "tC25B",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "G8jdm"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 12:04:20 GMT",
+      "map": "Pond",
+      "players": 20,
+      "gain": "0.02530",
+      "contest": false,
+      "carry": "m22TB",
+      "carry_gold": 15.11,
+      "payout": [
+        [
+          "m22TB",
+          15.11
+        ],
+        [
+          "nBmLV",
+          3.87
+        ],
+        [
+          "uOFuF",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "nBmLV"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:53:34 GMT",
+      "map": "Caucasia",
+      "players": 31,
+      "gain": "0.03591",
+      "contest": false,
+      "carry": "9BMM5",
+      "carry_gold": 26.98,
+      "payout": [
+        [
+          "9BMM5",
+          26.98
+        ],
+        [
+          "qKwqq",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "9BMM5"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:52:14 GMT",
+      "map": "Scandinavia",
+      "players": 30,
+      "gain": "0.03593",
+      "contest": false,
+      "carry": "L25mR",
+      "carry_gold": 22.98,
+      "payout": [
+        [
+          "L25mR",
+          22.98
+        ],
+        [
+          "Q5tVb",
+          4.02
+        ]
+      ],
+      "clan_winners": [
+        "L25mR"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:44:50 GMT",
+      "map": "World 2",
+      "players": 34,
+      "gain": "0.03725",
+      "contest": false,
+      "carry": "nBmLV",
+      "carry_gold": 7.77,
+      "payout": [
+        [
+          "nBmLV",
+          7.77
+        ],
+        [
+          "vQzdi",
+          5.97
+        ],
+        [
+          "mQmnb",
+          5.13
+        ],
+        [
+          "yLVbm",
+          2.55
+        ],
+        [
+          "cyNwr",
+          2.31
+        ],
+        [
+          "rDq8N",
+          1.56
+        ],
+        [
+          "4uFbW",
+          1.25
+        ],
+        [
+          "Wm877",
+          0.77
+        ],
+        [
+          "dkKqj",
+          0.69
+        ]
+      ],
+      "clan_winners": [
+        "nBmLV"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:27:55 GMT",
+      "map": "Scandinavia",
+      "players": 35,
+      "gain": "0.03982",
+      "contest": false,
+      "carry": "7rmkd",
+      "carry_gold": 21.44,
+      "payout": [
+        [
+          "7rmkd",
+          21.44
+        ],
+        [
+          "DkcrW",
+          6.25
+        ],
+        [
+          "9qdKc",
+          1.03
+        ],
+        [
+          "ktKWr",
+          0.87
+        ],
+        [
+          "TqgyV",
+          0.41
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:21:37 GMT",
+      "map": "Middle East",
+      "players": 48,
+      "gain": "0.05977",
+      "contest": false,
+      "carry": "QrM9b",
+      "carry_gold": 16.65,
+      "payout": [
+        [
+          "QrM9b",
+          16.65
+        ],
+        [
+          "VVbqr",
+          15.16
+        ],
+        [
+          "wvDrw",
+          3.81
+        ],
+        [
+          "J57gJ",
+          3.68
+        ],
+        [
+          "Dkgwq",
+          2.43
+        ],
+        [
+          "G8jdm",
+          2.23
+        ],
+        [
+          "D277B",
+          1.04
+        ]
+      ],
+      "clan_winners": [
+        "G8jdm"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 11:12:14 GMT",
+      "map": "Scandinavia",
+      "players": 35,
+      "gain": "0.04511",
+      "contest": false,
+      "carry": "rQqRM",
+      "carry_gold": 20.16,
+      "payout": [
+        [
+          "rQqRM",
+          20.16
+        ],
+        [
+          "cGLVG",
+          7.9
+        ],
+        [
+          "LGGYw",
+          4.27
+        ],
+        [
+          "GwCyr",
+          1.66
+        ]
+      ],
+      "clan_winners": [
+        "rQqRM"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:57:21 GMT",
+      "map": "Middle East",
+      "players": 98,
+      "gain": "0.23416",
+      "contest": true,
+      "carry": "CCGGr",
+      "carry_gold": 51.23,
+      "payout": [
+        [
+          "CCGGr",
+          51.23
+        ],
+        [
+          "Z2Yfi",
+          41.82
+        ],
+        [
+          "DKjTY",
+          24.26
+        ],
+        [
+          "NGmMt",
+          23.1
+        ],
+        [
+          "GLnTa",
+          20.42
+        ],
+        [
+          "imBCd",
+          11.11
+        ],
+        [
+          "B8CBk",
+          3.13
+        ],
+        [
+          "Qyvtq",
+          0.58
+        ],
+        [
+          "DT5Cb",
+          0.35
+        ]
+      ],
+      "clan_winners": [
+        "DKjTY",
+        "NGmMt"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:45:06 GMT",
+      "map": "Caucasia",
+      "players": 68,
+      "gain": "0.16791",
+      "contest": true,
+      "carry": "CPT-Z",
+      "carry_gold": 14.85,
+      "payout": [
+        [
+          "CPT-Z",
+          14.85
+        ],
+        [
+          "22982",
+          14.79
+        ],
+        [
+          "GbbmD",
+          11.85
+        ],
+        [
+          "fhSL3",
+          10.26
+        ],
+        [
+          "FMbXO",
+          7.61
+        ],
+        [
+          "rJcgL",
+          6.75
+        ],
+        [
+          "Z2Yfi",
+          6.1
+        ],
+        [
+          "RrtG2",
+          5.83
+        ],
+        [
+          "QQRYv",
+          5.82
+        ],
+        [
+          "JSEBO",
+          5.57
+        ],
+        [
+          "gg2Wk",
+          5.36
+        ],
+        [
+          "w2NBY",
+          4.4
+        ],
+        [
+          "2vrnR",
+          3.83
+        ],
+        [
+          "V8nm9",
+          3.63
+        ],
+        [
+          "7N99b",
+          3.54
+        ],
+        [
+          "N2LmJ",
+          3.13
+        ],
+        [
+          "kvQy8",
+          2.72
+        ],
+        [
+          "vbkjg",
+          2.45
+        ],
+        [
+          "M87Wv",
+          2.36
+        ],
+        [
+          "tMnrQ",
+          1.68
+        ]
+      ],
+      "clan_winners": [
+        "CPT-Z",
+        "JSEBO"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 10:33:57 GMT",
+      "map": "World 1",
+      "players": 43,
+      "gain": "0.05326",
+      "contest": false,
+      "carry": "M5NGM",
+      "carry_gold": 22.86,
+      "payout": [
+        [
+          "M5NGM",
+          22.86
+        ],
+        [
+          "BRmr8",
+          12.04
+        ],
+        [
+          "2dnRv",
+          3.16
+        ],
+        [
+          "5KcNc",
+          1.95
+        ],
+        [
+          "hB8ym",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "BRmr8"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:55:26 GMT",
+      "map": "Europe",
+      "players": 37,
+      "gain": "0.04293",
+      "contest": false,
+      "carry": "77dN7",
+      "carry_gold": 7.7,
+      "payout": [
+        [
+          "77dN7",
+          7.7
+        ],
+        [
+          "QQRYv",
+          6.03
+        ],
+        [
+          "tqGDJ",
+          3.88
+        ],
+        [
+          "gMjKY",
+          3.58
+        ],
+        [
+          "YdYjj",
+          3.4
+        ],
+        [
+          "dCdBv",
+          2.92
+        ],
+        [
+          "Tj8Cm",
+          2.14
+        ],
+        [
+          "qQT79",
+          1.86
+        ],
+        [
+          "qJYDq",
+          1.49
+        ]
+      ],
+      "clan_winners": [
+        "77dN7",
+        "qQT79"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:49:37 GMT",
+      "map": "Europe",
+      "players": 35,
+      "gain": "0.04163",
+      "contest": false,
+      "carry": "RtQtq",
+      "carry_gold": 21.59,
+      "payout": [
+        [
+          "RtQtq",
+          21.59
+        ],
+        [
+          "77dN7",
+          6.8
+        ],
+        [
+          "9yW2R",
+          2.21
+        ],
+        [
+          "bqddT",
+          1.4
+        ]
+      ],
+      "clan_winners": [
+        "RtQtq",
+        "77dN7"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:40:37 GMT",
+      "map": "Australia",
+      "players": 30,
+      "gain": "0.03382",
+      "contest": false,
+      "carry": "77dN7",
+      "carry_gold": 18.8,
+      "payout": [
+        [
+          "77dN7",
+          18.8
+        ],
+        [
+          "LnJvR",
+          5.17
+        ],
+        [
+          "55vTN",
+          1.28
+        ],
+        [
+          "RtQtq",
+          0.75
+        ]
+      ],
+      "clan_winners": [
+        "77dN7",
+        "LnJvR",
+        "RtQtq"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 07:32:56 GMT",
+      "map": "Africa",
+      "players": 24,
+      "gain": "0.02731",
+      "contest": false,
+      "carry": "RtQtq",
+      "carry_gold": 8.93,
+      "payout": [
+        [
+          "RtQtq",
+          8.93
+        ],
+        [
+          "TJWGT",
+          5.02
+        ],
+        [
+          "bkymg",
+          4.72
+        ],
+        [
+          "VmmYK",
+          2.34
+        ]
+      ],
+      "clan_winners": [
+        "RtQtq"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 06:45:56 GMT",
+      "map": "World 1",
+      "players": 17,
+      "gain": "0.02201",
+      "contest": false,
+      "carry": "LbrmQ",
+      "carry_gold": 10.32,
+      "payout": [
+        [
+          "LbrmQ",
+          10.32
+        ],
+        [
+          "DNkMy",
+          5.44
+        ],
+        [
+          "Wm2qB",
+          1.24
+        ]
+      ],
+      "clan_winners": [
+        "DNkMy"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 03:22:56 GMT",
+      "map": "Middle East",
+      "players": 13,
+      "gain": "0.01276",
+      "contest": false,
+      "carry": "trn8Q",
+      "carry_gold": 5.96,
+      "payout": [
+        [
+          "trn8Q",
+          5.96
+        ],
+        [
+          "vwjNT",
+          2.6
+        ],
+        [
+          "RMv7n",
+          1.44
+        ]
+      ],
+      "clan_winners": [
+        "trn8Q",
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 03:11:07 GMT",
+      "map": "World 1",
+      "players": 34,
+      "gain": "0.03955",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 23.28,
+      "payout": [
+        [
+          "RMv7n",
+          23.28
+        ],
+        [
+          "rL7gW",
+          7.72
+        ],
+        [
+          "7wNb7",
+          0.0
+        ],
+        [
+          "KgtDj",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:59:14 GMT",
+      "map": "Middle East",
+      "players": 13,
+      "gain": "0.01531",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 12.0,
+      "payout": [
+        [
+          "RMv7n",
+          12.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:47:55 GMT",
+      "map": "Mare Nostrum",
+      "players": 19,
+      "gain": "0.02424",
+      "contest": false,
+      "carry": "nCdgy",
+      "carry_gold": 4.24,
+      "payout": [
+        [
+          "nCdgy",
+          4.24
+        ],
+        [
+          "CCGGr",
+          3.83
+        ],
+        [
+          "bCL8j",
+          3.51
+        ],
+        [
+          "RMv7n",
+          2.1
+        ],
+        [
+          "7bWV5",
+          1.74
+        ],
+        [
+          "qyDRT",
+          1.28
+        ],
+        [
+          "q7MKJ",
+          1.04
+        ],
+        [
+          "Bud1C",
+          0.65
+        ],
+        [
+          "DdJcm",
+          0.62
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:28:11 GMT",
+      "map": "Middle East",
+      "players": 40,
+      "gain": "0.09958",
+      "contest": true,
+      "carry": "trn8Q",
+      "carry_gold": 23.53,
+      "payout": [
+        [
+          "trn8Q",
+          23.53
+        ],
+        [
+          "B7YMk",
+          17.73
+        ],
+        [
+          "LcNQ8",
+          8.13
+        ],
+        [
+          "dyKXY",
+          6.55
+        ],
+        [
+          "FHn-M",
+          6.42
+        ],
+        [
+          "5YJjw",
+          5.06
+        ],
+        [
+          "r8MtN",
+          3.93
+        ],
+        [
+          "7M9kY",
+          3.77
+        ],
+        [
+          "kMGgC",
+          1.55
+        ],
+        [
+          "55977",
+          1.32
+        ]
+      ],
+      "clan_winners": [
+        "trn8Q",
+        "r8MtN",
+        "55977"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 02:10:11 GMT",
+      "map": "Mare Nostrum",
+      "players": 61,
+      "gain": "0.13812",
+      "contest": true,
+      "carry": "57cWc",
+      "carry_gold": 28.8,
+      "payout": [
+        [
+          "57cWc",
+          28.8
+        ],
+        [
+          "55977",
+          25.98
+        ],
+        [
+          "BW7YK",
+          18.24
+        ],
+        [
+          "WCRJj",
+          12.16
+        ],
+        [
+          "r8MtN",
+          7.78
+        ],
+        [
+          "MpExp",
+          6.24
+        ],
+        [
+          "trn8Q",
+          3.3
+        ],
+        [
+          "BkcCK",
+          2.96
+        ],
+        [
+          "nrJqn",
+          1.77
+        ],
+        [
+          "7TrMN",
+          0.77
+        ]
+      ],
+      "clan_winners": [
+        "57cWc",
+        "55977",
+        "WCRJj",
+        "r8MtN",
+        "trn8Q",
+        "nrJqn"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 01:47:33 GMT",
+      "map": "Asia",
+      "players": 17,
+      "gain": "0.01915",
+      "contest": false,
+      "carry": "L25mR",
+      "carry_gold": 12.04,
+      "payout": [
+        [
+          "L25mR",
+          12.04
+        ],
+        [
+          "c52Gt",
+          2.96
+        ]
+      ],
+      "clan_winners": [
+        "L25mR"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 01:19:05 GMT",
+      "map": "Europe",
+      "players": 46,
+      "gain": "0.10981",
+      "contest": true,
+      "carry": "55977",
+      "carry_gold": 78.01,
+      "payout": [
+        [
+          "55977",
+          78.01
+        ],
+        [
+          "89Q7q",
+          3.81
+        ],
+        [
+          "WCRJj",
+          3.13
+        ],
+        [
+          "57cWc",
+          1.03
+        ],
+        [
+          "VQWMb",
+          0.02
+        ]
+      ],
+      "clan_winners": [
+        "55977",
+        "WCRJj"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 00:49:44 GMT",
+      "map": "World 1",
+      "players": 63,
+      "gain": "0.15855",
+      "contest": true,
+      "carry": "KwgdQ",
+      "carry_gold": 51.61,
+      "payout": [
+        [
+          "KwgdQ",
+          51.61
+        ],
+        [
+          "LKrtt",
+          39.16
+        ],
+        [
+          "r8MtN",
+          21.03
+        ],
+        [
+          "JjQNW",
+          5.86
+        ],
+        [
+          "55977",
+          5.77
+        ],
+        [
+          "Vt725",
+          0.26
+        ],
+        [
+          "7D5r5",
+          0.21
+        ],
+        [
+          "YtvRL",
+          0.1
+        ]
+      ],
+      "clan_winners": [
+        "r8MtN",
+        "55977"
+      ]
+    },
+    {
+      "time": "Fri, 30 Oct 2026 00:33:24 GMT",
+      "map": "North America",
+      "players": 25,
+      "gain": "0.02681",
+      "contest": false,
+      "carry": "BdMrG",
+      "carry_gold": 21.0,
+      "payout": [
+        [
+          "BdMrG",
+          21.0
+        ]
+      ],
+      "clan_winners": [
+        "BdMrG"
+      ]
+    }
+  ]
+}
