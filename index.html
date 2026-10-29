@@ -62,15 +62,11 @@
   ol.carries li:last-child { border-bottom: 0; }
   .rank { width: 26px; color: var(--muted); font-size: 12px; text-align: right; }
   .name { font-weight: 600; }
-  .count { margin-left: auto; color: var(--accent); white-space: nowrap; }
-  .count small { color: var(--muted); }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 8px 16px; border-bottom: 1px solid #21262d; }
   th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
   tr:last-child td { border-bottom: 0; }
   td.carry { color: var(--accent); font-weight: 600; }
-  td.gold { text-align: right; color: var(--green); }
-  th.gold { text-align: right; }
   .empty { padding: 28px 16px; color: var(--muted); text-align: center; }
   footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
@@ -106,10 +102,10 @@
     <h2>Recent OMEN wins</h2>
     <table>
       <thead>
-        <tr><th>Time (UTC)</th><th>Map</th><th>Carry</th><th class="gold">Gold</th></tr>
+        <tr><th>Time (UTC)</th><th>Map</th><th>Carry</th></tr>
       </thead>
       <tbody id="wins">
-        <tr><td colspan="4" class="empty">loading...</td></tr>
+        <tr><td colspan="3" class="empty">loading...</td></tr>
       </tbody>
     </table>
   </section>
@@ -186,21 +182,19 @@ function render(data) {
       <li>
         <span class="rank">${i + 1}</span>
         <span class="name">${escapeHtml(name)} - (${n}) carries</span>
-        <span class="count">${n}<small> ${n === 1 ? "carry" : "carries"}</small></span>
       </li>`).join("");
   }
 
   const wins = (data.wins || []).slice(0, MAX_ROWS);
   const tbody = $("wins");
   if (!wins.length) {
-    tbody.innerHTML = '<tr><td colspan="4" class="empty">no OMEN wins tracked yet</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="3" class="empty">no OMEN wins tracked yet</td></tr>';
   } else {
     tbody.innerHTML = wins.map((w) => `
       <tr>
         <td>${escapeHtml(w.time)}</td>
         <td>${escapeHtml(w.map)}</td>
         <td class="carry">${escapeHtml(w.carry)}</td>
-        <td class="gold">${Number(w.carry_gold || 0).toFixed(2)}</td>
       </tr>`).join("");
   }
 
