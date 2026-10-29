@@ -1,0 +1,1267 @@
+{
+  "clan": "OMEN",
+  "checked": "2026-11-07 15:45:39 UTC",
+  "updated": "2026-11-07 15:34:21 UTC",
+  "total_wins": 697,
+  "carries": {
+    "RMv7n": 51,
+    "9JqCq": 32,
+    "87BRB": 26,
+    "ED4in": 20,
+    "9mnVt": 15,
+    "77dN7": 14,
+    "7R252": 14,
+    "bLQrm": 14,
+    "55977": 13,
+    "MVqjy": 13,
+    "sOtSV": 13,
+    "ESXc7": 12,
+    "TvR7M": 12,
+    "v-b8G": 12,
+    "5rRrT": 11,
+    "7rmkd": 11,
+    "L25mR": 11,
+    "RLB7M": 11,
+    "n2jvJ": 9,
+    "BRmr8": 8,
+    "ncvyd": 7,
+    "Reaal": 7,
+    "CPT-Z": 6,
+    "RtQtq": 6,
+    "7Tbr5": 5,
+    "jdcnc": 5,
+    "Ln58q": 5,
+    "q5m52": 5,
+    "r8MtN": 5,
+    "9n8LQ": 4,
+    "KtQLm": 4,
+    "RwYTr": 4,
+    "trn8Q": 4,
+    "VRTNm": 4,
+    "5Rc7v": 3,
+    "8tNRt": 3,
+    "9nn5D": 3,
+    "Ap4cO": 3,
+    "CdmyB": 3,
+    "DKbV7": 3,
+    "GDR8n": 3,
+    "JSEBO": 3,
+    "nBmLV": 3,
+    "Qm95v": 3,
+    "qQT79": 3,
+    "SjJlN": 3,
+    "VVgcY": 3,
+    "2rbNR": 2,
+    "8R2NQ": 2,
+    "_s2QT": 2,
+    "BGgwG": 2,
+    "BtkKC": 2,
+    "btr2V": 2,
+    "dBjcg": 2,
+    "DKjTY": 2,
+    "JBjBJ": 2,
+    "kNDVY": 2,
+    "LTvb5": 2,
+    "LVLmr": 2,
+    "mT2Rt": 2,
+    "n79v9": 2,
+    "RDhuO": 2,
+    "rJNM9": 2,
+    "rqGqJ": 2,
+    "rV8LQ": 2,
+    "22LDb": 1,
+    "27jq2": 1,
+    "57cWc": 1,
+    "7b5nv": 1,
+    "9BMM5": 1,
+    "9BQqQ": 1,
+    "9dK5L": 1,
+    "9LLkG": 1,
+    "b8WdT": 1,
+    "BdMrG": 1,
+    "bMDqB": 1,
+    "bnrbN": 1,
+    "BqLLL": 1,
+    "BvJRb": 1,
+    "C4dFP": 1,
+    "cb5Yy": 1,
+    "DnbGD": 1,
+    "dTygW": 1,
+    "eCydT": 1,
+    "KwYGY": 1,
+    "LDCg9": 1,
+    "lQQyG": 1,
+    "Maqpj": 1,
+    "mbm8m": 1,
+    "MbtV5": 1,
+    "MDmC5": 1,
+    "mJnMB": 1,
+    "mL8qL": 1,
+    "MnRN2": 1,
+    "MQBtq": 1,
+    "mV9q2": 1,
+    "mvVT5": 1,
+    "N5ytc": 1,
+    "NGmMt": 1,
+    "nQt2r": 1,
+    "NwWRn": 1,
+    "q8q8q": 1,
+    "qBv2v": 1,
+    "QdRqb": 1,
+    "qK7TD": 1,
+    "QNcyR": 1,
+    "qqNV8": 1,
+    "RGjNB": 1,
+    "rNmYm": 1,
+    "rq9BR": 1,
+    "rQqRM": 1,
+    "RzNpW": 1,
+    "sMDo9": 1,
+    "tbb9N": 1,
+    "TfJ3h": 1,
+    "TQQbg": 1,
+    "TTvTT": 1,
+    "v792M": 1,
+    "vJmdK": 1,
+    "vv5v7": 1,
+    "vWqLT": 1,
+    "WCRJj": 1
+  },
+  "carries_noncontest": {
+    "RMv7n": 49,
+    "9JqCq": 32,
+    "ED4in": 19,
+    "87BRB": 16,
+    "7R252": 14,
+    "9mnVt": 13,
+    "5rRrT": 11,
+    "7rmkd": 11,
+    "L25mR": 11,
+    "RLB7M": 11,
+    "TvR7M": 11,
+    "ESXc7": 9,
+    "sOtSV": 9,
+    "77dN7": 8,
+    "bLQrm": 8,
+    "BRmr8": 8,
+    "n2jvJ": 8,
+    "ncvyd": 7,
+    "55977": 6,
+    "Reaal": 6,
+    "Ln58q": 5,
+    "q5m52": 5,
+    "RtQtq": 5,
+    "RwYTr": 4,
+    "8tNRt": 3,
+    "9n8LQ": 3,
+    "9nn5D": 3,
+    "DKbV7": 3,
+    "nBmLV": 3,
+    "Qm95v": 3,
+    "qQT79": 3,
+    "r8MtN": 3,
+    "VVgcY": 3,
+    "2rbNR": 2,
+    "5Rc7v": 2,
+    "7Tbr5": 2,
+    "BGgwG": 2,
+    "BtkKC": 2,
+    "btr2V": 2,
+    "CdmyB": 2,
+    "CPT-Z": 2,
+    "dBjcg": 2,
+    "DKjTY": 2,
+    "GDR8n": 2,
+    "JBjBJ": 2,
+    "kNDVY": 2,
+    "LTvb5": 2,
+    "mT2Rt": 2,
+    "n79v9": 2,
+    "rJNM9": 2,
+    "rqGqJ": 2,
+    "rV8LQ": 2,
+    "trn8Q": 2,
+    "VRTNm": 2,
+    "27jq2": 1,
+    "9BMM5": 1,
+    "9dK5L": 1,
+    "9LLkG": 1,
+    "Ap4cO": 1,
+    "b8WdT": 1,
+    "BdMrG": 1,
+    "bMDqB": 1,
+    "bnrbN": 1,
+    "BqLLL": 1,
+    "eCydT": 1,
+    "KwYGY": 1,
+    "LDCg9": 1,
+    "lQQyG": 1,
+    "LVLmr": 1,
+    "Maqpj": 1,
+    "MbtV5": 1,
+    "MDmC5": 1,
+    "mJnMB": 1,
+    "mL8qL": 1,
+    "MQBtq": 1,
+    "mV9q2": 1,
+    "qK7TD": 1,
+    "QNcyR": 1,
+    "qqNV8": 1,
+    "RGjNB": 1,
+    "rNmYm": 1,
+    "rq9BR": 1,
+    "rQqRM": 1,
+    "RzNpW": 1,
+    "tbb9N": 1,
+    "TfJ3h": 1,
+    "TTvTT": 1,
+    "v-b8G": 1,
+    "vv5v7": 1,
+    "vWqLT": 1
+  },
+  "carries_contest": {
+    "MVqjy": 13,
+    "v-b8G": 11,
+    "87BRB": 10,
+    "55977": 7,
+    "77dN7": 6,
+    "bLQrm": 6,
+    "jdcnc": 5,
+    "CPT-Z": 4,
+    "KtQLm": 4,
+    "sOtSV": 4,
+    "7Tbr5": 3,
+    "ESXc7": 3,
+    "JSEBO": 3,
+    "SjJlN": 3,
+    "8R2NQ": 2,
+    "9mnVt": 2,
+    "_s2QT": 2,
+    "Ap4cO": 2,
+    "r8MtN": 2,
+    "RDhuO": 2,
+    "RMv7n": 2,
+    "trn8Q": 2,
+    "VRTNm": 2,
+    "22LDb": 1,
+    "57cWc": 1,
+    "5Rc7v": 1,
+    "7b5nv": 1,
+    "9BQqQ": 1,
+    "9n8LQ": 1,
+    "BvJRb": 1,
+    "C4dFP": 1,
+    "cb5Yy": 1,
+    "CdmyB": 1,
+    "DnbGD": 1,
+    "dTygW": 1,
+    "ED4in": 1,
+    "GDR8n": 1,
+    "LVLmr": 1,
+    "mbm8m": 1,
+    "MnRN2": 1,
+    "mvVT5": 1,
+    "n2jvJ": 1,
+    "N5ytc": 1,
+    "NGmMt": 1,
+    "nQt2r": 1,
+    "NwWRn": 1,
+    "q8q8q": 1,
+    "qBv2v": 1,
+    "QdRqb": 1,
+    "Reaal": 1,
+    "RtQtq": 1,
+    "sMDo9": 1,
+    "TQQbg": 1,
+    "TvR7M": 1,
+    "v792M": 1,
+    "vJmdK": 1,
+    "WCRJj": 1
+  },
+  "names": {
+    "DKbV7": "[omen] Player 159",
+    "ESXc7": "[omen] Su",
+    "7Tbr5": "[omen] MD\ud83d\udc40",
+    "9JqCq": "[omen] Ax1S",
+    "8tNRt": "Nomiss mob [omen]",
+    "TQQbg": "[omen]fftt",
+    "7rmkd": "[Omen] Hell kingdom",
+    "Reaal": "\u0455\u043d\u03b1\u043dz\u03b1\u042f\ud83d\udd4a\ufe0f\u3164\u3164\u3164[omen]",
+    "RMv7n": "[omen] pictur",
+    "5rRrT": "randomnames [omen]",
+    "RLB7M": "[OMEN] Dreius",
+    "Ln58q": "[omen]Estda",
+    "qK7TD": "[Omen] hun",
+    "C4dFP": "[omen] Aurocen",
+    "n2jvJ": "Karlo [omen]",
+    "v-b8G": "\u3164\u3164\u3164\u3164\ud835\udd6f \u3164\u3164\u3164\u3164[omen]\u3164",
+    "55977": "[omen]Hunter\ud83d\ude0b",
+    "cb5Yy": "[OMEN] rustywashed",
+    "9mnVt": "[Omen] Tenkeld",
+    "87BRB": "[omen] caliphate",
+    "qQT79": "[OMEN] NEMO",
+    "lQQyG": "[omen] M",
+    "9BQqQ": "\ud83e\uddb6Zahid[omen]",
+    "9nn5D": "[omen] Animals",
+    "b8WdT": "[OMEN]",
+    "sOtSV": "tityS [omen]",
+    "BRmr8": "[OMEN] Billie eilish",
+    "9n8LQ": "[OMEN]Sirtabletop",
+    "LVLmr": "\u0455\u043d\u03b1\u043dz\u03b1\u042f\ud83d\udd4a\ufe0f\u3164\u3164\u3164[omen]",
+    "KwYGY": "[OMEN] Temu Su",
+    "5Rc7v": "[omen] Rolex",
+    "q8q8q": "deLuLu [OMEN]",
+    "Qm95v": "[OMEN] domi",
+    "tbb9N": "[OMEN] Potato Bob",
+    "Ap4cO": "kess\u0274e\u042f\ud83d\udd4a\ufe0f[omen]",
+    "MVqjy": "Darfy\ud83d\udd4a\ufe0f[omen]",
+    "RDhuO": "Karo\ud83d\udd4a\ufe0f[omen]",
+    "v792M": "[OMEN] Slovak\u262d",
+    "mT2Rt": "[omen] TessXArt",
+    "QdRqb": "[OMEN] ShreyTrackpad",
+    "7R252": "[OMEN] VainGlory",
+    "n79v9": "[OMEN] HYDRAA",
+    "BtkKC": "[OMEN]",
+    "ncvyd": "[Omen] mood",
+    "2rbNR": "[Omen]Re",
+    "mL8qL": "[OMEN]Oblong",
+    "VRTNm": "zlfr [omen]",
+    "GDR8n": "[OMEN] Epsilon",
+    "ED4in": "[Omen]",
+    "_s2QT": "\u26a1\ufe0etorm \ud83d\udd4a\ufe0f [omen]",
+    "jdcnc": "[Omen] Neidhardt",
+    "JSEBO": "Foid [omen]",
+    "LTvb5": "Salmonella[Omen]",
+    "bnrbN": "[Omen]NebmaatRa",
+    "btr2V": "[OMEN]AMOXICILINA",
+    "TvR7M": "[OMEN] Zanis",
+    "MDmC5": "[OmeN]ouS",
+    "WCRJj": "[omen] QueenOfHeels",
+    "VVgcY": "Beppo [omen]",
+    "8R2NQ": "[omen] zim",
+    "JBjBJ": "[Omen] Grind",
+    "dTygW": "Arthur[OMEN]",
+    "rV8LQ": "[Omen] Dante",
+    "BGgwG": "[OMEN] Dante\ud83d\ude08",
+    "Maqpj": "\ud83d\udc7b[Omen]",
+    "RtQtq": "BibiZ [omen]",
+    "trn8Q": "Dear [OMEN]",
+    "LDCg9": "[OMEN]Coco",
+    "rqGqJ": "[OMEN] \ud835\udcd9\ud835\udd02\ud835\udcf8\ud835\udcf1",
+    "kNDVY": "Hello? [OMEN]",
+    "RwYTr": "[Omen] \ud83d\udc40",
+    "DnbGD": "Bad [OMEN]",
+    "RzNpW": "AMorE[oMEn]ia",
+    "mvVT5": "[Omen] Omega",
+    "vv5v7": "\ud83d\udc9a \u028f\u0299oo [omen]",
+    "qqNV8": "[OMEN] Mogus",
+    "r8MtN": "[omen] pprex",
+    "TTvTT": "[omen] Smallsly",
+    "QNcyR": "KAAAAAAARL0 [omen]",
+    "9LLkG": "[omen]",
+    "L25mR": "[OMEN]FranceOnFire",
+    "rq9BR": "[OMEN]Silke",
+    "77dN7": "[OMEN]Constantrunner",
+    "MbtV5": "[OMEN][OG]MEGUNA",
+    "NwWRn": "[omen] karlo",
+    "q5m52": "[OMEN]fenerbah\u00e7e",
+    "27jq2": "[OMEN] Arbiter",
+    "DKjTY": "[omen]master oogway",
+    "rNmYm": "randomnames [omen]",
+    "bMDqB": "[omen]Worlds Debts",
+    "eCydT": "[omen] ORTYSIA",
+    "BqLLL": "[OMEN]beryll",
+    "dBjcg": "[OMEN] Fullsender",
+    "CdmyB": "[Omen]Redacted",
+    "22LDb": "[omen] picture",
+    "9dK5L": "[Omen]ghetto",
+    "bLQrm": "[OMEN]Nenad",
+    "MnRN2": "[omen] Zaanji",
+    "nQt2r": "[omen]WoW",
+    "mbm8m": "[omen] arcont",
+    "sMDo9": "Ichika [OMEN]",
+    "rJNM9": "[omen]ghetto",
+    "mJnMB": "[omen] Player 806",
+    "SjJlN": "Bad [Omen]",
+    "mV9q2": "[Omen] Apple",
+    "nBmLV": "[OMEN] Szlachta",
+    "KtQLm": "[OMEN] RISE",
+    "vJmdK": "[omen] Laurelin",
+    "CPT-Z": "Turkawka\ud83c\udf53[OMEN]",
+    "qBv2v": "[Omen] Broken",
+    "vWqLT": "[OMEN]Anti-Zionism",
+    "7b5nv": "Ninja[omen]",
+    "BvJRb": "[omen]popcorn",
+    "NGmMt": "[omen] Pythons",
+    "9BMM5": "[Omen]Tw\u00efG",
+    "rQqRM": "[Omen]Markhan",
+    "57cWc": "\u1855\u1835\u30c7\u6c14\u4ea0\ud83d\udca5[omen]",
+    "BdMrG": "player 3[omen]",
+    "RGjNB": "[OMEN]J",
+    "TfJ3h": "[omen] V",
+    "N5ytc": "\u2156[OmeN]",
+    "MQBtq": "[OMEN] Lost Somewher"
+  },
+  "wins": [
+    {
+      "time": "Sat, 07 Nov 2026 15:34:17 GMT",
+      "map": "Middle East",
+      "players": 35,
+      "gain": "0.05179",
+      "contest": false,
+      "carry": "DKbV7",
+      "carry_gold": 23.22,
+      "payout": [
+        [
+          "DKbV7",
+          23.22
+        ],
+        [
+          "vRnb5",
+          5.3
+        ],
+        [
+          "2LtRW",
+          2.35
+        ],
+        [
+          "CRWyT",
+          2.13
+        ]
+      ],
+      "clan_winners": [
+        "DKbV7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 15:19:00 GMT",
+      "map": "Australia",
+      "players": 22,
+      "gain": "0.02979",
+      "contest": false,
+      "carry": "DKbV7",
+      "carry_gold": 16.91,
+      "payout": [
+        [
+          "DKbV7",
+          16.91
+        ],
+        [
+          "BqLLL",
+          2.09
+        ]
+      ],
+      "clan_winners": [
+        "DKbV7",
+        "BqLLL"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 15:13:07 GMT",
+      "map": "Europe",
+      "players": 55,
+      "gain": "0.08004",
+      "contest": false,
+      "carry": "c2rmm",
+      "carry_gold": 6.89,
+      "payout": [
+        [
+          "c2rmm",
+          6.89
+        ],
+        [
+          "QJL82",
+          4.85
+        ],
+        [
+          "CyLYq",
+          3.72
+        ],
+        [
+          "7rmkd",
+          3.71
+        ],
+        [
+          "RQ5tD",
+          3.68
+        ],
+        [
+          "flU-g",
+          3.54
+        ],
+        [
+          "dJVrc",
+          3.24
+        ],
+        [
+          "2dRJn",
+          3.04
+        ],
+        [
+          "bVQBJ",
+          2.87
+        ],
+        [
+          "DCYq8",
+          2.65
+        ],
+        [
+          "tVRKj",
+          1.74
+        ],
+        [
+          "MbWy9",
+          1.62
+        ],
+        [
+          "Wm79K",
+          1.62
+        ],
+        [
+          "YVJ7w",
+          1.51
+        ],
+        [
+          "WwKM7",
+          1.46
+        ],
+        [
+          "VqCLc",
+          1.34
+        ],
+        [
+          "2MyYg",
+          1.27
+        ],
+        [
+          "gyNqC",
+          1.26
+        ],
+        [
+          "kRrBj",
+          0.57
+        ],
+        [
+          "GW8Cw",
+          0.34
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ],
+      "carry_omen": false
+    },
+    {
+      "time": "Sat, 07 Nov 2026 14:19:49 GMT",
+      "map": "Scandinavia",
+      "players": 27,
+      "gain": "0.03592",
+      "contest": false,
+      "carry": "C7wM7",
+      "carry_gold": 11.18,
+      "payout": [
+        [
+          "C7wM7",
+          11.18
+        ],
+        [
+          "ESXc7",
+          6.59
+        ],
+        [
+          "cqkqm",
+          2.58
+        ],
+        [
+          "EoG-e",
+          1.83
+        ],
+        [
+          "99cGr",
+          0.83
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": false
+    },
+    {
+      "time": "Sat, 07 Nov 2026 14:07:21 GMT",
+      "map": "Mare Nostrum",
+      "players": 40,
+      "gain": "0.05463",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 13.38,
+      "payout": [
+        [
+          "ESXc7",
+          13.38
+        ],
+        [
+          "5yk7t",
+          8.74
+        ],
+        [
+          "hWmQK",
+          7.75
+        ],
+        [
+          "cqkqm",
+          3.5
+        ],
+        [
+          "DVVCk",
+          1.64
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 12:39:18 GMT",
+      "map": "Middle East",
+      "players": 40,
+      "gain": "0.05886",
+      "contest": false,
+      "carry": "7Tbr5",
+      "carry_gold": 27.83,
+      "payout": [
+        [
+          "7Tbr5",
+          27.83
+        ],
+        [
+          "9JqCq",
+          3.97
+        ],
+        [
+          "4SkeY",
+          3.25
+        ],
+        [
+          "mKRm8",
+          2.4
+        ],
+        [
+          "J2dJR",
+          0.54
+        ]
+      ],
+      "clan_winners": [
+        "7Tbr5",
+        "9JqCq",
+        "J2dJR"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 12:08:31 GMT",
+      "map": "Swamp",
+      "players": 35,
+      "gain": "0.04638",
+      "contest": false,
+      "carry": "9JqCq",
+      "carry_gold": 29.45,
+      "payout": [
+        [
+          "9JqCq",
+          29.45
+        ],
+        [
+          "ttgw2",
+          0.55
+        ],
+        [
+          "228YD",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "9JqCq",
+        "228YD"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:58:39 GMT",
+      "map": "Scandinavia",
+      "players": 38,
+      "gain": "0.05565",
+      "contest": false,
+      "carry": "9JqCq",
+      "carry_gold": 30.97,
+      "payout": [
+        [
+          "9JqCq",
+          30.97
+        ],
+        [
+          "vcyq8",
+          3.54
+        ],
+        [
+          "4k2qG",
+          1.48
+        ],
+        [
+          "TYcDv",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "9JqCq"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:53:17 GMT",
+      "map": "Cliffs",
+      "players": 23,
+      "gain": "0.02782",
+      "contest": false,
+      "carry": "8tNRt",
+      "carry_gold": 8.33,
+      "payout": [
+        [
+          "8tNRt",
+          8.33
+        ],
+        [
+          "qr9mB",
+          7.21
+        ],
+        [
+          "2Vjwq",
+          1.57
+        ],
+        [
+          "MtG7L",
+          0.53
+        ],
+        [
+          "gc8KD",
+          0.35
+        ],
+        [
+          "tjQyW",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "8tNRt"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:39:54 GMT",
+      "map": "World 2",
+      "players": 60,
+      "gain": "0.08505",
+      "contest": false,
+      "carry": "DwGLD",
+      "carry_gold": 30.3,
+      "payout": [
+        [
+          "DwGLD",
+          30.3
+        ],
+        [
+          "lQQyG",
+          11.45
+        ],
+        [
+          "BGgwG",
+          7.52
+        ],
+        [
+          "Jg7nL",
+          3.05
+        ],
+        [
+          "Tkc9t",
+          2.67
+        ],
+        [
+          "bQnMm",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "lQQyG",
+        "BGgwG"
+      ],
+      "carry_omen": false
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:39:41 GMT",
+      "map": "World 1",
+      "players": 51,
+      "gain": "0.07123",
+      "contest": false,
+      "carry": "9JqCq",
+      "carry_gold": 30.23,
+      "payout": [
+        [
+          "9JqCq",
+          30.23
+        ],
+        [
+          "QcMw7",
+          8.55
+        ],
+        [
+          "TLgTy",
+          5.98
+        ],
+        [
+          "odiQr",
+          1.23
+        ],
+        [
+          "228YD",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "9JqCq",
+        "228YD"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:39:34 GMT",
+      "map": "Caucasia",
+      "players": 39,
+      "gain": "0.05425",
+      "contest": false,
+      "carry": "QoqgZ",
+      "carry_gold": 11.95,
+      "payout": [
+        [
+          "QoqgZ",
+          11.95
+        ],
+        [
+          "ESXc7",
+          7.86
+        ],
+        [
+          "TqbLJ",
+          2.55
+        ],
+        [
+          "vrDmk",
+          2.41
+        ],
+        [
+          "RKQKJ",
+          2.38
+        ],
+        [
+          "5rgLc",
+          1.72
+        ],
+        [
+          "BNgTg",
+          1.42
+        ],
+        [
+          "YVVTL",
+          1.35
+        ],
+        [
+          "bNTCc",
+          1.31
+        ],
+        [
+          "KvWCL",
+          0.86
+        ],
+        [
+          "jg8YR",
+          0.8
+        ],
+        [
+          "YvYkq",
+          0.39
+        ],
+        [
+          "Tn7NQ",
+          0.01
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": false
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:30:10 GMT",
+      "map": "World 1",
+      "players": 108,
+      "gain": "0.30538",
+      "contest": true,
+      "carry": "TQQbg",
+      "carry_gold": 196.0,
+      "payout": [
+        [
+          "TQQbg",
+          196.0
+        ]
+      ],
+      "clan_winners": [
+        "TQQbg"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:27:59 GMT",
+      "map": "Scandinavia",
+      "players": 22,
+      "gain": "0.02960",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 16.54,
+      "payout": [
+        [
+          "ESXc7",
+          16.54
+        ],
+        [
+          "Dg77y",
+          1.48
+        ],
+        [
+          "wgtgj",
+          0.6
+        ],
+        [
+          "QFolY",
+          0.38
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:23:38 GMT",
+      "map": "Africa",
+      "players": 27,
+      "gain": "0.03897",
+      "contest": false,
+      "carry": "9JqCq",
+      "carry_gold": 15.31,
+      "payout": [
+        [
+          "9JqCq",
+          15.31
+        ],
+        [
+          "qTrBG",
+          9.69
+        ],
+        [
+          "228YD",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "9JqCq",
+        "228YD"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:08:13 GMT",
+      "map": "Mountains 1",
+      "players": 24,
+      "gain": "0.03427",
+      "contest": false,
+      "carry": "9JqCq",
+      "carry_gold": 22.0,
+      "payout": [
+        [
+          "9JqCq",
+          22.0
+        ],
+        [
+          "228YD",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "9JqCq",
+        "228YD"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 11:05:55 GMT",
+      "map": "Middle East",
+      "players": 42,
+      "gain": "0.06082",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 28.21,
+      "payout": [
+        [
+          "ESXc7",
+          28.21
+        ],
+        [
+          "C2TqD",
+          10.79
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 10:57:52 GMT",
+      "map": "South America",
+      "players": 36,
+      "gain": "0.04993",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 30.81,
+      "payout": [
+        [
+          "ESXc7",
+          30.81
+        ],
+        [
+          "RwKnN",
+          1.19
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 10:46:00 GMT",
+      "map": "Africa",
+      "players": 39,
+      "gain": "0.06085",
+      "contest": false,
+      "carry": "ESXc7",
+      "carry_gold": 37.61,
+      "payout": [
+        [
+          "ESXc7",
+          37.61
+        ],
+        [
+          "K9dVV",
+          1.39
+        ]
+      ],
+      "clan_winners": [
+        "ESXc7"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 09:23:03 GMT",
+      "map": "Asia",
+      "players": 43,
+      "gain": "0.06204",
+      "contest": false,
+      "carry": "7rmkd",
+      "carry_gold": 16.29,
+      "payout": [
+        [
+          "7rmkd",
+          16.29
+        ],
+        [
+          "Cd2DL",
+          5.6
+        ],
+        [
+          "7gKBW",
+          5.22
+        ],
+        [
+          "q8tB9",
+          4.77
+        ],
+        [
+          "qnVvN",
+          4.61
+        ],
+        [
+          "vcyq8",
+          2.16
+        ],
+        [
+          "5NB97",
+          1.34
+        ]
+      ],
+      "clan_winners": [
+        "7rmkd"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 09:13:18 GMT",
+      "map": "Middle East",
+      "players": 19,
+      "gain": "0.02790",
+      "contest": false,
+      "carry": "Reaal",
+      "carry_gold": 18.0,
+      "payout": [
+        [
+          "Reaal",
+          18.0
+        ]
+      ],
+      "clan_winners": [
+        "Reaal"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 08:49:55 GMT",
+      "map": "Desert",
+      "players": 21,
+      "gain": "0.03097",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 11.66,
+      "payout": [
+        [
+          "RMv7n",
+          11.66
+        ],
+        [
+          "kPFQM",
+          4.81
+        ],
+        [
+          "t8Qbn",
+          3.53
+        ],
+        [
+          "GVNC2",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 08:37:38 GMT",
+      "map": "Mountains 1",
+      "players": 12,
+      "gain": "0.01702",
+      "contest": false,
+      "carry": "RMv7n",
+      "carry_gold": 5.53,
+      "payout": [
+        [
+          "RMv7n",
+          5.53
+        ],
+        [
+          "j98JW",
+          5.16
+        ],
+        [
+          "tYR8m",
+          0.31
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ],
+      "carry_omen": true
+    },
+    {
+      "time": "Sat, 07 Nov 2026 08:30:51 GMT",
+      "map": "Pond",
+      "players": 19,
+      "gain": "0.02321",
+      "contest": false,
+      "carry": "VbNbB",
+      "carry_gold": 5.7,
+      "payout": [
+        [
+          "VbNbB",
+          5.7
+        ],
+        [
+          "RMv7n",
+          3.88
+        ],
+        [
+          "gjk9b",
+          2.53
+        ],
+        [
+          "vJ8m8",
+          1.53
+        ],
+        [
+          "MvjCT",
+          0.75
+        ],
+        [
+          "Rn9rv",
+          0.61
+        ],
+        [
+          "9McBR",
+          0.0
+        ]
+      ],
+      "clan_winners": [
+        "RMv7n"
+      ],
+      "carry_omen": false
+    },
+    {
+      "time": "Sat, 07 Nov 2026 08:13:44 GMT",
+      "map": "Middle East",
+      "players": 28,
+      "gain": "0.04175",
+      "contest": false,
+      "carry": "WcW5G",
+      "carry_gold": 14.04,
+      "payout": [
+        [
+          "WcW5G",
+          14.04
+        ],
+        [
+          "Reaal",
+          10.55
+        ],
+        [
+          "5rRrT",
+          2.41
+        ]
+      ],
+      "clan_winners": [
+        "Reaal",
+        "5rRrT"
+      ],
+      "carry_omen": false
+    }
+  ]
+}
