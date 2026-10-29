@@ -35,12 +35,21 @@ jobs:
           cd "$work"
           git checkout -B data
 
+          state="$work/state.json"
+          slots="$work/d"
+          mkdir -p "$slots"
+
           deadline=$(( $(date +%s) + 20700 ))
           while [ "$(date +%s)" -lt "$deadline" ]; do
-            python3 "$GITHUB_WORKSPACE/tracker.py" "$work/data.json" || true
+            python3 "$GITHUB_WORKSPACE/tracker.py" "$state" "$slots" || true
 
-            if [ -n "$(git status --porcelain -- data.json)" ]; then
-              git add data.json
+            (
+              cd "$slots"
+              ls -1 *.json 2>/dev/null | sort -n | head -n -20 | xargs -r rm -f
+            )
+
+            if [ -n "$(git status --porcelain -- state.json d)" ]; then
+              git add state.json d
               git commit --amend --no-edit -q || git commit -m "Update OMEN carry data" -q
               for attempt in 1 2 3; do
                 if git push --force origin HEAD:data; then break; fi
@@ -48,5 +57,5 @@ jobs:
               done
             fi
 
-            sleep 30
+            sleep 25
           done

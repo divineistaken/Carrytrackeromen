@@ -54,7 +54,7 @@
     text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted);
     border-bottom: 1px solid var(--border);
   }
-  ol.carries { list-style: none; margin: 0; padding: 6px 0; counter-reset: c; }
+  ol.carries { list-style: none; margin: 0; padding: 6px 0; }
   ol.carries li {
     display: flex; align-items: center; gap: 12px;
     padding: 9px 16px; border-bottom: 1px solid #21262d;
@@ -92,7 +92,7 @@
   <section class="stats">
     <div class="stat"><b id="total-wins">-</b><span>OMEN wins tracked</span></div>
     <div class="stat"><b id="total-carriers">-</b><span>players with carries</span></div>
-    <div class="stat"><b id="updated">-</b><span>data updated (UTC)</span></div>
+    <div class="stat"><b id="updated">-</b><span>last checked (UTC)</span></div>
   </section>
 
   <section class="panel">
@@ -121,52 +121,62 @@
 </main>
 
 <script>
-const SOURCES = [
-  "https://raw.githack.com/divineistaken/Carrytrackeromen/data/data.json",
-  "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/data.json",
-  "https://cdn.jsdelivr.net/gh/divineistaken/Carrytrackeromen@data/data.json"
+const SLOT_MS = 30000;
+const SLOT_BASE = "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/d/";
+const STATE_SOURCES = [
+  "https://raw.githack.com/divineistaken/Carrytrackeromen/data/state.json",
+  "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/state.json"
 ];
 const REFRESH_MS = 30000;
 const MAX_ROWS = 25;
 
 const $ = (id) => document.getElementById(id);
 let lastData = null;
-let lastCheck = null;
 
-function bust(url) {
-  return url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
-}
-
-async function fetchSource(url) {
-  const res = await fetch(bust(url), { cache: "no-store" });
+async function getJson(url) {
+  const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(url + " -> " + res.status);
   const data = await res.json();
   if (!data || !Array.isArray(data.wins)) throw new Error("bad payload");
   return data;
 }
 
+function slotUrls() {
+  const now = Date.now();
+  const newest = Math.floor(now / SLOT_MS) * SLOT_MS;
+  const urls = [];
+  for (let i = 0; i < 4; i++) {
+    urls.push(SLOT_BASE + (newest - i * SLOT_MS) + ".json");
+  }
+  return urls;
+}
+
 async function loadData() {
-  const results = await Promise.allSettled(SOURCES.map(fetchSource));
-  const valid = results
+  const slots = await Promise.allSettled(slotUrls().map(getJson));
+  const valid = slots
     .filter((r) => r.status === "fulfilled")
     .map((r) => r.value)
     .sort((a, b) => {
       const wa = a.total_wins || 0, wb = b.total_wins || 0;
       if (wb !== wa) return wb - wa;
-      return (Date.parse(b.updated) || 0) - (Date.parse(a.updated) || 0);
+      return (Date.parse((b.checked || "").replace(" UTC", "Z")) || 0)
+           - (Date.parse((a.checked || "").replace(" UTC", "Z")) || 0);
     });
-  if (!valid.length) throw new Error("all sources failed");
-  return valid[0];
+  if (valid.length) return valid[0];
+
+  const states = await Promise.allSettled(STATE_SOURCES.map(getJson));
+  const fallback = states.find((r) => r.status === "fulfilled");
+  if (fallback) return fallback.value;
+  throw new Error("all sources failed");
 }
 
 function render(data) {
   lastData = data;
-  lastCheck = new Date();
 
   $("total-wins").textContent = data.total_wins ?? 0;
   const carries = Object.entries(data.carries || {});
   $("total-carriers").textContent = carries.length;
-  $("updated").textContent = data.updated || "-";
+  $("updated").textContent = data.checked || data.updated || "-";
 
   const list = $("carries");
   if (!carries.length) {
@@ -194,8 +204,7 @@ function render(data) {
       </tr>`).join("");
   }
 
-  $("dot").className = "dot";
-  $("status").textContent = "live";
+  setStatus("live", false);
 }
 
 function escapeHtml(value) {
@@ -211,8 +220,7 @@ function setStatus(text, stale) {
 
 async function refresh() {
   try {
-    const data = await loadData();
-    render(data);
+    render(await loadData());
   } catch (err) {
     console.error(err);
     if (!lastData) {
