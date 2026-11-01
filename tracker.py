@@ -16,6 +16,7 @@ import sys
 import time
 import urllib.request
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 LOG_URL = "https://territorial.io/log/team"
@@ -184,13 +185,30 @@ def utc_now():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
 
+def time_key(record):
+    try:
+        return parsedate_to_datetime(record.get("time", "")).timestamp()
+    except (TypeError, ValueError, OverflowError):
+        return 0.0
+
+
+def is_omen_carry(win, names):
+    code = win.get("carry")
+    if not code:
+        return False
+    display = names.get(code)
+    if display:
+        return "[omen]" in display.lower()
+    return code in win.get("clan_winners", [])
+
+
 def build_summary(state, checked, names=None):
     names = names or {}
     wins = state.get("wins", [])
     total, non_contest, contest = {}, {}, {}
     for win in wins:
         name = win.get("carry")
-        if not name:
+        if not name or not is_omen_carry(win, names):
             continue
         total[name] = total.get(name, 0) + 1
         bucket = contest if win.get("contest") else non_contest
@@ -208,7 +226,10 @@ def build_summary(state, checked, names=None):
         "carries_noncontest": ordered(non_contest),
         "carries_contest": ordered(contest),
         "names": {name: names[name] for name in total if name in names},
-        "wins": wins[:RECENT_WINS],
+        "wins": [
+            {**win, "carry_omen": is_omen_carry(win, names)}
+            for win in wins[:RECENT_WINS]
+        ],
     }
 
 
@@ -245,20 +266,19 @@ def main():
             wins[key] = record
             added += 1
 
-    ordered = sorted(wins.values(), key=lambda w: w["time"], reverse=True)[:MAX_WINS]
+    ordered = sorted(wins.values(), key=time_key, reverse=True)[:MAX_WINS]
 
     names_path = state_path.with_name("names.json")
     names = load_json(names_path)
     names, name_added = resolve_names(names, {w["carry"] for w in ordered})
     write_if_changed(names_path, names)
 
-    changed = False
-    if added:
-        state = {"clan": CLAN, "updated": utc_now(), "wins": ordered}
-        changed = write_if_changed(state_path, state)
-    elif not state:
-        state = {"clan": CLAN, "updated": utc_now(), "wins": ordered}
-        changed = write_if_changed(state_path, state)
+    for win in ordered:
+        win["carry_omen"] = is_omen_carry(win, names)
+
+    updated = utc_now() if (added or not state) else state.get("updated", utc_now())
+    state = {"clan": CLAN, "updated": updated, "names": names, "wins": ordered}
+    changed = write_if_changed(state_path, state)
 
     if state:
         history = {
@@ -269,6 +289,7 @@ def main():
                     "map": w.get("map", ""),
                     "carry": w.get("carry", ""),
                     "contest": bool(w.get("contest")),
+                    "carry_omen": is_omen_carry(w, names),
                 }
                 for w in state.get("wins", [])
             ],

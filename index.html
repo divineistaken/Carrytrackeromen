@@ -25,7 +25,7 @@
     padding: 32px 16px 64px;
   }
   main { max-width: 860px; margin: 0 auto; }
-  header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
   h1 { font-size: 26px; margin: 0; letter-spacing: -0.5px; }
   h1 span { color: var(--accent); }
   .wip {
@@ -33,8 +33,6 @@
     color: var(--muted); border: 1px solid var(--border);
     border-radius: 999px; padding: 2px 9px;
   }
-  .sub { color: var(--muted); margin: 6px 0 24px; font-size: 13px; }
-  .sub a { color: var(--muted); }
   .stats {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px; margin-bottom: 24px;
@@ -86,6 +84,10 @@
   tr:last-child td { border-bottom: 0; }
   td.carry { color: var(--accent); font-weight: 600; }
   .uname { color: var(--muted); font-weight: 400; }
+  .random { color: var(--muted); font-style: italic; }
+  .table-wrap { overflow-x: auto; }
+  th.num.points, td.num.points { color: var(--green); }
+  td.num.points { font-weight: 700; }
   .empty { padding: 28px 16px; color: var(--muted); text-align: center; }
   footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
@@ -99,14 +101,12 @@
     <h1>OMEN <span>Carries</span></h1>
     <span class="wip">work in progress</span>
   </header>
-  <p class="sub">
-    tracking <a href="https://territorial.io/log/team" target="_blank" rel="noopener">territorial.io/log/team</a>
-    &middot; wins by clan <b>[OMEN]</b> only
-  </p>
-
   <section class="stats">
     <div class="stat"><b id="total-wins">-</b><span>OMEN wins tracked</span></div>
-    <div class="stat"><b id="total-carriers">-</b><span>players with carries</span></div>
+    <div class="stat"><b id="total-carriers">-</b><span>OMEN players with carries</span></div>
+    <div class="stat"><b id="non-points">-</b><span>non-contest pts (×1)</span></div>
+    <div class="stat"><b id="contest-points">-</b><span>contest pts (×3)</span></div>
+    <div class="stat"><b id="total-points">-</b><span>total points</span></div>
     <div class="stat"><b id="updated">-</b><span>last checked (UTC)</span></div>
   </section>
 
@@ -121,31 +121,36 @@
       </div>
     </div>
     <p class="range-note" id="range-note"></p>
-    <table class="carries">
-      <thead>
-        <tr>
-          <th>Player</th>
-          <th class="num">Non-contest</th>
-          <th class="num">Contest</th>
-          <th class="num total">Total</th>
-        </tr>
-      </thead>
-      <tbody id="carries">
-        <tr><td colspan="4" class="empty">loading...</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table class="carries">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th class="num">Non-contest</th>
+            <th class="num">Contest</th>
+            <th class="num total">Total</th>
+            <th class="num points">Points</th>
+          </tr>
+        </thead>
+        <tbody id="carries">
+          <tr><td colspan="5" class="empty">loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <section class="panel">
     <h2>Recent OMEN wins</h2>
-    <table>
-      <thead>
-        <tr><th>Time (UTC)</th><th>Map</th><th>Carry</th></tr>
-      </thead>
-      <tbody id="wins">
-        <tr><td colspan="3" class="empty">loading...</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Time (UTC)</th><th>Map</th><th>Carry</th></tr>
+        </thead>
+        <tbody id="wins">
+          <tr><td colspan="3" class="empty">loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <footer>
@@ -224,7 +229,7 @@ function carryStats(data) {
     const total = {}, non = {}, con = {};
     for (const w of wins) {
       const name = w.carry;
-      if (!name) continue;
+      if (!name || w.carry_omen === false) continue;
       total[name] = (total[name] || 0) + 1;
       if (w.contest) con[name] = (con[name] || 0) + 1;
       else non[name] = (non[name] || 0) + 1;
@@ -270,7 +275,7 @@ function statsForRange(data) {
   const total = {}, non = {}, con = {};
   for (const w of filteredWins(data)) {
     const name = w.carry;
-    if (!name) continue;
+    if (!name || w.carry_omen === false) continue;
     total[name] = (total[name] || 0) + 1;
     if (w.contest) con[name] = (con[name] || 0) + 1;
     else non[name] = (non[name] || 0) + 1;
@@ -292,14 +297,38 @@ function playerLabel(data, code) {
   return escapeHtml(code) + suffix;
 }
 
+function sumCounts(counts) {
+  return Object.values(counts || {}).reduce((a, b) => a + b, 0);
+}
+
+function pointsFor(stats) {
+  if (!stats.non && !stats.con) return null;
+  const non = sumCounts(stats.non);
+  const con = sumCounts(stats.con);
+  return { non, con: con * 3, total: non + con * 3 };
+}
+
+function playerPoints(stats, name) {
+  if (!stats.non && !stats.con) return null;
+  return ((stats.non || {})[name] || 0) + ((stats.con || {})[name] || 0) * 3;
+}
+
 function render(data) {
   lastData = data;
 
   $("total-wins").textContent = data.total_wins ?? 0;
   const stats = activeRange ? statsForRange(data) : carryStats(data);
-  const names = Object.keys(stats.total).sort((a, b) =>
-    (stats.total[b] - stats.total[a]) || a.toLowerCase().localeCompare(b.toLowerCase()));
+  const names = Object.keys(stats.total).sort((a, b) => {
+    const pa = playerPoints(stats, a) || 0;
+    const pb = playerPoints(stats, b) || 0;
+    return (pb - pa) || (stats.total[b] - stats.total[a])
+      || a.toLowerCase().localeCompare(b.toLowerCase());
+  });
+  const pts = pointsFor(stats);
   $("total-carriers").textContent = names.length;
+  $("non-points").textContent = pts ? pts.non : "—";
+  $("contest-points").textContent = pts ? pts.con : "—";
+  $("total-points").textContent = pts ? pts.total : "—";
   $("updated").textContent = data.checked || data.updated || "-";
 
   const note = $("range-note");
@@ -312,15 +341,19 @@ function render(data) {
 
   const list = $("carries");
   if (!names.length) {
-    list.innerHTML = '<tr><td colspan="4" class="empty">no OMEN carries in this range</td></tr>';
+    list.innerHTML = '<tr><td colspan="5" class="empty">no OMEN carries in this range</td></tr>';
   } else {
-    list.innerHTML = names.map((name) => `
+    list.innerHTML = names.map((name) => {
+      const playerPts = playerPoints(stats, name);
+      return `
       <tr>
         <td class="name">${playerLabel(data, name)}</td>
         <td class="num">${stats.non ? (stats.non[name] || 0) : "—"}</td>
         <td class="num">${stats.con ? (stats.con[name] || 0) : "—"}</td>
         <td class="num total">${stats.total[name] || 0}</td>
-      </tr>`).join("");
+        <td class="num points">${playerPts === null ? "—" : playerPts}</td>
+      </tr>`;
+    }).join("");
   }
 
   const wins = (activeRange ? filteredWins(data) : (data.wins || [])).slice(0, MAX_ROWS);
@@ -328,12 +361,17 @@ function render(data) {
   if (!wins.length) {
     tbody.innerHTML = '<tr><td colspan="3" class="empty">no OMEN wins tracked yet</td></tr>';
   } else {
-    tbody.innerHTML = wins.map((w) => `
+    tbody.innerHTML = wins.map((w) => {
+      const carry = w.carry_omen === false
+        ? '<span class="random">non omen/random carry</span>'
+        : playerLabel(data, w.carry);
+      return `
       <tr>
         <td>${escapeHtml(w.time)}</td>
         <td>${escapeHtml(w.map)}</td>
-        <td class="carry">${playerLabel(data, w.carry)}</td>
-      </tr>`).join("");
+        <td class="carry">${carry}</td>
+      </tr>`;
+    }).join("");
   }
 
   setStatus("live", false);
