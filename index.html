@@ -130,7 +130,22 @@
   .graph svg { display: block; width: 100%; height: auto; }
   .graph-caption { color: var(--muted); font-size: 11px; margin-top: 4px; }
   .graph-empty { color: var(--muted); font-size: 13px; padding: 12px 0; }
-  footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
+  footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .refresh {
+    background: var(--panel); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer;
+  }
+  .refresh:hover { border-color: var(--accent); color: var(--accent); }
+  .refresh:disabled { opacity: 0.5; cursor: default; }
+  .pull {
+    position: fixed; top: 0; left: 50%; transform: translate(-50%, -100%);
+    background: var(--panel); border: 1px solid var(--border); border-top: 0;
+    border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
+    padding: 6px 14px; font-size: 12px; color: var(--muted); z-index: 30;
+    transition: transform 0.15s ease; pointer-events: none;
+  }
+  .pull.show { transform: translate(-50%, 0); }
+  .pull.ready { color: var(--accent); border-color: var(--accent); }
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
   .dot.stale { background: var(--red); }
   .error { color: var(--red); }
@@ -198,7 +213,9 @@
   <footer>
     <span><span class="dot" id="dot"></span><span id="status">connecting...</span></span>
     <span>auto-refresh every 30s</span>
+    <button id="refresh" class="refresh" type="button">Refresh</button>
   </footer>
+  <div class="pull" id="pull" aria-hidden="true">pull to refresh</div>
 
   <div class="modal" id="profile" hidden>
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="profile-name">
@@ -235,7 +252,10 @@
 
 <script>
 const SLOT_MS = 30000;
-const SLOT_BASE = "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/d/";
+const SLOT_BASES = [
+  "https://raw.githack.com/divineistaken/Carrytrackeromen/data/d/",
+  "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/d/"
+];
 const STATE_SOURCES = [
   "https://raw.githack.com/divineistaken/Carrytrackeromen/data/state.json",
   "https://raw.githubusercontent.com/divineistaken/Carrytrackeromen/data/state.json"
@@ -255,8 +275,14 @@ let activeRange = null;
 let activePlayer = null;
 let searchQuery = "";
 
+function parseUtc(value) {
+  if (!value) return 0;
+  return Date.parse(String(value).replace(" ", "T").replace(" UTC", "Z")) || 0;
+}
+
 async function getJson(url) {
-  const res = await fetch(url, { cache: "no-store" });
+  const bust = (url.includes("?") ? "&" : "?") + "t=" + Date.now();
+  const res = await fetch(url + bust, { cache: "no-store" });
   if (!res.ok) throw new Error(url + " -> " + res.status);
   const data = await res.json();
   if (!data || !Array.isArray(data.wins)) throw new Error("bad payload");
@@ -267,8 +293,10 @@ function slotUrls() {
   const now = Date.now();
   const newest = Math.floor(now / SLOT_MS) * SLOT_MS;
   const urls = [];
-  for (let i = 0; i < 4; i++) {
-    urls.push(SLOT_BASE + (newest - i * SLOT_MS) + ".json");
+  for (const base of SLOT_BASES) {
+    for (let i = 0; i < 4; i++) {
+      urls.push(base + (newest - i * SLOT_MS) + ".json");
+    }
   }
   return urls;
 }
@@ -281,8 +309,7 @@ async function loadData() {
     .sort((a, b) => {
       const wa = a.total_wins || 0, wb = b.total_wins || 0;
       if (wb !== wa) return wb - wa;
-      return (Date.parse((b.checked || "").replace(" UTC", "Z")) || 0)
-           - (Date.parse((a.checked || "").replace(" UTC", "Z")) || 0);
+      return parseUtc(b.checked) - parseUtc(a.checked);
     });
   if (valid.length) return valid[0];
 
@@ -578,7 +605,9 @@ function render(data) {
   }
 
   if (activePlayer) renderProfile();
-  setStatus("live", false);
+  const checkedAt = parseUtc(data.checked || data.updated);
+  const stale = checkedAt > 0 && Date.now() - checkedAt > 3 * 60 * 1000;
+  setStatus(stale ? `stale · last update ${data.checked || data.updated}` : "live", stale);
 }
 
 function escapeHtml(value) {
@@ -621,11 +650,16 @@ function clearRange() {
   if (lastData) render(lastData);
 }
 
-async function refresh() {
+async function refresh(force) {
+  const button = $("refresh");
+  if (force) {
+    button.disabled = true;
+    setStatus("refreshing…", false);
+  }
   try {
     if (activeRange || activePlayer) {
       try {
-        await loadHistory(false);
+        await loadHistory(!!force);
       } catch (err) {
         console.error(err);
       }
@@ -637,8 +671,61 @@ async function refresh() {
       $("carries").innerHTML = '<tr><td colspan="4" class="empty error">could not load data</td></tr>';
     }
     setStatus("offline - retrying", true);
+  } finally {
+    if (force) button.disabled = false;
   }
 }
+
+let pullStart = null;
+let pullDistance = 0;
+const PULL_THRESHOLD = 70;
+
+function resetPull() {
+  pullDistance = 0;
+  const el = $("pull");
+  el.style.transform = "";
+  el.classList.remove("show", "ready");
+  el.textContent = "pull to refresh";
+}
+
+window.addEventListener("touchstart", (e) => {
+  if (!$("profile").hidden || window.scrollY > 0 || e.touches.length !== 1) return;
+  pullStart = e.touches[0].clientY;
+  pullDistance = 0;
+}, { passive: true });
+
+window.addEventListener("touchmove", (e) => {
+  if (pullStart === null || e.touches.length !== 1) return;
+  if (!$("profile").hidden || window.scrollY > 0) {
+    pullStart = null;
+    resetPull();
+    return;
+  }
+  pullDistance = e.touches[0].clientY - pullStart;
+  if (pullDistance <= 0) {
+    resetPull();
+    return;
+  }
+  e.preventDefault();
+  const el = $("pull");
+  el.style.transform = `translate(-50%, ${Math.min(pullDistance, PULL_THRESHOLD)}px)`;
+  el.classList.add("show");
+  el.classList.toggle("ready", pullDistance >= PULL_THRESHOLD);
+  el.textContent = pullDistance >= PULL_THRESHOLD ? "release to refresh" : "pull to refresh";
+}, { passive: false });
+
+window.addEventListener("touchend", () => {
+  if (pullStart === null) return;
+  const ready = pullDistance >= PULL_THRESHOLD;
+  pullStart = null;
+  resetPull();
+  if (ready) refresh(true);
+}, { passive: true });
+
+window.addEventListener("touchcancel", () => {
+  pullStart = null;
+  resetPull();
+});
 
 $("apply").addEventListener("click", applyRange);
 $("clear").addEventListener("click", clearRange);
@@ -665,6 +752,7 @@ $("profile-close").addEventListener("click", closeProfile);
 $("profile").addEventListener("click", (e) => {
   if (e.target === $("profile")) closeProfile();
 });
+$("refresh").addEventListener("click", () => refresh(true));
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && activePlayer) closeProfile();
 });

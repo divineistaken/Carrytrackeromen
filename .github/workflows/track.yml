@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: omen-tracker
@@ -27,6 +28,7 @@ jobs:
         env:
           TTIO_ACCOUNT: ${{ secrets.TTIO_ACCOUNT }}
           TTIO_PASSWORD: ${{ secrets.TTIO_PASSWORD }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -uo pipefail
           git config --global user.name "omen-tracker"
@@ -42,7 +44,10 @@ jobs:
           slots="$work/d"
           mkdir -p "$slots"
 
-          deadline=$(( $(date +%s) + 20700 ))
+          start=$(date +%s)
+          deadline=$(( start + 20700 ))
+          dispatch_at=$(( start + 18000 ))
+          dispatched=0
           while [ "$(date +%s)" -lt "$deadline" ]; do
             python3 "$GITHUB_WORKSPACE/tracker.py" "$state" "$slots" || true
 
@@ -60,5 +65,15 @@ jobs:
               done
             fi
 
+            if [ "$dispatched" -eq 0 ] && [ "$(date +%s)" -ge "$dispatch_at" ]; then
+              if gh workflow run track.yml -R "$GITHUB_REPOSITORY" --ref main; then
+                dispatched=1
+              fi
+            fi
+
             sleep 25
           done
+
+          if [ "$dispatched" -eq 0 ]; then
+            gh workflow run track.yml -R "$GITHUB_REPOSITORY" --ref main || true
+          fi

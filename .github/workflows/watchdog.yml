@@ -1,0 +1,27 @@
+name: Collector watchdog
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+concurrency:
+  group: omen-watchdog
+  cancel-in-progress: true
+
+jobs:
+  ensure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start collector if idle
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          active=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/track.yml/runs?per_page=30" --jq '[.workflow_runs[] | select(.status == "in_progress" or .status == "queued" or .status == "waiting" or .status == "requested" or .status == "pending")] | length')
+          if [ "$active" -eq 0 ]; then
+            gh workflow run track.yml -R "$GITHUB_REPOSITORY" --ref main
+          fi
