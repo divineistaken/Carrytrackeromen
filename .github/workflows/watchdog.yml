@@ -3,6 +3,9 @@ name: Collector watchdog
 on:
   schedule:
     - cron: "*/10 * * * *"
+  workflow_run:
+    workflows: ["Track OMEN carries"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +19,9 @@ jobs:
   ensure:
     runs-on: ubuntu-latest
     steps:
+      - name: Let a queued run appear
+        run: sleep 20
+
       - name: Start collector if idle
         env:
           GH_TOKEN: ${{ github.token }}
