@@ -72,6 +72,12 @@
     border-radius: 6px; padding: 5px 10px; font: inherit; font-size: 12px; cursor: pointer;
   }
   .range button:hover { border-color: var(--accent); color: var(--accent); }
+  .search {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12px;
+    min-width: 180px; flex: 1 1 180px; max-width: 260px;
+  }
+  .search:focus { outline: none; border-color: var(--accent); }
   .range-note { margin: 0; padding: 8px 16px; font-size: 12px; color: var(--muted); border-bottom: 1px solid #21262d; }
   .range-note:empty { display: none; }
   .name { font-weight: 600; }
@@ -88,7 +94,42 @@
   .table-wrap { overflow-x: auto; }
   th.num.points, td.num.points { color: var(--green); }
   td.num.points { font-weight: 700; }
+  tr.clickable { cursor: pointer; }
+  tr.clickable:hover { background: #1c2129; }
+  .player-link { color: inherit; text-decoration: none; }
+  .player-link:hover { text-decoration: underline; }
+  td.carry[data-player] { cursor: pointer; }
   .empty { padding: 28px 16px; color: var(--muted); text-align: center; }
+  .modal {
+    position: fixed; inset: 0; z-index: 20; display: flex; align-items: flex-start;
+    justify-content: center; padding: 32px 16px; overflow-y: auto;
+    background: rgba(1, 4, 9, 0.72);
+  }
+  .modal[hidden] { display: none; }
+  .modal-card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    width: 100%; max-width: 720px; padding: 20px;
+  }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .modal-head h2 { margin: 0; font-size: 20px; letter-spacing: -0.3px; }
+  .modal-sub { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+  .modal-close {
+    background: transparent; border: 0; color: var(--muted); font: inherit;
+    font-size: 24px; line-height: 1; cursor: pointer; padding: 0 4px;
+  }
+  .modal-close:hover { color: var(--text); }
+  .profile-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px; margin: 16px 0 4px;
+  }
+  .profile-stats .stat { background: var(--bg); }
+  .modal-section {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--muted); margin: 18px 0 8px;
+  }
+  .graph svg { display: block; width: 100%; height: auto; }
+  .graph-caption { color: var(--muted); font-size: 11px; margin-top: 4px; }
+  .graph-empty { color: var(--muted); font-size: 13px; padding: 12px 0; }
   footer { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: 1px; }
   .dot.stale { background: var(--red); }
@@ -113,6 +154,7 @@
   <section class="panel">
     <div class="panel-head">
       <h2>Carries</h2>
+      <input type="search" id="search" class="search" placeholder="Search player or account…" autocomplete="off">
       <div class="range">
         <label>From <input type="datetime-local" id="from" step="1"></label>
         <label>To <input type="datetime-local" id="to" step="1"></label>
@@ -157,6 +199,38 @@
     <span><span class="dot" id="dot"></span><span id="status">connecting...</span></span>
     <span>auto-refresh every 30s</span>
   </footer>
+
+  <div class="modal" id="profile" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="profile-name">
+      <div class="modal-head">
+        <div>
+          <h2 id="profile-name">-</h2>
+          <p class="modal-sub" id="profile-sub"></p>
+        </div>
+        <button class="modal-close" id="profile-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="profile-stats">
+        <div class="stat"><b id="p-rank">-</b><span>rank</span></div>
+        <div class="stat"><b id="p-points">-</b><span>points</span></div>
+        <div class="stat"><b id="p-total">-</b><span>carries</span></div>
+        <div class="stat"><b id="p-non">-</b><span>non-contest</span></div>
+        <div class="stat"><b id="p-con">-</b><span>contest</span></div>
+      </div>
+      <h3 class="modal-section">Cumulative points</h3>
+      <div class="graph" id="p-graph"></div>
+      <h3 class="modal-section">Recent wins</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Time (UTC)</th><th>Map</th><th>Type</th><th class="num points">Pts</th></tr>
+          </thead>
+          <tbody id="p-wins">
+            <tr><td colspan="4" class="empty">-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
@@ -178,6 +252,8 @@ let lastData = null;
 let history = null;
 let historyAt = 0;
 let activeRange = null;
+let activePlayer = null;
+let searchQuery = "";
 
 async function getJson(url) {
   const res = await fetch(url, { cache: "no-store" });
@@ -313,19 +389,143 @@ function playerPoints(stats, name) {
   return ((stats.non || {})[name] || 0) + ((stats.con || {})[name] || 0) * 3;
 }
 
+function currentStats(data) {
+  return activeRange ? statsForRange(data) : carryStats(data);
+}
+
+function rankOf(stats, code) {
+  const target = playerPoints(stats, code) || 0;
+  let better = 0;
+  for (const name of Object.keys(stats.total || {})) {
+    if (name !== code && (playerPoints(stats, name) || 0) > target) better++;
+  }
+  return better + 1;
+}
+
+function shortDate(value) {
+  const t = Date.parse(value);
+  if (isNaN(t)) return String(value);
+  const d = new Date(t);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+
+function renderGraph(wins) {
+  const el = $("p-graph");
+  if (!wins.length) {
+    el.innerHTML = '<div class="graph-empty">no wins in this range</div>';
+    return;
+  }
+  const asc = [...wins].sort((a, b) =>
+    (Date.parse(a.time) || 0) - (Date.parse(b.time) || 0));
+  let cumulative = 0;
+  const points = asc.map((w) => {
+    cumulative += w.contest ? 3 : 1;
+    return cumulative;
+  });
+  const max = points[points.length - 1] || 1;
+  const W = 600, H = 160, padX = 8, padTop = 18, padBottom = 12;
+  const n = points.length;
+  const x = (i) => n === 1 ? W / 2 : padX + (W - 2 * padX) * i / (n - 1);
+  const y = (v) => H - padBottom - (H - padTop - padBottom) * (v / max);
+  const line = points.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const area = `${padX},${H - padBottom} ${line} ${W - padX},${H - padBottom}`;
+  const dots = n <= 40
+    ? points.map((v, i) =>
+        `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2.5" fill="#f0883e"><title>${escapeHtml(asc[i].time)} · ${v} pts</title></circle>`).join("")
+    : "";
+  el.innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="cumulative points">
+      <line x1="${padX}" y1="${H - padBottom}" x2="${W - padX}" y2="${H - padBottom}" stroke="#30363d" stroke-width="1"/>
+      <polygon points="${area}" fill="rgba(240,136,62,0.12)"/>
+      <polyline points="${line}" fill="none" stroke="#f0883e" stroke-width="2"/>
+      ${dots}
+      <text x="${padX}" y="${padTop - 6}" fill="#8b949e" font-size="10">${max} pts</text>
+    </svg>
+    <div class="graph-caption">${escapeHtml(shortDate(asc[0].time))} → ${escapeHtml(shortDate(asc[n - 1].time))} · ${asc.length} win${asc.length === 1 ? "" : "s"}</div>`;
+}
+
+function renderProfile() {
+  const data = lastData;
+  if (!data || !activePlayer) return;
+  const stats = currentStats(data);
+  const code = activePlayer;
+  const display = (data.names || {})[code];
+  const pts = playerPoints(stats, code) || 0;
+  const non = (stats.non || {})[code] || 0;
+  const con = (stats.con || {})[code] || 0;
+  const total = (stats.total || {})[code] || 0;
+  $("profile-name").textContent = display && display !== code ? display : code;
+  $("profile-sub").textContent = `${code} · ${activeRange ? rangeText() : "all time"}`;
+  $("p-rank").textContent = "#" + rankOf(stats, code);
+  $("p-points").textContent = pts;
+  $("p-total").textContent = total;
+  $("p-non").textContent = non;
+  $("p-con").textContent = con;
+
+  const wins = mergedWins(data)
+    .filter((w) => w.carry === code && w.carry_omen !== false && inRange(w))
+    .sort((a, b) => (Date.parse(b.time) || 0) - (Date.parse(a.time) || 0));
+  renderGraph(wins);
+
+  const tbody = $("p-wins");
+  if (!wins.length) {
+    tbody.innerHTML = '<tr><td colspan="4" class="empty">no wins in this range</td></tr>';
+  } else {
+    tbody.innerHTML = wins.slice(0, 20).map((w) => `
+      <tr>
+        <td>${escapeHtml(w.time)}</td>
+        <td>${escapeHtml(w.map)}</td>
+        <td>${w.contest ? "Contest" : "Non-contest"}</td>
+        <td class="num points">${w.contest ? 3 : 1}</td>
+      </tr>`).join("");
+  }
+}
+
+async function openProfile(code) {
+  if (!lastData) return;
+  activePlayer = code;
+  document.body.style.overflow = "hidden";
+  $("profile").hidden = false;
+  $("profile-name").textContent = ((lastData.names || {})[code]) || code;
+  $("profile-sub").textContent = "loading…";
+  $("p-wins").innerHTML = '<tr><td colspan="4" class="empty">loading…</td></tr>';
+  $("p-graph").innerHTML = "";
+  $("profile-close").focus();
+  try {
+    await loadHistory(false);
+  } catch (err) {
+    console.error(err);
+  }
+  renderProfile();
+}
+
+function closeProfile() {
+  activePlayer = null;
+  document.body.style.overflow = "";
+  $("profile").hidden = true;
+}
+
 function render(data) {
   lastData = data;
 
   $("total-wins").textContent = data.total_wins ?? 0;
-  const stats = activeRange ? statsForRange(data) : carryStats(data);
-  const names = Object.keys(stats.total).sort((a, b) => {
+  const stats = currentStats(data);
+  const allNames = Object.keys(stats.total).sort((a, b) => {
     const pa = playerPoints(stats, a) || 0;
     const pb = playerPoints(stats, b) || 0;
     return (pb - pa) || (stats.total[b] - stats.total[a])
       || a.toLowerCase().localeCompare(b.toLowerCase());
   });
+  const names = searchQuery
+    ? allNames.filter((name) => {
+        const display = (data.names || {})[name] || "";
+        return name.toLowerCase().includes(searchQuery)
+          || display.toLowerCase().includes(searchQuery);
+      })
+    : allNames;
   const pts = pointsFor(stats);
-  $("total-carriers").textContent = names.length;
+  $("total-carriers").textContent = allNames.length;
   $("non-points").textContent = pts ? pts.non : "—";
   $("contest-points").textContent = pts ? pts.con : "—";
   $("total-points").textContent = pts ? pts.total : "—";
@@ -341,13 +541,13 @@ function render(data) {
 
   const list = $("carries");
   if (!names.length) {
-    list.innerHTML = '<tr><td colspan="5" class="empty">no OMEN carries in this range</td></tr>';
+    list.innerHTML = `<tr><td colspan="5" class="empty">${searchQuery ? "no players match your search" : "no OMEN carries in this range"}</td></tr>`;
   } else {
     list.innerHTML = names.map((name) => {
       const playerPts = playerPoints(stats, name);
       return `
-      <tr>
-        <td class="name">${playerLabel(data, name)}</td>
+      <tr class="clickable" data-player="${escapeHtml(name)}">
+        <td class="name"><a class="player-link" href="#" data-player="${escapeHtml(name)}">${playerLabel(data, name)}</a></td>
         <td class="num">${stats.non ? (stats.non[name] || 0) : "—"}</td>
         <td class="num">${stats.con ? (stats.con[name] || 0) : "—"}</td>
         <td class="num total">${stats.total[name] || 0}</td>
@@ -364,16 +564,20 @@ function render(data) {
     tbody.innerHTML = wins.map((w) => {
       const carry = w.carry_omen === false
         ? '<span class="random">non omen/random carry</span>'
-        : playerLabel(data, w.carry);
+        : `<a class="player-link" href="#">${playerLabel(data, w.carry)}</a>`;
+      const playerAttr = w.carry_omen === false
+        ? ""
+        : ` data-player="${escapeHtml(w.carry)}"`;
       return `
       <tr>
         <td>${escapeHtml(w.time)}</td>
         <td>${escapeHtml(w.map)}</td>
-        <td class="carry">${carry}</td>
+        <td class="carry"${playerAttr}>${carry}</td>
       </tr>`;
     }).join("");
   }
 
+  if (activePlayer) renderProfile();
   setStatus("live", false);
 }
 
@@ -419,7 +623,7 @@ function clearRange() {
 
 async function refresh() {
   try {
-    if (activeRange) {
+    if (activeRange || activePlayer) {
       try {
         await loadHistory(false);
       } catch (err) {
@@ -441,6 +645,29 @@ $("clear").addEventListener("click", clearRange);
 [$("from"), $("to")].forEach((el) => el.addEventListener("keydown", (e) => {
   if (e.key === "Enter") applyRange();
 }));
+$("search").addEventListener("input", (e) => {
+  searchQuery = e.target.value.trim().toLowerCase();
+  if (lastData) render(lastData);
+});
+$("carries").addEventListener("click", (e) => {
+  const el = e.target.closest("[data-player]");
+  if (!el) return;
+  e.preventDefault();
+  openProfile(el.dataset.player);
+});
+$("wins").addEventListener("click", (e) => {
+  const el = e.target.closest("[data-player]");
+  if (!el) return;
+  e.preventDefault();
+  openProfile(el.dataset.player);
+});
+$("profile-close").addEventListener("click", closeProfile);
+$("profile").addEventListener("click", (e) => {
+  if (e.target === $("profile")) closeProfile();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && activePlayer) closeProfile();
+});
 
 refresh();
 setInterval(refresh, REFRESH_MS);
